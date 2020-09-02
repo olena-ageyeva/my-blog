@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+h1 {
+  /* font-family: "Open Sans"; */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+
+  margin: 10px 0;
+}
+
+#app {
+  height: 35vh;
+}
+
+.controls {
+  position: absolute;
+  padding: 20px;
+}
+
+.button,
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  letter-spacing: 0.3em;
+  padding: 10px 30px;
+  margin: 10px 0;
+}

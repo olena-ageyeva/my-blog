@@ -1,11 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+//import "./index/styles.css"
+//import { onInitialClientRender } from "../../gatsby-browser.js"
+import { onPageRender } from "./index/index"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
 class IndexPage extends React.Component {
+  componentDidMount() {
+    onPageRender()
+  }
+
   render() {
     const siteTitle = "Hello, World!"
 
@@ -15,16 +22,22 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
-        <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
-        </h1>
+
+        <div id="app">
+          <div className="controls">
+            <div className="button" id="wireframe">
+              solid
+            </div>
+            <div className="button" id="shape">
+              cube
+            </div>
+          </div>
+        </div>
 
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <button className="button">
+            Go to Blog <i class="fas fa-arrow-right"></i>
+          </button>
         </Link>
       </Layout>
     )
