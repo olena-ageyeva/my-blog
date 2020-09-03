@@ -39,6 +39,7 @@ button {
   padding: 5px 15px;
   margin: 10px 0;
   font-size: 0.9rem;
+  border-radius: 6px;
 }
 
 .quote_author {
@@ -98,4 +99,15 @@ button {
 
 .post_nav li:nth-child(3) a {
   float: right;
+}
+
+.header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header a {
+  box-shadow: none;
+  text-decoration: none;
 }
