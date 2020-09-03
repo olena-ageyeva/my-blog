@@ -22,23 +22,31 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-
-        <div id="app">
-          <div className="controls">
-            <div className="button" id="wireframe">
-              frame
-            </div>
-            <div className="button" id="shape">
-              shape
+        <div className="home">
+          <div id="app">
+            <div className="controls">
+              <div className="button" id="wireframe">
+                frame
+              </div>
+              <div className="button" id="shape">
+                shape
+              </div>
             </div>
           </div>
-        </div>
+          <blockquote class="blockquote">
+            <p className="quote">
+              There is geometry in the humming of the strings, there is music in
+              the spacing of the spheres.{" "}
+            </p>
+            <span className="quote_author">Pythagoras</span>
+          </blockquote>
 
-        <Link to="/blog/">
-          <button className="button">
-            Go to Blog <i class="fas fa-arrow-right"></i>
-          </button>
-        </Link>
+          <Link to="/blog/">
+            <button className="button">
+              Go to Blog <i class="fas fa-arrow-right"></i>
+            </button>
+          </Link>
+        </div>
       </Layout>
     )
   }

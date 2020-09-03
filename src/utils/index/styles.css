@@ -36,7 +36,52 @@ button {
   background: #333;
   color: #fff;
   letter-spacing: 0.2em;
-  padding: 10px 20px;
+  padding: 5px 15px;
   margin: 10px 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.quote_author {
+  float: right;
+  font-family: "Utopia-italic";
+  font-size: 1.1rem;
+  font-weight: 400px;
+}
+
+.blockquote {
+  padding: 2rem 4rem;
+  position: relative;
+  border-left: none;
+  text-align: left;
+}
+.blockquote p {
+  font-family: "Utopia-italic";
+  font-size: 1.5rem;
+  font-weight: 400px;
+  text-align: center;
+  margin-block-end: 0.5rem;
+}
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 0;
+  content: "\F10D";
+  font-size: 70px;
+  margin: 2rem -0.5rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 3px;
+  width: 200px;
+}
+
+.home {
+  text-align: center;
 }

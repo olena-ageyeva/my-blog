@@ -39,8 +39,8 @@ export const onPageRender = () => {
       scene.add(obj)
     })
     //SCENE
-    var width = window.innerWidth / 3
-    var height = window.innerHeight / 3
+    var width = document.getElementById("app").offsetWidth
+    var height = document.getElementById("app").offsetHeight
 
     var renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(width, height)
