@@ -18,11 +18,11 @@ export const onPageRender = () => {
       sphere = !sphere
       if (shape === "ico") {
         shape = "sphere"
-        objGeometry = new THREE.SphereGeometry(50, 32, 32)
+        objGeometry = new THREE.SphereGeometry(100, 32, 32)
       } else {
         if (shape === "sphere") {
           shape = "cube"
-          objGeometry = new THREE.CubeGeometry(100, 100, 100)
+          objGeometry = new THREE.CubeGeometry(150, 150, 150)
         } else {
           shape = "ico"
           objGeometry = new THREE.IcosahedronGeometry(100, 0)
@@ -52,7 +52,7 @@ export const onPageRender = () => {
 
     //CUBE
     //   if (obj) scene.remove(obj);
-    var objGeometry = new THREE.CubeGeometry(100, 100, 100)
+    var objGeometry = new THREE.CubeGeometry(150, 150, 150)
     var objMaterial = new THREE.MeshLambertMaterial({
       color: 0xccff,
       wireframe: wireframe,
