@@ -85,3 +85,17 @@ button {
 .home {
   text-align: center;
 }
+
+.post_nav ul li {
+  padding-left: 0;
+  width: 33%;
+  text-align: center;
+}
+
+.post_nav li:nth-child(1) a {
+  float: left;
+}
+
+.post_nav li:nth-child(3) a {
+  float: right;
+}
