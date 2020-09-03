@@ -37,7 +37,9 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-
+        <Link to="/blog/">
+          <button className="button">See All</button>
+        </Link>
         <ul
           style={{
             display: `flex`,
@@ -84,7 +86,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
       }
     }
   }

@@ -1,16 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-//gatsby-node.js
-exports.onCreateWebpackConfig = ({ actions }) => {
-  const { setWebpackConfig } = actions
-  setWebpackConfig({
-    externals: {
-      jquery: "jQuery", // important: 'Q' capitalized
-    },
-  })
-}
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 

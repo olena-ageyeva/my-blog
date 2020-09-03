@@ -42,9 +42,7 @@ class IndexPage extends React.Component {
           </blockquote>
 
           <Link to="/blog/">
-            <button className="button">
-              Go to Blog <i class="fas fa-arrow-right"></i>
-            </button>
+            <button className="button">Go to Blog</button>
           </Link>
         </div>
       </Layout>

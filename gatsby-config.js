@@ -2,11 +2,13 @@ module.exports = {
   siteMetadata: {
     // edit below
     title: `Simple Code Blog`,
-    author: `Gatsby`,
+    author: `Olena Ageyeva`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://olena-ageyeva.netlify.com/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `Olena91250581`,
+      website: `https://olena-ageyeva.com/`,
+      mathwell: `https://www.linkedin.com/company/mathwell/`,
     },
   },
   plugins: [
