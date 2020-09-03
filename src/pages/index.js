@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 //import "./index/styles.css"
 //import { onInitialClientRender } from "../../gatsby-browser.js"
-import { onPageRender } from "./index/index"
+import { onPageRender } from "../utils/index/index"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,10 +26,10 @@ class IndexPage extends React.Component {
         <div id="app">
           <div className="controls">
             <div className="button" id="wireframe">
-              solid
+              frame
             </div>
             <div className="button" id="shape">
-              cube
+              shape
             </div>
           </div>
         </div>

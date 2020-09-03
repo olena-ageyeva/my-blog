@@ -5,6 +5,7 @@ import "./styles.css"
 export const onPageRender = () => {
   var wireframe = false
   var sphere = false
+  var shape = "cube"
 
   setTimeout(function() {
     $(document).ready(function() {
@@ -17,10 +18,17 @@ export const onPageRender = () => {
       $("#shape").click(function() {
         scene.remove(obj)
         sphere = !sphere
-        if (sphere) {
+        if (shape === "ico") {
+          shape = "sphere"
           objGeometry = new THREE.SphereGeometry(50, 32, 32)
         } else {
-          objGeometry = new THREE.CubeGeometry(100, 100, 100)
+          if (shape === "sphere") {
+            shape = "cube"
+            objGeometry = new THREE.CubeGeometry(100, 100, 100)
+          } else {
+            shape = "ico"
+            objGeometry = new THREE.IcosahedronGeometry(100, 0)
+          }
         }
         objMaterial = new THREE.MeshLambertMaterial({
           color: 0xccff,
