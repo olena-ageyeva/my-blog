@@ -1,16 +1,16 @@
 ---
 title: "Three, Pt and more"
 date: "2020-09-03T09:52:03.284Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+description: Animation is now a organic part of the web. What are your favorite libraries?
 ---
-
-Coming soon...
 
 ### Pure CSS
 
-It's still the most performat and cross-platform/browser compatible way to animate website elements.
-The result is scalable, quick-loading, and well, impressive to see.
-Check out some [more examples](https://webdesign.tutsplus.com/articles/pure-css-animation-inspiration-on-codepen--cms-30875) of neat pure CSS animations.
+
+<div id="animated_div">CSS</div>
+
+Yes! CSS allows animation of HTML elements without using JavaScript or Flash! An animation lets an element gradually change from one style to another.
+You can change as many CSS properties you want, as many times you want.
 
 <iframe
   height="400"
@@ -32,10 +32,11 @@ Check out some [more examples](https://webdesign.tutsplus.com/articles/pure-css-
   <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-### Three
+It's still the most performat and cross-platform/browser compatible way to animate website elements.
+The result is scalable, quick-loading, and well, impressive to see.
+Check out some [more examples](https://webdesign.tutsplus.com/articles/pure-css-animation-inspiration-on-codepen--cms-30875) of neat pure CSS animations.
 
-At over 63K stars, this popular library is a great way to create 3D animations on the browser, using WebGL in an intuitive way.
-First introduced at April 2010, the library is still being actively developed by nearly 1,000 contributors.
+### [Three](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
 
 <iframe
 height="400"
@@ -46,7 +47,32 @@ height="400"
 
 </iframe>
 
-### Pt
+Three.js is an over 63K stars open-source 3D library for JavaScript that supports Canvas, SVG, and WebGL renderers. What does that mean? 
+You can create interactive 3D animations right in the browser using WebGL in an intuitive way. 
+First introduced at April 2010, the library is still being actively developed by nearly 1,000 contributors.
+Three’s homepage is at http://mrdoob.github.com/three.js which includes examples, documentation, and a link to the Three.js GitHub repository where you can always download the latest package.
+
+import Card from "src/components/card"
+import photo from "./ricardoCabello.jpg"
+import wngan from "./wngan.png"
+import airbnb from "./airbnb.png"
+
+
+ <Card photo={photo} author="Ricardo Cabello" repo="mrdoob/three.js" about="JavaScript 3D library." platform= "github.com" />
+
+
+
+
+
+### [Pt](https://ptsjs.org/guide/get-started-0100)
+
+<iframe
+height="400"
+  style="width: 100%;"
+  id="scene"
+  src="https://williamngan.github.io/pt/demo/index.html?name=triangle.incenter"
+>
+</iframe>
 
 "A line is a dot that went for a walk. <br/>
 Drawing is taking a line for a walk."  <br/>
@@ -55,13 +81,15 @@ Paul Klee
 This is what this whole experimental animation library all about. 
 It starts with a simple point that creates a concept when put into space and transforms into interpretation when gets into a form. 
 The space and the form in return create a context for a point. The code is being viewed as  new medium: 
-it can automate processes, model abstractions, and design interactions. All together Point, Space and Form orchestrated by Code created beautiful pictures on a canvas.
+it can automate processes, model abstractions, and design interactions. All together Point, Space and Form orchestrated by Code create beautiful pictures on a canvas.
 
-<iframe
-height="400"
-  style="width: 100%;"
-  id="scene"
-  src="https://williamngan.github.io/pt/demo/index.html?name=triangle.incenter"
->
+ <Card photo={wngan} author="William Ngan" repo="williamngan/pts" about="A library for visualization and creative-coding." platform= "github.com" />
 
-</iframe>
+
+### [Lottie](https://github.com/airbnb/lottie-web) 
+
+![Alt Text](https://miro.medium.com/max/800/1*qZMz2abxuSdvi6YQOFkLVg.gif)
+
+Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovinand renders them natively.
+
+ <Card photo={airbnb} author="Airbnb" repo="airbnb/lottie-web" about="Render After Effects animations natively on Web, Android and iOS, and React Native." platform= "github.com" />
