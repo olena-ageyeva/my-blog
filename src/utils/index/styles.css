@@ -163,7 +163,6 @@ button {
   overflow: hidden;
   font-family: "Source Code Pro", monospace;
   font-size: 1.5rem;
-  /* color: rgba(255, 255, 255, 0.7); */
   position: relative;
 }
 
@@ -190,7 +189,7 @@ button {
     width: 0;
   }
   to {
-    width: 35rem;
+    width: 37rem;
   }
 }
 
