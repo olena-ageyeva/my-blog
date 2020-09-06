@@ -57,7 +57,7 @@ class News extends React.Component {
               <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
               <a href="https://codepen.io">CodePen</a>.
             </iframe>
-            <p class="title">Day #1</p>
+            <p class="title">Day #1. Weekly Report.</p>
             <p>
               Featuring animated tooltip on graph point hovering. Implemented
               with using sass array variables and loops.
@@ -82,10 +82,10 @@ class News extends React.Component {
               <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
               <a href="https://codepen.io">CodePen</a>.
             </iframe>
-            <p class="title">Day #2</p>
+            <p class="title">Day #2. Profile.</p>
             <p>
               Featuring animated two circle image frame and hover effect on
-              elements.
+              elements. Implemented with partially transparent border.
             </p>
           </div>
 
@@ -107,11 +107,58 @@ class News extends React.Component {
               <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
               <a href="https://codepen.io">CodePen</a>.
             </iframe>
-            <p class="title">Day #3</p>
+            <p class="title">Day #3. Menu Button.</p>
             <p>
               Featuring on click animation of a hamburger menu. Implemented with
               use of sass mixing and class toggling with js
             </p>
+          </div>
+
+          <div class="card">
+            <iframe
+              height="450"
+              width="410"
+              scrolling="no"
+              title="The Pyramide"
+              src="https://codepen.io/olena-ageyeva/embed/mdPpwgj?height=450&theme-id=light&default-tab=result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen{" "}
+              <a href="https://codepen.io/olena-ageyeva/pen/mdPpwgj">
+                The Pyramide
+              </a>{" "}
+              by Olena (
+              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <p class="title">Day #4. The Pyramide.</p>
+            <p>
+              Featuring a continuous animation with a day time change effect.
+            </p>
+          </div>
+          <div class="card">
+            <iframe
+              height="450"
+              width="410"
+              scrolling="no"
+              title="Loading"
+              src="https://codepen.io/olena-ageyeva/embed/xxVprNr?height=450&theme-id=light&default-tab=result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen{" "}
+              <a href="https://codepen.io/olena-ageyeva/pen/xxVprNr">Loading</a>{" "}
+              by Olena (
+              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <p class="title">Day #5. Loading...</p>
+            <p>Featuring loading event animation with a 3D effect.</p>
           </div>
         </div>
       </Wrapper>
@@ -144,7 +191,8 @@ const Wrapper = styled.div`
     left: 3rem;
     z-index: 5;
     color: black;
-    display: inline-flex;
+    display: inline-block;
+    max-width: 1500px;
 
     .card {
       width: 470px;
