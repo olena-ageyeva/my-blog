@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ReportCard from "../components/css-challenge/report-card"
+
 import styled from "styled-components"
 
 class News extends React.Component {
@@ -39,24 +39,55 @@ class News extends React.Component {
           </div>
         </Layout>
         <div class="work">
-          <iframe
-            height="450"
-            width="410"
-            scrolling="no"
-            title="LYNepzy"
-            src="https://codepen.io/olena-ageyeva/embed/LYNepzy?height=450&theme-id=light&default-tab=result"
-            frameborder="no"
-            loading="lazy"
-            allowtransparency="true"
-            allowfullscreen="true"
-          >
-            See the Pen{" "}
-            <a href="https://codepen.io/olena-ageyeva/pen/LYNepzy">LYNepzy</a>{" "}
-            by Olena (
-            <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-            <a href="https://codepen.io">CodePen</a>.
-          </iframe>
-          <p>Day #1</p>
+          <div class="card">
+            <iframe
+              height="450"
+              width="410"
+              scrolling="no"
+              title="LYNepzy"
+              src="https://codepen.io/olena-ageyeva/embed/LYNepzy?height=450&theme-id=light&default-tab=result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen{" "}
+              <a href="https://codepen.io/olena-ageyeva/pen/LYNepzy">LYNepzy</a>{" "}
+              by Olena (
+              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <p class="title">Day #1</p>
+            <p>
+              Featuring animated tooltip on graph point hovering. Implemented
+              with using sass array variables and loops.
+            </p>
+          </div>
+
+          <div class="card">
+            <iframe
+              height="450"
+              width="410"
+              scrolling="no"
+              title="oNxpzVV"
+              src="https://codepen.io/olena-ageyeva/embed/oNxpzVV?height=450&theme-id=light&default-tab=result"
+              frameborder="no"
+              loading="lazy"
+              allowtransparency="true"
+              allowfullscreen="true"
+            >
+              See the Pen{" "}
+              <a href="https://codepen.io/olena-ageyeva/pen/oNxpzVV">oNxpzVV</a>{" "}
+              by Olena (
+              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
+              <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+            <p class="title">Day #2</p>
+            <p>
+              Featuring animated two circle image frame and hover effect on
+              elements.
+            </p>
+          </div>
         </div>
       </Wrapper>
     )
@@ -88,6 +119,24 @@ const Wrapper = styled.div`
     left: 3rem;
     z-index: 5;
     color: black;
+    display: inline-flex;
+
+    .card {
+      width: 470px;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+
+      iframe {
+        margin: 0 0 0.1rem 0;
+      }
+      .title {
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
   }
 
   .news a {
