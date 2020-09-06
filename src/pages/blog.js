@@ -23,16 +23,20 @@ class Blog extends React.Component {
             <button>Go Home</button>
           </Link>
         </div>
-
+        <Link to="/news">
+          <div id="parent">
+            {`Check out my 100 days css challenge --->>>`}
+            <div id="border"></div>
+          </div>
+          <div id="animated_div">CSS</div>
+        </Link>{" "}
+        <br />
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}
           navigate={navigate}
           location={location}
         />
-        {/* <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link> */}
       </Layout>
     )
   }
