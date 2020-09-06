@@ -1,7 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-//import "./index/styles.css"
-//import { onInitialClientRender } from "../../gatsby-browser.js"
 import { onPageRender } from "../utils/index/index"
 
 import Layout from "../components/layout"
