@@ -5,11 +5,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import styled from "styled-components"
+import CSSCard from "../components/css-card"
+import challengeData from "../components/css-challenge/data.json"
 
 class News extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+
+    const challengeCards = challengeData.map((item, index) => (
+      <CSSCard
+        title={item.title}
+        info={`Day #${challengeData.length - index}. ${item.info}`}
+        description={item.description}
+      />
+    ))
 
     return (
       <Wrapper>
@@ -22,145 +32,25 @@ class News extends React.Component {
               </div>
 
               <div class="tutorial">
-                <div class="logo">
-                  <div class="number">
-                    <div class="one-one"></div>
-                    <div class="one-two"></div>
-                    <div class="zero-one"></div>
-                    <div class="zero-two"></div>
+                <a href="https://100dayscss.com/">
+                  <div class="logo">
+                    <div class="number">
+                      <div class="one-one"></div>
+                      <div class="one-two"></div>
+                      <div class="zero-one"></div>
+                      <div class="zero-two"></div>
+                    </div>
+                    <div class="text">
+                      <div class="big">Days</div>
+                      <div class="small">CSS Challenge</div>
+                    </div>
                   </div>
-                  <div class="text">
-                    <div class="big">Days</div>
-                    <div class="small">CSS Challenge</div>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </Layout>
-        <div class="work">
-          <div class="card">
-            <iframe
-              height="450"
-              width="410"
-              scrolling="no"
-              title="LYNepzy"
-              src="https://codepen.io/olena-ageyeva/embed/LYNepzy?height=450&theme-id=light&default-tab=result"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{" "}
-              <a href="https://codepen.io/olena-ageyeva/pen/LYNepzy">LYNepzy</a>{" "}
-              by Olena (
-              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-              <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            <p class="title">Day #1. Weekly Report.</p>
-            <p>
-              Featuring animated tooltip on graph point hovering. Implemented
-              with using sass array variables and loops.
-            </p>
-          </div>
-
-          <div class="card">
-            <iframe
-              height="450"
-              width="410"
-              scrolling="no"
-              title="oNxpzVV"
-              src="https://codepen.io/olena-ageyeva/embed/oNxpzVV?height=450&theme-id=light&default-tab=result"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{" "}
-              <a href="https://codepen.io/olena-ageyeva/pen/oNxpzVV">oNxpzVV</a>{" "}
-              by Olena (
-              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-              <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            <p class="title">Day #2. Profile.</p>
-            <p>
-              Featuring animated two circle image frame and hover effect on
-              elements. Implemented with partially transparent border.
-            </p>
-          </div>
-
-          <div class="card">
-            <iframe
-              height="450"
-              width="410"
-              scrolling="no"
-              title="bGpaRdK"
-              src="https://codepen.io/olena-ageyeva/embed/bGpaRdK?height=450&theme-id=light&default-tab=result"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{" "}
-              <a href="https://codepen.io/olena-ageyeva/pen/bGpaRdK">bGpaRdK</a>{" "}
-              by Olena (
-              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-              <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            <p class="title">Day #3. Menu Button.</p>
-            <p>
-              Featuring on click animation of a hamburger menu. Implemented with
-              use of sass mixing and class toggling with js
-            </p>
-          </div>
-
-          <div class="card">
-            <iframe
-              height="450"
-              width="410"
-              scrolling="no"
-              title="The Pyramide"
-              src="https://codepen.io/olena-ageyeva/embed/mdPpwgj?height=450&theme-id=light&default-tab=result"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{" "}
-              <a href="https://codepen.io/olena-ageyeva/pen/mdPpwgj">
-                The Pyramide
-              </a>{" "}
-              by Olena (
-              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-              <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            <p class="title">Day #4. The Pyramide.</p>
-            <p>
-              Featuring a continuous animation with a day time change effect.
-            </p>
-          </div>
-          <div class="card">
-            <iframe
-              height="450"
-              width="410"
-              scrolling="no"
-              title="Loading"
-              src="https://codepen.io/olena-ageyeva/embed/xxVprNr?height=450&theme-id=light&default-tab=result"
-              frameborder="no"
-              loading="lazy"
-              allowtransparency="true"
-              allowfullscreen="true"
-            >
-              See the Pen{" "}
-              <a href="https://codepen.io/olena-ageyeva/pen/xxVprNr">Loading</a>{" "}
-              by Olena (
-              <a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
-              <a href="https://codepen.io">CodePen</a>.
-            </iframe>
-            <p class="title">Day #5. Loading...</p>
-            <p>Featuring loading event animation with a 3D effect.</p>
-          </div>
-        </div>
+        <div class="work">{challengeCards}</div>
       </Wrapper>
     )
   }
@@ -216,9 +106,9 @@ const Wrapper = styled.div`
   .news a {
     position: absolute;
     top: 1rem;
-    left: 1rem;
     z-index: 3;
     box-shadow: none;
+    margin: 0 2rem;
   }
 
   //   h3 a {
@@ -235,7 +125,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100vh;
     min-height: 600px;
-    max-height: 960px;
+    //max-height: 960px;
     overflow-y: hidden;
   }
   @media (max-width: 920px) {

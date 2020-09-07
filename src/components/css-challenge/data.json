@@ -1,0 +1,28 @@
+[
+  {
+    "title": "xxVprNr",
+    "info": "Loading...",
+    "description": "Featuring loading event animation with a 3D effect."
+  },
+  {
+    "title": "mdPpwgj",
+    "info": "The Pyramide.",
+    "description": "Featuring a continuous animation with a day time change effect."
+  },
+
+  {
+    "title": "bGpaRdK",
+    "info": "Menu Button.",
+    "description": "Featuring on click animation of a hamburger menu. Implemented with use of cubic-bezier for transition effect with variable speed."
+  },
+  {
+    "title": "oNxpzVV",
+    "info": "Profile.",
+    "description": "Featuring animated two circle image frame and hover effect on elements. Implemented with partially transparent border."
+  },
+  {
+    "title": "LYNepzy",
+    "info": "Weekly Report.",
+    "description": "Featuring animated tooltip on graph point hovering. Implemented with using sass array variables and loops."
+  }
+]
