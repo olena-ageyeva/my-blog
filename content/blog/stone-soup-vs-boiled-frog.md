@@ -5,12 +5,14 @@ title: Stone Soup vs Boiled Frog
 description: When you are try to catalyze change within your organization  are
   you doing good or bad? Is the decision subjective or objective?
 ---
+![](../assets/soup.gif "soup")
+
 
 
 Another good quote from my favorite book.
 
 > The three soldiers returning home from war were hungry. When they saw the village ahead
-> their spirits liftedthey were sure the villagers would give them a meal. But when they got
+> their spirits lifted they were sure the villagers would give them a meal. But when they got
 > there, they found the doors locked and the windows closed. After many years of war, the
 > villagers were short of food, and hoarded what they had.
 >
@@ -18,7 +20,7 @@ Another good quote from my favorite book.
 > The amazed villagers came out to watch.
 >
 > "This is stone soup," the soldiers explained. "Is that all you put in it?" asked the
-> villagers. "Absolutelyalthough some say it tastes even better with a few carrots." A
+> villagers. "Absolutely although some say it tastes even better with a few carrots." A
 > villager ran off, returning in no time with a basket of carrots from his hoard.
 >
 > A couple of minutes later, the villagers again asked "Is that it?"
@@ -42,7 +44,7 @@ Another good quote from my favorite book.
 > Every now and then, you might want to emulate the soldiers.
 >
 > You may be in a situation where you know exactly what needs doing and how to do it. The
-> entire system just appears before your eyesyou know it's right. But ask permission to tackle
+> entire system just appears before your eyes you know it's right. But ask permission to tackle
 > the whole thing and you'll be met with delays and blank stares. People will form committees ,
 > budgets will need approval, and things will get complicated. Everyone will guard their own
 > resources. Sometimes this is called "start-up fatigue."
