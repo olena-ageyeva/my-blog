@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,53 +7,82 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 import CSSCard from "../components/css-card"
 import challengeData from "../components/css-challenge/data.json"
+import arrow from "../img/double_arrow.png"
+import arrow_right from "../img/arrow-right.png"
 
-class News extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+const News = ({ data, location }) => {
+  const [currentSet, setCurrentSet] = useState(0)
+  const max = Math.ceil(challengeData.length / 3) - 1
 
-    const challengeCards = challengeData.map((item, index) => (
-      <CSSCard
-        title={item.title}
-        info={`Day #${challengeData.length - index}. ${item.info}`}
-        description={item.description}
-      />
-    ))
+  //const { data } = this.props
+  const siteTitle = data.site.siteMetadata.title
 
+  const challengeCards = [0, 1, 2].map(index => {
+    const indexAdjustment = 2 - index + 3 * currentSet
+    if (indexAdjustment >= challengeData.length) {
+      return null
+    }
     return (
-      <Wrapper>
-        <Layout location={this.props.location} title={siteTitle}>
-          <SEO title="News: 100 days css challenge" />
-          <div className="news">
-            <div class="fullscreen">
-              <div class="challenge">
-                <div class="bg"></div>
-              </div>
+      <CSSCard
+        title={challengeData[indexAdjustment].title}
+        info={`Day #${challengeData.length - indexAdjustment}. ${
+          challengeData[indexAdjustment].info
+        }`}
+        description={challengeData[indexAdjustment].description}
+      />
+    )
+  })
 
-              <div class="tutorial">
-                <a href="https://100dayscss.com/">
-                  <div class="logo">
-                    <div class="number">
-                      <div class="one-one"></div>
-                      <div class="one-two"></div>
-                      <div class="zero-one"></div>
-                      <div class="zero-two"></div>
-                    </div>
-                    <div class="text">
-                      <div class="big">Days</div>
-                      <div class="small">CSS Challenge</div>
-                    </div>
+  return (
+    <Wrapper>
+      <Layout location={location} title={siteTitle}>
+        <SEO title="News: 100 days css challenge" />
+        <div className="news">
+          <div class="fullscreen">
+            <div class="challenge">
+              <div class="bg"></div>
+            </div>
+
+            <div class="tutorial">
+              <a href="https://100dayscss.com/">
+                <div class="logo">
+                  <div class="number">
+                    <div class="one-one"></div>
+                    <div class="one-two"></div>
+                    <div class="zero-one"></div>
+                    <div class="zero-two"></div>
                   </div>
-                </a>
-              </div>
+                  <div class="text">
+                    <div class="big">Days</div>
+                    <div class="small">CSS Challenge</div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
-        </Layout>
-        <div class="work">{challengeCards}</div>
-      </Wrapper>
-    )
-  }
+        </div>
+      </Layout>
+      <div class="work">
+        {currentSet < max && (
+          <div
+            class="arrow"
+            onClick={() => currentSet < max && setCurrentSet(currentSet + 1)}
+          >
+            <img src={arrow} width="50px" alt="arrow" />
+          </div>
+        )}
+        {challengeCards}
+        {currentSet > 0 && (
+          <div
+            class="arrow"
+            onClick={() => currentSet > 0 && setCurrentSet(currentSet - 1)}
+          >
+            <img src={arrow_right} width="37px" alt="arrow" />
+          </div>
+        )}
+      </div>
+    </Wrapper>
+  )
 }
 
 export default News
@@ -82,24 +111,16 @@ const Wrapper = styled.div`
     z-index: 5;
     color: black;
     display: inline-block;
-    max-width: 1500px;
+    max-width: 1700px;
 
-    .card {
-      width: 470px;
-      margin: 0.5rem;
-      padding: 1rem;
-      display: inline-grid;
-      box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-
-      iframe {
-        margin: 0 auto;
-      }
-      .title {
-        font-family: "Open Sans", Helvetica, sans-serif;
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin: 0;
-      }
+    .arrow {
+      height: 350px;
+      vertical-align: middle;
+      width: 50px;
+      display: inline-block;
+      background: transparent;
+      z-index: 6;
+      cursor: poiner;
     }
   }
 

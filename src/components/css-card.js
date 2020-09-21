@@ -27,7 +27,7 @@ function CSSCard({ title, info, description }) {
 }
 
 const Container = styled.div`
-  width: 470px;
+  width: 440px;
   margin: 0.5rem;
   padding: 1rem;
   display: inline-grid;
