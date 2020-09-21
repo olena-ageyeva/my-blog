@@ -5,9 +5,7 @@ title: Stone Soup vs Boiled Frog
 description: When you are try to catalyze change within your organization  are
   you doing good or bad? Is the decision subjective or objective?
 ---
-![](../assets/soup.gif "soup")
-
-
+![](../assets/stoned-soup-2.jpg "soup")
 
 Another good quote from my favorite book.
 
