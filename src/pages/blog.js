@@ -20,7 +20,8 @@ class Blog extends React.Component {
         <div className="header">
           <Bio />
           <Link to="/">
-            <button>Go Home</button>
+            {/* <button>Go Home</button> */}
+            <Button>Go Home</Button>
           </Link>
         </div>
         <Link to="/news">

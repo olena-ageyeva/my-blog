@@ -8,8 +8,7 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
-    const extraPath = `${__PATH_PREFIX__}/news`
+    const blogPath = `${__PATH_PREFIX__}/blog/`    
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
@@ -35,12 +34,15 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
+        <h1
+        style={{
+          ...scale(1.5),
+          marginBottom: rhythm(1.5),
+          marginTop: 0,
+          marginLeft: -500,
+          zIndex: 3
+        }}
+      >
           <Link
             style={{
               boxShadow: `none`,
@@ -51,7 +53,7 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+        </h1>
       )
     }
     return (

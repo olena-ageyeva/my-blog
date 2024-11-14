@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Card({ repo, about, platform, author, photo }) {
   return (
     <Container>
-      <a href={`https://${platform}/${repo}`} target="_blank">
+      <a href={`https://${platform}/${repo}`} target="_blank" rel="noopener noreferrer">
         <div className="github_card">
           <div className="github_info">
             <h2>{repo}</h2>

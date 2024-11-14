@@ -25,9 +25,8 @@ const News = ({ data, location }) => {
     return (
       <CSSCard
         title={challengeData[indexAdjustment].title}
-        info={`Day #${challengeData.length - indexAdjustment}. ${
-          challengeData[indexAdjustment].info
-        }`}
+        info={`Day #${challengeData.length - indexAdjustment}. ${challengeData[indexAdjustment].info
+          }`}
         description={challengeData[indexAdjustment].description}
       />
     )
@@ -67,6 +66,9 @@ const News = ({ data, location }) => {
           <div
             class="arrow"
             onClick={() => currentSet < max && setCurrentSet(currentSet + 1)}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && currentSet < max && setCurrentSet(currentSet + 1)}
+            role="button"
+            tabIndex="0"
           >
             <img src={arrow} width="50px" alt="arrow" />
           </div>
@@ -76,6 +78,9 @@ const News = ({ data, location }) => {
           <div
             class="arrow"
             onClick={() => currentSet > 0 && setCurrentSet(currentSet - 1)}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && currentSet > 0 && setCurrentSet(currentSet - 1)}
+            role="button"
+            tabIndex="0"
           >
             <img src={arrow_right} width="37px" alt="arrow" />
           </div>
@@ -143,11 +148,13 @@ const Wrapper = styled.div`
 
   .fullscreen {
     position: absolute;
+    top:0;
     width: 100%;
     height: 100vh;
     min-height: 600px;
     //max-height: 960px;
     overflow-y: hidden;
+    // margin: -120px 240px;
   }
   @media (max-width: 920px) {
     .fullscreen {
@@ -182,8 +189,8 @@ const Wrapper = styled.div`
     right: -140px;
     margin-top: -600px;
     background: #fff;
-    -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    // -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    // box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
   }
   @media (max-width: 920px) {

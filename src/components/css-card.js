@@ -28,6 +28,7 @@ function CSSCard({ title, info, description }) {
 
 const Container = styled.div`
   width: 440px;
+  min-height: 670px;
   margin: 0.5rem;
   padding: 1rem;
   display: inline-grid;

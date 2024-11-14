@@ -22,16 +22,12 @@ class IndexPage extends React.Component {
         />
         <div className="home">
           <div id="app">
-            <div className="controls">
-              <div className="button" id="wireframe">
-                frame
-              </div>
-              <div className="button" id="shape">
-                shape
-              </div>
+            <div className="controls">       
+              <Button className="button" id="wireframe">frame</Button>
+              <Button className="button" id="shape">shape</Button> 
             </div>
           </div>
-          <blockquote class="blockquote">
+          <blockquote className="blockquote">
             <p className="quote">
               There is geometry in the humming of the strings, there is music in
               the spacing of the spheres.{" "}
@@ -40,7 +36,7 @@ class IndexPage extends React.Component {
           </blockquote>
 
           <Link to="/blog/">
-            <button className="button">Go to Blog</button>
+            <Button className="button">Go to Blog</Button>
           </Link>
         </div>
       </Layout>
