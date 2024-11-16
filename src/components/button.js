@@ -1,10 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-const Button = props => {
-  const {id="", className=""}= props;
-  console.log("********************************button", props)
-  return(< ButtonWrapper props={props} id={id} className={className}> {props.children}</ButtonWrapper >)
+const Button = ({ id = "", className = "", onClick = () => { }, children, ...rest }) => {
+  return (< ButtonWrapper props={rest} id={id} className={className} onClick={onClick}> {children}</ButtonWrapper >)
 }
 
 
@@ -18,22 +16,27 @@ const ButtonWrapper = styled.button`
   font-size: 0.9rem;
   border-radius: 6px;
 
-  // display: block;
-  border: none;  
-  box-sizing: border-box;
-  text-decoration: none;    
+  background: linear-gradient(135deg, #333, #555);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: light;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
 
-  background: ${props => props.props.background || "rgb(51, 51, 51)"};
-  color: ${props => props.props.color || "rgb(255, 255, 255)"};
-  font-size: ${props => props.props.fontSize || "15px"};
-  font-weight: ${props => props.props.fontWeight || "600"};
-  border-radius: ${props => props.props.radius || "6px"};
-  margin-top: ${props => props.props.marginTop || "10px"};
-  margin-bottom: ${props => props.props.marginBottom || "10px"};
-
-  &:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+  &:hover { 
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
   }
+  &:active {
+  transform: translateY(1px); 
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
 `
 
 export default Button
