@@ -13,7 +13,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 3rem;
-
+  text-align: center;
   margin: 10px 0;
 }
 
@@ -27,7 +27,7 @@ h1 {
   padding: 20px;
 }
 
-#wireframe,
+/* #wireframe,
 #shape,
 .button,
 button {
@@ -41,20 +41,142 @@ button {
   margin: 10px 0;
   font-size: 0.9rem;
   border-radius: 6px;
+} */
+
+.quote-wrapper {
+  display: flex;
+  align-items: flex-start;
+  /* max-width: 600px; */
+  padding: 0 8px 0.2em;
+  background-color: #fff;
+  position:relative;
+  align-items: center;
+  color: hsla(0, 0%, 0%, 0.59);
+  box-shadow: 4px 8px 4px 0 rgba(0, 0, 0, 0.1);
+  /* border-radius: 12px; */
+  margin: 20px 0 4em;
 }
 
-.quote_author {
-  float: right;
-  font-family: "Utopia-italic";
-  font-size: 1.1rem;
-  font-weight: 400px;
+.author-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 15px;
+  /* Space between image and text */
 }
 
 .blockquote {
+  margin: 0;
+  text-align: left;
+  /* Ensure text is left-aligned */
+  border: none;
+  padding: 1em;
+  color: hsla(0, 0%, 0%, 0.59);
+
+}
+
+.quote {
+  font-size: 24px;
+  color: #333;
+  line-height: 1;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+  display: inline;
+  color: hsla(0, 0%, 0%, 0.59);
+}
+
+
+.quote-icon {
+  color: #ff9800;
+  /* Adjusted color for the quote icon */
+  font-size: 32px;
+  font-weight: 600;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.quote_author {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  /* margin-top: 10px; */
+  font-style: normal;
+  text-align: left;
+  /* Ensure author text is left-aligned */
+}
+
+.quote_author::before {
+  content: "— ";
+  /* Add dash before author name */
+}
+
+.quote_author em {
+  font-style: italic;
+  color: #999;
+  font-weight: 400;
+}
+
+.blockquote::after {
+  content: "";
+  top: 4px;
+  left: 50%;
+  margin-left: -100px;
+  position: absolute;
+  border-bottom: 3px solid #7FB7E4;
+  height: 3px;
+  width: 200px;
+}
+
+
+
+
+/* .blockquote {
+  font-size: 1.4em;
+ 
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 0.4em 0.2em;
+  border-left: 8px solid #78C0A8;
+  line-height: 1.6;
+  position: relative;
+  text-align: left;
+
+}
+
+.blockquote:before {
+  font-family: Arial;
+  content: "\201C";
+  color: #78C0A8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -32px;
+}
+
+.blockquote::after {
+  content: '';
+}
+
+.quote_author {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+} */
+
+
+
+/* .blockquote {
   padding: 2rem 4rem;
   position: relative;
   border-left: none;
   text-align: left;
+  margin:50px auto;
+  line-height:1.6;
 }
 .blockquote p {
   font-family: "Utopia-italic";
@@ -66,11 +188,12 @@ button {
 .blockquote:before {
   position: absolute;
   font-family: "FontAwesome";
-  top: 0;
+  bottom: -20px;
   content: "\F10D";
-  font-size: 70px;
+  font-size: 120px;
   margin: 2rem -0.5rem;
   color: rgba(0, 0, 0, 0.1);
+  left: 60px; 
 }
 
 .blockquote::after {
@@ -82,7 +205,17 @@ button {
   border-bottom: 3px solid #bf0024;
   height: 3px;
   width: 200px;
+} 
+  
+.quote_author {
+  float: right;
+  font-family: "Utopia-italic";
+  font-size: 1.1rem;
+  font-weight: 400px;
 }
+
+
+*/
 
 .home {
   text-align: center;
@@ -135,23 +268,28 @@ button {
     transform: rotate(0deg);
     left: 0px;
   }
+
   25% {
     transform: rotate(20deg);
     left: 0px;
   }
+
   50% {
     transform: rotate(0deg);
     left: 500px;
   }
+
   55% {
     transform: rotate(0deg);
     left: 500px;
   }
+
   70% {
     transform: rotate(0deg);
     left: 500px;
     background: #1ec7e6;
   }
+
   100% {
     transform: rotate(-360deg);
     left: 0px;
@@ -189,6 +327,7 @@ button {
   from {
     width: 0;
   }
+
   to {
     width: 40rem;
   }
@@ -200,6 +339,7 @@ button {
   from {
     border-bottom-color: rgba(0, 255, 0, 0.75);
   }
+
   to {
     border-bottom-color: transparent;
   }

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { onPageRender } from "../utils/index/index"
+import pifagoras from "../img/pifagoras-2.png"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,24 +23,31 @@ class IndexPage extends React.Component {
         />
         <div className="home">
           <div id="app">
-            <div className="controls">       
+            <div className="controls">
               <Button className="button" id="wireframe">frame</Button>
-              <Button className="button" id="shape">shape</Button> 
+              <Button className="button" id="shape">shape</Button>
             </div>
           </div>
-          <blockquote className="blockquote">
-            <p className="quote">
-              There is geometry in the humming of the strings, there is music in
-              the spacing of the spheres.{" "}
-            </p>
-            <span className="quote_author">Pythagoras</span>
-          </blockquote>
+          <div class="quote-wrapper">
+            <img src={pifagoras} alt="Author Image" class="author-image" />
+            <blockquote class="blockquote">
+              <p class="quote">
+                <span class="quote-icon">“</span>
+                There is geometry in the humming of the strings, there is music in
+                the spacing of the spheres.
+              </p>
+              <span class="quote_author">
+                Pythagoras <em>in Ancient Texts</em>
+              </span>
+            </blockquote>
+          </div>
+
 
           <Link to="/blog/">
             <Button className="button">Go to Blog</Button>
           </Link>
         </div>
-      </Layout>
+      </Layout >
     )
   }
 }
