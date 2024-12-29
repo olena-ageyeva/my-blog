@@ -29,14 +29,14 @@ class IndexPage extends React.Component {
             </div>
           </div>
           <div class="quote-wrapper">
-            <img src={pifagoras} alt="Author" class="author-image" />
-            <blockquote class="blockquote">
+            <img src={pifagoras} alt="Author" className="author-image" />
+            <blockquote className="blockquote">
               <p class="quote">
-                <span class="quote-icon">“</span>
+                <span className="quote-icon">“</span>
                 There is geometry in the humming of the strings, there is music in
                 the spacing of the spheres.
               </p>
-              <span class="quote_author">
+              <span className="quote_author">
                 Pythagoras <em>in Ancient Texts</em>
               </span>
             </blockquote>
