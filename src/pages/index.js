@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
           <div class="quote-wrapper">
-            <img src={pifagoras} alt="Author Image" class="author-image" />
+            <img src={pifagoras} alt="Author" class="author-image" />
             <blockquote class="blockquote">
               <p class="quote">
                 <span class="quote-icon">“</span>
