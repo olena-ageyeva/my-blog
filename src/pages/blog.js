@@ -19,7 +19,8 @@ class Blog extends React.Component {
         <SEO title="All posts" />
         <div className="header">
           <Bio />
-          <Link to="/">            
+          <Link to="/">
+            {/* <button>Go Home</button> */}
             <Button>Go Home</Button>
           </Link>
         </div>
