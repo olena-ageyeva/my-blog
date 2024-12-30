@@ -22,7 +22,7 @@ Why? Because her evaluation system missed something glaringly obvious—like an 
 
 Let me explain. Just a few weeks earlier, Alex approached me holding her stuffed bunny and asked, *“The bunny is curious—can 2 + 2 = 5 ever be correct?”*
 
-I know this may not sound like a typical 5-year-old question, but this was classic Alex. Her curiosity was boundless and her thinking refreshingly unconventional.  I replied, *“Not at all. There are actually several ways that could make sense mathematically. Can you find them?”*
+I know this may not sound like a typical 5-year-old question, but this was classic Alex. Her curiosity was boundless and her thinking refreshingly unconventional.  I replied, *“In some contexts, it can be. There are actually several ways that could make sense mathematically. Can you find them?”*
 
 And guess what? She did! Alex came up with three solutions:
 
