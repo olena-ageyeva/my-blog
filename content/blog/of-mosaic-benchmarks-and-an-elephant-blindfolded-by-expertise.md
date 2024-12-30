@@ -36,6 +36,6 @@ For context, Alex and I had already explored [binary](https://en.wikipedia.org/w
 
 And speaking of "traditional" conventional public school math... Two weeks later, [Math Kangaroo](https://mathkangaroo.org/mks/) results came in: Alex [ranked 1st ](https://mathkangaroo.org/mks/wp-content/uploads/2022/04/2017_Level-1_National-Winners.pdf)*nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both the math olympiad and the cognitive test were conducted in English, which, at the time, was her second language with limited exposure.
 
-The moral of the story? Sometimes, the real genius isn’t in following formulas but in thinking beyond them. And if you’re going to evaluate math readiness, you’d better check for elephants—and maybe stuffed bunnies—before drawing conclusions.
+The moral of the story? Rigid benchmarks often fall short when they encounter exceptions. True talent lies not in simply following formulas, but in thinking beyond them. After all, evolution wouldn’t happen without the courage to try things differently. And remember—if you’re going to evaluate someone’s math readiness, make sure to check for elephants—and maybe stuffed bunnies—before jumping to conclusions.
 
 ![](../assets/alex-collage.jpg)
