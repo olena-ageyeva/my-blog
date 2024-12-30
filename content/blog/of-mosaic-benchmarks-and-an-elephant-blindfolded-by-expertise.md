@@ -11,7 +11,7 @@ description: " A visit to a reputable math studio turned into an unexpected
 \
 Once upon a time, I decided to take my 5-year-old daughter, Alex, to a highly reputable math studio for an introductory visit. The owner of the studio, armed with a solid math education and 20 years of experience running programs for K-12 students, graciously scheduled time for us. I was excited—what could possibly go wrong?
 
-When we arrived, she pulled out a mosaic board, carefully built a pattern on one side, and then turned her attention to chatting with me. Meanwhile, Alex, curious as ever, decided to explore the mosaic herself. She built her own design on the other side of the board—a design that, unbeknownst to her, was being evaluated.
+When we arrived, she pulled out a mosaic board, carefully built a simple pattern on one side, and then turned her attention to chatting with me. Meanwhile, Alex, curious as ever, decided to explore the mosaic herself. She built her own design on the other side of the board—a design that, unbeknownst to her, was being evaluated.
 
 Here’s the kicker: the studio owner never gave Alex any instructions. No one told her to copy the example on the other side of the board. Alex simply did what 5-year-olds do—she created something entirely her own, much more intricate and sophisticated than the original.
 
@@ -28,16 +28,14 @@ Now, most 5-year-olds might ask about cartoons or snacks, but this was classic A
 
 And guess what? She did! Alex came up with three solutions:
 
-1. Numbers are symbols we humans agreed upon. If we create our own math ring and redefine what “2,” “+,” and “5” mean, we could make 2 + 2 = 5 true.
+1. Numbers are symbols we humans agreed upon. If we create our own [math ring](https://en.wikipedia.org/wiki/Ring_(mathematics)) and redefine what “2,” “+,” and “5” mean, we could make 2 + 2 = 5 true.
 2. Operations like “+” and “=” are conventions. If we reassigned their functions, anything is possible.
-3. Finally, consider dynamics: during an infinitesimally small moment while performing the addition, the two “2’s” could grow by 0.5 each, resulting in a total of 5.
+3. Finally, consider dynamics: during an [infinitesimally](https://en.wikipedia.org/wiki/Infinitesimal) small moment while performing the addition, the two “2’s” could grow by 0.5 each, resulting in a total of 5.
 
-I was so impressed that I shared Alex’s ideas with Bob and Ellen Kaplan, math professors at Harvard and founders of the Math Circle Alex attended. They validated her thinking as mathematically sound and praised her creativity.
+I was so impressed that I shared Alex’s ideas with [Bob and Ellen Kaplan](https://people.math.harvard.edu/~knill/various/bobkaplan/index.html), math professors at Harvard and founders of the Math Circle Alex attended. They validated her thinking as mathematically sound and praised her creativity.
 
-For context, Alex and I had already explored binary, decimal, and *n*-number systems. She understood that the decimal system was just one of countless possible frameworks. So, naturally, when I brought her to the math studio, I expected someone with 20 years of experience to recognize her potential. Instead, she saw a child “not ready for math.”
+For context, Alex and I had already explored [binary](https://en.wikipedia.org/wiki/Binary_number), [decimal](https://en.wikipedia.org/wiki/Decimal), and [*n*-number systems](https://en.wikipedia.org/wiki/Positional_notation). She understood that the decimal system was just one of countless possible frameworks. So, naturally, when I brought her to the math studio, I expected someone with 20 years of experience to recognize her potential. Instead, she saw a child “not ready for math.”
 
-Two weeks later, Math Kangaroo results came in: Alex ranked 1st *nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both tests were administered in English, which, at the time, was her second language with limited exposure.
+Two weeks later, [Math Kangaroo](https://mathkangaroo.org/mks/) results came in: Alex [ranked 1st ](https://mathkangaroo.org/mks/wp-content/uploads/2022/04/2017_Level-1_National-Winners.pdf)*nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both tests were administered in English, which, at the time, was her second language with limited exposure.
 
 The moral of the story? Sometimes, the real genius isn’t in following formulas but in thinking beyond them. And if you’re going to evaluate math readiness, you’d better check for elephants—and maybe stuffed bunnies—before drawing conclusions.
-
-<!--EndFragment-->
