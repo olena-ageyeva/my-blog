@@ -16,7 +16,7 @@ Here’s the kicker: the studio owner never gave Alex any instructions. No one t
 
 After about 10 minutes, the studio owner delivered her grand conclusion: *“Your daughter is not ready for math classes yet.”* She explained—quite verbosely, I might add—how children need to master units, then tens, then hundreds before they can even *dream* of understanding math. To justify her verdict, she pointed to Alex’s mosaic design and concluded that, because Alex didn’t match the sample pattern, she must not grasp the concept of units and tens. My eyebrows raised higher with each sentence, like parabolas shooting off the graph. “Huh?” I asked a few clarifying questions, trying to make sense of her algorithm for evaluating math readiness.
 
-At the end of this verbose performance, I smiled and thanked her for her time. *“Come back in a year,”* she said. I knew one thing for sure—we weren’t coming back.
+At the end I smiled and thanked her for her time. *“Come back in a year,”* she said. I knew one thing for sure—we weren’t coming back.
 
 Why? Because her evaluation system missed something glaringly obvious—like an elephant in the room holding a calculator. It was a spectacular demonstration of what happens when educators rely on rigid stereotypes and fail to recognize the potential of children who deviate from the "average." Instead of nurturing creativity and curiosity, the system squashed it with misplaced assumptions.
 
@@ -32,7 +32,7 @@ And guess what? She did! Alex came up with three solutions:
 
 I was so impressed that I shared Alex’s ideas with [Bob and Ellen Kaplan](https://people.math.harvard.edu/~knill/various/bobkaplan/index.html), math professors at Harvard and founders of the Math Circle Alex attended. They validated her thinking as mathematically sound and praised her creativity.
 
-For context, Alex and I had already explored [binary](https://en.wikipedia.org/wiki/Binary_number), [decimal](https://en.wikipedia.org/wiki/Decimal), and [*n*-number systems](https://en.wikipedia.org/wiki/Positional_notation). She quickly grasped that the decimal system is just one of many ways to think about numbers. When we visited the math studio, I was eager to see how someone experienced might nurture her unique curiosity. Although the assessment didn’t align with what I’d hoped, it was a valuable reminder of the importance of recognizing and embracing individual ways of thinking. Stereotyping, after all, can limit growth on both sides. Every interaction is an opportunity to learn, grow, and gain a fresh perspective! 
+For context, Alex and I had already explored [binary](https://en.wikipedia.org/wiki/Binary_number), [decimal](https://en.wikipedia.org/wiki/Decimal), and [*n*-number systems](https://en.wikipedia.org/wiki/Positional_notation). She quickly grasped that the decimal system is just one of many ways to think about numbers. 
 
 And speaking of "traditional" conventional public school math... Two weeks later, [Math Kangaroo](https://mathkangaroo.org/mks/) results came in: Alex [ranked 1st ](https://mathkangaroo.org/mks/wp-content/uploads/2022/04/2017_Level-1_National-Winners.pdf)*nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both the math olympiad and the cognitive test were conducted in English, which, at the time, was her second language with limited exposure.
 
