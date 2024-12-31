@@ -1,17 +1,26 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { DiscussionEmbed } from "disqus-react"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
+
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const { title, description, slug } = post.frontmatter
+
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: slug, title },
+    }
 
     const post_nav = () => (
       <div className="post_nav">
@@ -48,11 +57,11 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          title={title}
+          description={description || post.excerpt}
         />
         {post_nav()}
-        <h1>{post.frontmatter.title}</h1>
+        <h1>{title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -71,6 +80,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
+        <DiscussionEmbed {...disqusConfig} />
         {post_nav()}
       </Layout>
     )
