@@ -79,9 +79,9 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
-        <DiscussionEmbed {...disqusConfig} />
+        <Bio />        
         {post_nav()}
+        <DiscussionEmbed {...disqusConfig} />
       </Layout>
     )
   }
