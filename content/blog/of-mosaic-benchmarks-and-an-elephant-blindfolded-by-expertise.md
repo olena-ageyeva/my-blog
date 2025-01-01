@@ -16,11 +16,11 @@ Here’s the kicker: the studio owner never gave Alex any instructions. No one t
 
 After about 10 minutes, the studio owner delivered her grand conclusion: *“Your daughter is not ready for math classes yet.”* She explained—quite verbosely, I might add—how children need to master units, then tens, then hundreds before they can even *dream* of understanding math. To justify her verdict, she pointed to Alex’s mosaic design and concluded that, because Alex didn’t match the sample pattern, she must not grasp the concept of units and tens. My eyebrows raised higher with each sentence, like parabolas shooting off the graph. “Huh?” I was trying to make sense of her algorithm for evaluating math readiness.
 
-At the end I smiled and thanked her for her time. *“Come back in a year,”* she said. I knew one thing for sure—we weren’t coming back.
+“Come back in a year,” she said. I smiled and thanked her for her time. I knew one thing for sure—we weren’t coming back.
 
-Why? Because her evaluation system missed something glaringly obvious—like an elephant in the room holding a calculator. It was a spectacular demonstration of what happens when educators rely on rigid stereotypes and fail to recognize the potential of children who deviate from the "average." Instead of nurturing creativity and curiosity, the system squashed it with misplaced assumptions.
+Why? Because I had just witnessed this experienced lady miss something glaringly obvious — like an elephant in the room holding a calculator. It was a spectacular demonstration of what happens when one relies on rigid stereotypes and fails to recognize the potential of anything that deviates slightly from the "average." Instead of expanding and evolving to make space for unconventional capabilities, the system squashed them with misplaced assumptions.
 
-Let me explain. Just a few weeks earlier, Alex approached me holding her stuffed bunny and asked, *“The bunny is curious—can 2 + 2 = 5 ever be correct?”*
+In case you’re wondering how my own evaluation system makes sense, let me provide a bit more context. Just a few weeks earlier, Alex approached me holding her stuffed bunny and asked, *“The bunny is curious—can 2 + 2 = 5 ever be correct?”*
 
 I know this may not sound like a typical 5-year-old question, but this was classic Alex. Her curiosity was boundless and her thinking refreshingly unconventional.  I replied, *“In some contexts, it can be. There are actually several ways that could make sense mathematically. Can you find them?”*
 
@@ -32,10 +32,12 @@ And guess what? She did! Alex came up with three solutions:
 
 I was so impressed that I shared Alex’s ideas with [Bob and Ellen Kaplan](https://people.math.harvard.edu/~knill/various/bobkaplan/index.html), math professors at Harvard and founders of the Math Circle Alex attended. They validated her thinking as mathematically sound and praised her creativity.
 
-For context, Alex and I had already explored [binary](https://en.wikipedia.org/wiki/Binary_number), [decimal](https://en.wikipedia.org/wiki/Decimal), and [*n*-number systems](https://en.wikipedia.org/wiki/Positional_notation). She quickly grasped that the decimal system is just one of many ways to think about numbers. 
+For context, Alex and I had already explored [binary](https://en.wikipedia.org/wiki/Binary_number), [decimal](https://en.wikipedia.org/wiki/Decimal), and [*n*-number systems](https://en.wikipedia.org/wiki/Positional_notation). She quickly grasped that the decimal system is just one of many ways to think about numbers. How was this possible? With engaging, age-appropriate resources, advanced math becomes both accessible and fun. These tools, such as the book [*Alice in Math Wonderland* by Lev Gendenshtein](https://www.rulit.me/books/alisa-v-strane-matematiki-read-164757-1.html), the *[AoPS Beast Academy](https://beastacademy.com/)* program, games from *Banda Umnikov*, weekly Math Circle with Bob & Ellen, combine stories, games, and creative exploration to make learning both engaging and enjoyable.
 
-And speaking of "traditional" conventional public school math... Two weeks later, [Math Kangaroo](https://mathkangaroo.org/mks/) results came in: Alex [ranked 1st ](https://mathkangaroo.org/mks/wp-content/uploads/2022/04/2017_Level-1_National-Winners.pdf)*nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both the math olympiad and the cognitive test were conducted in English, which, at the time, was her second language with limited exposure.
+And speaking of "traditional" conventional public school math... Two weeks later, [Math Kangaroo](https://mathkangaroo.org/mks/) results came in: Alex ranked [1 st](https://mathkangaroo.org/mks/wp-content/uploads/2022/04/2017_Level-1_National-Winners.pdf)*nationwide* in her age category. A week after that, her IQ test results arrived—she scored above 130. Both the math olympiad and the cognitive test were conducted in English, which, at the time, was her second language with limited exposure.
 
-The moral of the story? Rigid benchmarks often fall short when they encounter exceptions. True talent lies not in simply following formulas, but in thinking beyond them. After all, evolution wouldn’t happen without the courage to try things differently. And remember—if you’re going to evaluate someone’s math readiness, make sure to check for elephants—and maybe stuffed bunnies—before jumping to conclusions.
+The moral of the story? Rigid benchmarks often fall short when they encounter exceptions. True talent lies not in simply following formulas, but in thinking beyond them. After all, evolution wouldn’t happen without the courage to try things differently.
+
+Whether in education, work, or life, let’s celebrate the courage to innovate, explore, and deviate from the norm—because that’s how true progress is made. And remember—if you’re going to evaluate someone’s readiness, make sure to check for elephants—and maybe stuffed bunnies—before jumping to conclusions.
 
 ![](../assets/alex-collage.jpg)
