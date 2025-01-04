@@ -16,14 +16,18 @@ While soaking in the festivities, I couldn’t help but make an observation. Tur
 
 Curious, they asked, “How did you figure that out?”
 
-I gestured toward the *definitive proof*: two massive, snaking lines, hundreds deep, stretching toward the gentlemen’s restroom.\
+I gestured toward the *definitive proof*: two massive, snaking lines, hundreds deep, stretching toward the gentlemen’s restroom.
+
 And the ladies’? An echoing void. Not a line, not a wait. Just blissful emptiness.
 
 It’s like the restroom lines were delivering a live, unfiltered demographic report. 😏
 
-While I’m 95% confident in my restroom-line methodology (pun intended), I can’t help but wonder:\
-1️⃣ What’s the *real* data? Is attendee demographic information available?\
-2️⃣ How many others made the same observation and drew a similar conclusion?\
+While I’m 95% confident in my restroom-line methodology (pun intended), but wonder:
+
+1️⃣ What’s the *real* data? Is attendee demographic information available?
+
+2️⃣ How many others made the same observation and drew a similar conclusion?
+
 3️⃣ What might be the flaws in my logic? (Because even data-driven humor deserves some statistical rigor, right?)
 
 Let me know what you think! And to my fellow data enthusiasts: the next time you're at a conference, keep an eye on those restroom lines—they might just be the most unexpected dataset of the day. 😉
