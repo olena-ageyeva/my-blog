@@ -11,18 +11,4 @@ description: Testing imbeded video
     </video>
 
 
-  <div>
-    <iframe
-      src="https://www.youtube.com/watch?v=LF4ETgw29BA"
-      title="video"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameBorder="0"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-    />
-  <video controls>
-      <source src={DogVideo} type="video/mp4" />
-    </video>
 
-  </div>
