@@ -137,6 +137,8 @@ One week of learning, connecting, geeking out over cloud innovation—and yes, m
 
 Nudging never felt so fun.
 
+![Picasa Restaurant in Vegas ](../assets/vegas.jpg "Picasa Restaurant in Vegas ")
+
 ## 🧻 Final Thought
 
 You don’t need to force better habits.
