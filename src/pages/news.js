@@ -10,6 +10,10 @@ import challengeData from "../components/css-challenge/data.json"
 import arrow from "../img/double_arrow.png"
 import arrow_right from "../img/arrow-right.png"
 
+const breakpoints = {
+  mobile: '768px', // Or any size you define as the mobile breakpoint
+};
+
 const News = ({ data, location }) => {
   const [currentSet, setCurrentSet] = useState(0)
   const max = Math.ceil(challengeData.length / 3) - 1
@@ -103,8 +107,7 @@ export const pageQuery = graphql`
 `
 
 const Wrapper = styled.div`
-  //   min-height: 100vh;
-
+  
   h3 {
     margin: 0;
   }
@@ -151,18 +154,10 @@ const Wrapper = styled.div`
     top:0;
     width: 100%;
     height: 100vh;
-    min-height: 600px;
-    //max-height: 960px;
-    overflow-y: hidden;
-    // margin: -120px 240px;
+    min-height: 600px;   
+    overflow-y: hidden;   
   }
-  @media (max-width: 920px) {
-    .fullscreen {
-      min-height: 0;
-      max-height: none;
-      height: auto;
-    }
-  }
+
   .fullscreen .challenge {
     position: relative;
     z-index: 5;
@@ -337,5 +332,16 @@ const Wrapper = styled.div`
   .fullscreen .tutorial .logo .big {
     font-size: 76px;
     line-height: 65px;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    .fullscreen {
+      display: none;
+    }
+    .arrow {
+      display: none;
+    }
+    .work{
+      position: relative;
+    }
   }
 `

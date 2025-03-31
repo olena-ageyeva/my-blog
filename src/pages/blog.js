@@ -1,11 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
+
+const breakpoints = {
+  mobile: '768px', // Or any size you define as the mobile breakpoint
+};
 
 class Blog extends React.Component {
   render() {
@@ -19,17 +24,19 @@ class Blog extends React.Component {
         <SEO title="All posts" />
         <div className="header">
           <Bio />
-          <Link to="/">           
+          <Link to="/">
             <Button>Go Home</Button>
           </Link>
         </div>
-        <Link to="/news">
-          <div id="parent">
-            {`Check out my 100 days css challenge --->>>`}
-            <div id="border"></div>
-          </div>
-          <div id="animated_div">CSS</div>
-        </Link>{" "}
+        <Wrapper>
+          <Link to="/news">
+            <div id="parent">
+              {`Check out my 100 days css challenge --->>>`}
+              <div id="border"></div>
+            </div>
+            <div id="animated_div">CSS</div>
+          </Link>
+        </Wrapper>
         <br />
         <SearchPosts
           posts={posts}
@@ -70,5 +77,10 @@ export const pageQuery = graphql`
         }
       }
     }
+  }
+`
+const Wrapper = styled.div`  
+  @media (max-width: ${breakpoints.mobile}) {
+     display: none;
   }
 `

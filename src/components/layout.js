@@ -8,15 +8,15 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`    
+    const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            ...scale(1.2),
+            marginBottom: rhythm(1.2),
             marginTop: 0,
           }}
         >
@@ -35,14 +35,14 @@ class Layout extends React.Component {
     } else {
       header = (
         <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-          marginLeft: -500,
-          zIndex: 3
-        }}
-      >
+          style={{
+            ...scale(1.5),
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
+            marginLeft: -500,
+            zIndex: 3
+          }}
+        >
           <Link
             style={{
               boxShadow: `none`,
@@ -58,7 +58,7 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
-        <div
+             <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
@@ -82,6 +82,9 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  margin: 0 auto;
+  
+  padding: 1em;
 
   header h1 a {
     font-size: 3rem;
@@ -90,7 +93,7 @@ const Wrapper = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
-  margin: 24px;
+  margin: 24px auto;
 `
 
 export default Layout

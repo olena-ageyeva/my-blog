@@ -9,6 +9,8 @@ module.exports = {
       twitter: `Olena91250581`,
       website: `https://olena-ageyeva.com/`,
       mathwell: `https://www.linkedin.com/company/mathwell/`,
+      cto: "https://www.linkedin.com/posts/activity-7275698198474620928-rokI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA",
+      mentor: "https://www.linkedin.com/posts/activity-7245898937335779329-kwQF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA"
     },
   },
   plugins: [

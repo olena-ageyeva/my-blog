@@ -12,6 +12,10 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
+const breakpoints = {
+  mobile: '768px', // Or any size you define as the mobile breakpoint
+};
+
 function Bio() {
   return (
     <StaticQuery
@@ -33,10 +37,12 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
+            <p class="title">
               by <strong>{author}</strong> <br />
-              <a href={social.website}>Web Developer</a> and{" "}
-              <a href={social.mathwell}>Educator</a>
+              <a href={social.cto}>Tech Strategist</a> {"-"}
+              <a href={social.website}>Web Developer</a> {"-"}
+              <a href={social.mentor}>Mentor</a>  {"-"}
+              <a href="">Educator</a>
             </p>
           </Container>
         )
@@ -67,8 +73,13 @@ const bioQuery = graphql`
   }
 `
 
-const Container = styled.div`
+const Container = styled.div`  
   display: flex;
+  
+  @media (max-width: ${breakpoints.mobile}) {    
+     display: block;
+     max-width: 64%;
+  }   
 `
 
 export default Bio
