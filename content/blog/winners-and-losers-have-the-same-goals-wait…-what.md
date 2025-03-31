@@ -7,6 +7,8 @@ description: Everyone wants to win—but not everyone builds the daily habits to
   explore why having a goal isn’t enough—and how building joyful, sustainable
   systems is what truly sets winners apart.
 ---
+![Goal vs System](../assets/goal-vs-system.png "Goal vs System")
+
 By now, you’ve probably realized life isn’t just a motivational poster in a yoga studio. You can have the perfect goal, the perfect planner, and the perfect Pinterest board—and still somehow end up eating ice cream straight out of the tub while binge-watching productivity videos.
 
 It’s not just you. It’s *everyone*.
@@ -119,9 +121,6 @@ So whether you’re learning, growing, skipping, stumbling, or snacking—do it 
 Because winners and losers may have the same goals…
 
 …but only winners build lives they actually *want* to live while getting there.
-
-![Goal vs System](../assets/goal-vs-system.png "Goal vs System")
-
 
 
 *This post was inspired by Atomic Habits by James Clear—a game-changing book about how tiny changes lead to remarkable results. You can grab a copy here: [Atomic Habits on Amazon](https://www.amazon.com/dp/0735211299)*
