@@ -42,7 +42,7 @@ function Bio() {
               <a href={social.cto}>Tech Strategist</a> {"-"}
               <a href={social.website}>Web Developer</a> {"-"}
               <a href={social.mentor}>Mentor</a>  {"-"}
-              <a href="">Educator</a>
+              <a href={social.mathwell}>Educator</a>              
             </p>
           </Container>
         )
