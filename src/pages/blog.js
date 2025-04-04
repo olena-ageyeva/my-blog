@@ -19,6 +19,8 @@ class Blog extends React.Component {
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
 
+    console.log("!!!!!!!!!!!!!!!!!!!", posts)
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
@@ -65,7 +67,6 @@ export const pageQuery = graphql`
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }

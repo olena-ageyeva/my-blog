@@ -108,10 +108,6 @@ export const pageQuery = graphql`
 
 const Wrapper = styled.div`
   
-  h3 {
-    margin: 0;
-  }
-
   .work {
     position: absolute;
     top: 10rem;
@@ -119,7 +115,7 @@ const Wrapper = styled.div`
     z-index: 5;
     color: black;
     display: inline-block;
-    max-width: 1700px;
+    max-width: 1700px;    
 
     .arrow {
       height: 350px;
@@ -132,68 +128,57 @@ const Wrapper = styled.div`
     }
   }
 
-  .news a {
-    position: absolute;
-    top: 1rem;
-    z-index: 3;
-    box-shadow: none;
-    margin: 0 2rem;
-  }
 
-  //   h3 a {
-  //     float: right;
-  //   }
 
-  div {
-    -webkit-box-sizing: border-box;
-    font-family: "Courier New", "Courier", monospace;
-  }
-
-  .fullscreen {
-    position: absolute;
+  .fullscreen {    
+    float:right;
     top:0;
     width: 100%;
     height: 100vh;
     min-height: 600px;   
-    overflow-y: hidden;   
+    overflow-y: hidden;
+    margin-top: -106px; 
   }
 
-  .fullscreen .challenge {
+  .challenge {
     position: relative;
     z-index: 5;
     float: left;
-    height: 100%;
+    height: 100vh;
     width: 30%;
   }
-  @media (max-width: 1100px) {
-    .fullscreen .challenge {
-      width: 30%;
-    }
-  }
-  @media (max-width: 920px) {
-    .fullscreen .challenge {
-      float: none;
-      width: 100%;
-    }
-  }
-  .fullscreen .challenge .bg {
+  // @media (max-width: 1100px) {
+  //   .fullscreen .challenge {
+  //     width: 30%;
+  //   }
+  // }
+  // @media (max-width: 920px) {
+  //   .fullscreen .challenge {
+  //     float: none;
+  //     width: 100%;
+  //   }
+  // }
+
+  .bg {
     position: absolute;
     height: 1200px;
     width: 700px;
     top: 50%;
     right: -140px;
     margin-top: -600px;
-    background: #fff;
-    // -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-    // box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;    
     border-radius: 50%;
+    z-index: 5;
   }
-  @media (max-width: 920px) {
-    .fullscreen .challenge .bg {
-      display: none;
-    }
-  }
-  .fullscreen .challenge .content {
+
+  // @media (max-width: 920px) {
+  //   .fullscreen .challenge .bg {
+  //     display: none;
+  //   }
+  // }
+
+
+  .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -216,41 +201,39 @@ const Wrapper = styled.div`
     background: #fff;
     padding-left: 100px;
   }
-  @media (max-width: 920px) {
-    .fullscreen .challenge .content {
-      position: relative;
-      padding: 48px 16px;
-    }
-  }
-  @media (max-width: 520px) {
-    .fullscreen .challenge .content {
-      padding-top: 16px;
-    }
-  }
 
-  .fullscreen .tutorial {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  // @media (max-width: 920px) {
+  //   .fullscreen .challenge .content {
+  //     position: relative;
+  //     padding: 48px 16px;
+  //   }
+  // }
+  // @media (max-width: 520px) {
+  //   .fullscreen .challenge .content {
+  //     padding-top: 16px;
+  //   }
+  // }
+
+  .tutorial {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: baseline;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    position: relative;
-    float: left;
+    flex-flow: column nowrap;    
     height: 100%;
     width: 70%;
     padding: 32px 32px 32px 140px;
-    background: #77aee6;
-    background: -webkit-linear-gradient(250deg, #406bd8 0%, #9cdbef 100%);
-    background: linear-gradient(200deg, #406bd8 0%, #9cdbef 100%);
+    background: linear-gradient(200deg, #4f8ef3 0%, #a7d8f8 100%);
+
+    a {
+      right: 0;
+      position: absolute;
+      top: 1rem;
+      z-index: 3;
+      box-shadow: none;
+      margin: 0 2rem;
+    }
   }
+
   @media (max-width: 1100px) {
     .fullscreen .tutorial {
       width: 70%;
@@ -261,11 +244,16 @@ const Wrapper = styled.div`
       float: none;
       width: 100%;
       padding: 48px 16px 96px 16px;
-    }
+      
+      a {
+        display: none
+      }
+    }   
   }
+
   .fullscreen .tutorial .logo {
     position: relative;
-    z-index: 1;
+    z-index: 5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -274,6 +262,7 @@ const Wrapper = styled.div`
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     text-decoration: none;
+    float:left;
   }
   .fullscreen .tutorial .logo .number {
     position: relative;
@@ -344,4 +333,26 @@ const Wrapper = styled.div`
       position: relative;
     }
   }
+
+  .fullscreen .tutorial::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.fullscreen .tutorial .logo .text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 4px rgba(74, 100, 164, 0.4);
+}
+
+
+
 `

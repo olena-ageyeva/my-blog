@@ -7,69 +7,48 @@ import { rhythm, scale } from "../utils/typography"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
-    let header
+    // const rootPath = `${__PATH_PREFIX__}/`
+    // const blogPath = `${__PATH_PREFIX__}/blog/`
 
-    if (location.pathname === rootPath || location.pathname === blogPath) {
-      header = (
-        <h1
+    const isNews = location.pathname.includes("/news")
+    const isBlog = location.pathname.includes("/blog")
+
+    const header = (
+      <h1
+        style={{
+          ...scale(1.2),
+          marginBottom: rhythm(1.2),
+          marginTop: 0,
+          float: isNews ? "left" : "center"
+        }}        
+      >
+        <Link
           style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.2),
-            marginTop: 0,
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
           }}
+          to={isBlog || isNews ? `/blog/` : "/"}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={location.pathname === blogPath ? `/blog/` : `/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-            marginLeft: -500,
-            zIndex: 3
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/blog/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    }
+          {title}
+        </Link>
+
+      </h1>
+    )
+
     return (
       <Wrapper>
-             <div
+        <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
-            // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            maxWidth: isNews ? "100%" : rhythm(24)
           }}
         >
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer>
+        <Footer style={{display: isNews ? "none" : "block"}}>
           © {new Date().getFullYear()}
           <br />
           Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a> ~
@@ -83,12 +62,17 @@ class Layout extends React.Component {
 const Wrapper = styled.div`
   min-height: 100vh;
   margin: 0 auto;
+  font-size: 1.2em;
   
   padding: 1em;
 
-  header h1 a {
-    font-size: 3rem;
-  }
+  header h1 {    
+    position: relative;
+    z-index: 10;      
+  a {
+    font-size: 3rem;    
+  }  
+}
 `
 
 const Footer = styled.footer`

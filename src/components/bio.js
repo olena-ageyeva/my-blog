@@ -12,6 +12,11 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
+const cto = `https://www.linkedin.com/posts/activity-7275698198474620928-rokI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA`;
+const mentor = `https://www.linkedin.com/posts/activity-7245898937335779329-kwQF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA`;
+
+
+
 const breakpoints = {
   mobile: '768px', // Or any size you define as the mobile breakpoint
 };
@@ -39,9 +44,9 @@ function Bio() {
             />
             <p class="title">
               by <strong>{author}</strong> <br />
-              <a href={social.cto}>Tech Strategist</a> {"-"}
+              <a href={cto}>Tech Strategist</a> {"-"}
               <a href={social.website}>Web Developer</a> {"-"}
-              <a href={social.mentor}>Mentor</a>  {"-"}
+              <a href={mentor}>Mentor</a>  {"-"}
               <a href={social.mathwell}>Educator</a>              
             </p>
           </Container>

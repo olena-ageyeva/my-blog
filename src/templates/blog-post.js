@@ -67,19 +67,23 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
+            fontSize: "1em"
             // marginTop: rhythm(-1),
           }}
         >
           {post.frontmatter.date}
         </p>
-
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <p style={{
+          fontSize: "1.5em"       
+        }}>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </p>
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />        
+        <Bio />
         {post_nav()}
         <DiscussionEmbed {...disqusConfig} />
       </Layout>
