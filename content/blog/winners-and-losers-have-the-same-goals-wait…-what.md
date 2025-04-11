@@ -13,7 +13,8 @@ description: Everyone wants to win—but not everyone builds the daily habits to
 
 ### Goals Fade. Systems Scale.
 
-We’ve all set goals and lost steam. That’s because goals are moments—systems are momentum.\
+We’ve all set goals and lost steam. That’s because goals are moments—systems are momentum.
+
 As James Clear puts it in *Atomic Habits*:
 
 > **“Winners and losers have the same goals.”**
@@ -30,7 +31,7 @@ Meanwhile, a friend just kept showing up. No hype—just habit. Her system won.
 
 It’s no different in engineering. Everyone wants clean code, fast delivery, happy users. But the teams that actually get there? They’ve built systems—ATDD, CI/CD, clear DoD, fast feedback loops. Outcomes follow naturally.
 
-> Think of the [*Broken Windows* theory from *The Pragmatic Programmer*](https://medium.com/logistimo-engineering-blog/programming-and-broken-windows-5a52bb1b3f0b)—leave one bad practice unchecked (a messy function, a skipped test), and soon the whole codebase starts to decay.\
+> Think of the [*Broken Windows* theory from *The Pragmatic Programmer*](https://medium.com/logistimo-engineering-blog/programming-and-broken-windows-5a52bb1b3f0b)—leave one bad practice unchecked (a messy function, a skipped test), and soon the whole codebase starts to decay.
 > A good system guards against that. It catches broken windows early, before they become tech debt that trashes the neighborhood.
 
 - - -
@@ -60,13 +61,13 @@ Tiny actions may feel like nothing—until they snowball into everything.
 
 ### A Few Quick Truths About Goals
 
-**1. A goal is a moment. A system is a lifestyle.**\
+**1. A goal is a moment. A system is a lifestyle.**
 Hit your goal? Great. But without sustainable habits, it doesn’t last.
 
-**2. The journey matters more than the medal.**\
+**2. The journey matters more than the medal.**
 If you're miserable chasing a goal, you won’t be magically happy at the finish line. Make the process meaningful.
 
-**3. Tiny steps beat big leaps.**\
+**3. Tiny steps beat big leaps.**
 Progress isn’t always pretty. Skip, stumble, groove—just keep moving with intention.
 
 - - -
@@ -77,14 +78,14 @@ Progress isn’t always pretty. Skip, stumble, groove—just keep moving with in
 * Make the process joyful and sustainable
 * Let time amplify your habits—not your excuses
 
-Because goals set direction. But systems shape who you become.\
+Because goals set direction. But systems shape who you become.
 And the life (and codebase) you build is defined by what you do *every day*—not what you hope to achieve *someday*.
 
 - - -
 
 ### Final Thought: Goals are direction. Systems are momentum.
 
-Everyone wants to win. The real difference?\
+Everyone wants to win. The real difference?
 Some people build the habits that make winning inevitable—again and again.
 
 *(Inspired by Atomic Habits by James Clear and The Pragmatic Programmer by Andrew Hunt & David Thomas—both highly recommended.)*
