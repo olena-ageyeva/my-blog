@@ -1,7 +1,7 @@
 ---
 path: 2020_6-dont-be-a-junior-developer
 date: 2020-09-27T22:21:30.852Z
-title: Don't be a Junior Developer
+title: 💡 Don't be a Junior Developer
 description: Don’t overestimate the world and underestimate yourself. You are
   better than you think.
 ---
