@@ -9,7 +9,7 @@ description: Graduating with an EMBA and parenting a future Doctor of Economics?
 ---
 ![Olena and Marsha](../assets/1688157810020.jpg "Olena and Marsha")
 
-**Off we go! 🛫** Flying over the seas to celebrate my daughter [Mariya Pominova](https://www.linkedin.com/in/mariya-pominova)'s admission to the Duke University PhD in Economics program and my completion of the EMBA with the [Quantic School of Business and Technology](https://quantic.edu). 🎓 Exciting times ahead!
+**Off we go! 🛫** Flying over the seas to celebrate my daughter [Mariya Pominova](https://www.linkedin.com/in/mariyapominova/)'s admission to the Duke University PhD in Economics program and my completion of the EMBA with the [Quantic School of Business and Technology](https://quantic.edu). 🎓 Exciting times ahead!
 
 I'm thrilled to be part of the Quantic community, where diversity, inclusion, and revolutionary innovation in education delivery are making a real impact on a global scale. Throughout my educational journey—spanning multiple programs, four degrees, and countless certification courses—I have never experienced anything quite like Quantic. The combination of mind-blowing fun and engaging learning methods for subjects like math, accounting, finance, and economics brought a wide smile to my face throughout the process.
 
