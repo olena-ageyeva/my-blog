@@ -6,9 +6,9 @@ description: Simplicity isn’t a shortcut—it’s a strategy. Here are my key
   takeaways from AWS re:Invent 2024 on mastering the art of “simplexity” in tech
   and design.
 ---
+![bull Picasso](../assets/picasso-bulls.jpg "bull Picasso")
+
 “It takes a lot of hard work to make something simple.” Amazon CTO Dr. [](https://www.linkedin.com/in/ACoAAAAxvZ4B0e3NQwqdMJGjzf-s_gTP0iGq6iU)[Werner Vogels](https://www.linkedin.com/in/wernervogels/)’ insights on simplexity—managing complexity while delivering simplicity—reminded me of Picasso’s bull sketches. Picasso didn’t just draw; he refined intricate designs into their purest form, proving simplicity isn’t a shortcut—it’s the result of thoughtful effort.
-
-
 
 Dr. [](https://www.linkedin.com/in/ACoAAAAxvZ4B0e3NQwqdMJGjzf-s_gTP0iGq6iU)[Werner Vogels](https://www.linkedin.com/in/wernervogels/) shared these key lessons:
 
