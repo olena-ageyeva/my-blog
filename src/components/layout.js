@@ -1,83 +1,72 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
+import { Link } from "gatsby"
+import { GlobalStyle } from "../styles/GlobalStyle"
+import { rhythm } from "../utils/typography"
 
-import { rhythm, scale } from "../utils/typography"
+const Layout = ({ location, title, children }) => {
+  const isHomePage = location.pathname === "/"
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    // const rootPath = `${__PATH_PREFIX__}/`
-    // const blogPath = `${__PATH_PREFIX__}/blog/`
-
-    const isNews = location.pathname.includes("/news")
-    const isBlog = location.pathname.includes("/blog")
-
-    const header = (
-      <h1
-        style={{
-          ...scale(1.2),
-          marginBottom: rhythm(1.2),
-          marginTop: 0,
-          float: isNews ? "left" : "center"
-        }}        
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={isBlog || isNews ? `/blog/` : "/"}
-        >
-          {title}
-        </Link>
-
-      </h1>
-    )
-
-    return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: isNews ? "100%" : rhythm(24)
-          }}
-        >
-          <header>{header}</header>
-          <main>{children}</main>
-        </div>
-        <Footer style={{display: isNews ? "none" : "block"}}>
-          © {new Date().getFullYear()}
-          <br />
-          Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a> ~
-          Powered with {` `} <a href="https://www.netlify.com/">Netlify</a>
-        </Footer>
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <GlobalStyle />
+      <Header>
+        <TitleLink to="/blog">
+          <Title>{title}</Title>
+        </TitleLink>
+      </Header>
+      <Main isHomePage={isHomePage}>{children}</Main>
+      <Footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </Footer>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  margin: 0 auto;
-  font-size: 1.2em;
-  
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+`
 
-  header h1 {    
-    position: relative;
-    z-index: 10;      
-  a {
-    font-size: 3rem;    
-  }  
-}
+const Header = styled.header`
+  padding: ${rhythm(1)};
+  z-index: 10;
+`
+
+const TitleLink = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+`
+
+const Title = styled.h1`
+  // margin-bottom: ${rhythm(1)};
+  margin-top: 0;
+`
+
+const Main = styled.main`
+  flex: 1;
+  padding: ${rhythm(1)};
+  max-width: ${props => props.isHomePage ? rhythm(24) : rhythm(32)};
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: ${rhythm(24)};
+    padding: ${rhythm(1)};
+  }
 `
 
 const Footer = styled.footer`
+  padding: ${rhythm(1)};
   text-align: center;
-  margin: 24px auto;
 `
 
 export default Layout

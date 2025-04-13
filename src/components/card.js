@@ -26,7 +26,7 @@ const Container = styled.div`
     "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   box-shadow: inset 0 0 0 1px rgba(230, 230, 230, 1);
 
-  .github_card {   
+  .github_card {
     width: 100%;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -35,16 +35,16 @@ const Container = styled.div`
     justify-content: space-between;
     box-shadow: 4px 8px 4px 0 rgba(0, 0, 0, 0.1);
   }
-  .github_info {    
+  .github_info {
     padding: 16px 20px;
-    border: 1px solid #dfe1e5;  
+    border: 1px solid #dfe1e5;
     width: 75%;
   }
-  .img {    
-    width: 25%;    
+  .img {
+    width: 25%;
   }
   img {
-    padding: 0;    
+    padding: 0;
     margin: 0;
     height: 100%;
   }

@@ -76,7 +76,7 @@ button {
 }
 
 .quote {
-  font-size: 24px;
+  font-size: 1.2em;
   color: #333;
   line-height: 1;
   font-style: italic;
@@ -149,13 +149,15 @@ button {
 .header {
   display: inline-flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+  z-index: 1;
 }
 
 .header a {
   box-shadow: none;
   text-decoration: none;
 }
+
 
 #animated_div {
   width: 70px;
@@ -254,4 +256,8 @@ button {
   to {
     border-bottom-color: transparent;
   }
+}
+
+p {
+  font-size: 1.2em;
 }

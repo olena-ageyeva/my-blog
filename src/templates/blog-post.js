@@ -67,14 +67,14 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
-            fontSize: "1em"
+            fontSize: "1.2em"
             // marginTop: rhythm(-1),
           }}
         >
           {post.frontmatter.date}
         </p>
         <p style={{
-          fontSize: "1.5em"       
+          fontSize: "1.2em"
         }}>
           <MDXRenderer>{post.body}</MDXRenderer>
         </p>

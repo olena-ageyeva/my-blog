@@ -12,14 +12,35 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
-const cto = `https://www.linkedin.com/posts/activity-7275698198474620928-rokI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA`;
-const mentor = `https://www.linkedin.com/posts/activity-7245898937335779329-kwQF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAm5xMQBBacbbstPN14e6mDAMyRSp-nzHeA`;
-
-
-
 const breakpoints = {
   mobile: '768px', // Or any size you define as the mobile breakpoint
 };
+
+const Container = styled.div`
+  display: flex;
+  margin-bottom: ${rhythm(1)};
+  .title{
+   font-size: 1em;
+    line-height: 1.5em;
+   }
+
+  strong {
+    font-size: 1.2em;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: block;
+    max-width: 64%;
+  }
+`
+
+const StyledImage = styled(Image)`
+  margin-right: ${rhythm(1 / 2)};
+  margin-bottom: 0;
+  min-width: ${rhythm(2)};
+  min-height: ${rhythm(2)};
+  border-radius: 100%;
+`
 
 function Bio() {
   return (
@@ -29,25 +50,20 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         return (
           <Container>
-            <Image
+            <StyledImage
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
               imgStyle={{
                 borderRadius: `50%`,
               }}
             />
-            <p class="title">
+            <p className="title">
               by <strong>{author}</strong> <br />
-              <a href={cto}>Tech Strategist</a> {"-"}
+              {/* <a href={cto}>Tech Strategist</a> {"-"}
               <a href={social.website}>Web Developer</a> {"-"}
-              <a href={mentor}>Mentor</a>  {"-"}
-              <a href={social.mathwell}>Educator</a>              
+              <a href={mentor}>Mentor</a> {"-"}
+              <a href={social.mathwell}>Educator</a> */}
+              <a href={social.linkedIn} target="_blank" >Engineering Leader</a> | Driving Innovation & Efficiency
             </p>
           </Container>
         )
@@ -72,19 +88,13 @@ const bioQuery = graphql`
           twitter
           website
           mathwell
+          linkedIn
+          cto
+          mentor
         }
       }
     }
   }
-`
-
-const Container = styled.div`  
-  display: flex;
-  
-  @media (max-width: ${breakpoints.mobile}) {    
-     display: block;
-     max-width: 64%;
-  }   
 `
 
 export default Bio

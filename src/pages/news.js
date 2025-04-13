@@ -11,14 +11,13 @@ import arrow from "../img/double_arrow.png"
 import arrow_right from "../img/arrow-right.png"
 
 const breakpoints = {
-  mobile: '768px', // Or any size you define as the mobile breakpoint
+  mobile: '768px',
 };
 
 const News = ({ data, location }) => {
   const [currentSet, setCurrentSet] = useState(0)
   const max = Math.ceil(challengeData.length / 3) - 1
 
-  //const { data } = this.props
   const siteTitle = data.site.siteMetadata.title
 
   const challengeCards = [0, 1, 2].map(index => {
@@ -41,23 +40,27 @@ const News = ({ data, location }) => {
       <Layout location={location} title={siteTitle}>
         <SEO title="News: 100 days css challenge" />
         <div className="news">
-          <div class="fullscreen">
-            <div class="challenge">
-              <div class="bg"></div>
-            </div>
+          <div className ="curved-bg">
+            <div className ="white-curve"></div>
+          </div>
+          <div className ="fullscreen">
+            {/* <div className ="challenge">
+              <div className ="bg"></div>
+            </div> */}
 
-            <div class="tutorial">
+
+            <div className ="tutorial">
               <a href="https://100dayscss.com/">
-                <div class="logo">
-                  <div class="number">
-                    <div class="one-one"></div>
-                    <div class="one-two"></div>
-                    <div class="zero-one"></div>
-                    <div class="zero-two"></div>
+                <div className ="logo">
+                  <div className ="number">
+                    <div className ="one-one"></div>
+                    <div className ="one-two"></div>
+                    <div className ="zero-one"></div>
+                    <div className ="zero-two"></div>
                   </div>
-                  <div class="text">
-                    <div class="big">Days</div>
-                    <div class="small">CSS Challenge</div>
+                  <div className ="text">
+                    <div className ="big">Days</div>
+                    <div className ="small">CSS Challenge</div>
                   </div>
                 </div>
               </a>
@@ -65,10 +68,10 @@ const News = ({ data, location }) => {
           </div>
         </div>
       </Layout>
-      <div class="work">
+      <div className ="work">
         {currentSet < max && (
           <div
-            class="arrow"
+            className ="arrow"
             onClick={() => currentSet < max && setCurrentSet(currentSet + 1)}
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && currentSet < max && setCurrentSet(currentSet + 1)}
             role="button"
@@ -80,7 +83,7 @@ const News = ({ data, location }) => {
         {challengeCards}
         {currentSet > 0 && (
           <div
-            class="arrow"
+            className ="arrow"
             onClick={() => currentSet > 0 && setCurrentSet(currentSet - 1)}
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && currentSet > 0 && setCurrentSet(currentSet - 1)}
             role="button"
@@ -107,7 +110,7 @@ export const pageQuery = graphql`
 `
 
 const Wrapper = styled.div`
-  
+
   .work {
     position: absolute;
     top: 10rem;
@@ -115,7 +118,7 @@ const Wrapper = styled.div`
     z-index: 5;
     color: black;
     display: inline-block;
-    max-width: 1700px;    
+    max-width: 1700px;
 
     .arrow {
       height: 350px;
@@ -130,14 +133,14 @@ const Wrapper = styled.div`
 
 
 
-  .fullscreen {    
+  .fullscreen {
     float:right;
     top:0;
     width: 100%;
     height: 100vh;
-    min-height: 600px;   
+    min-height: 600px;
     overflow-y: hidden;
-    margin-top: -106px; 
+    margin-top: -106px;
   }
 
   .challenge {
@@ -147,36 +150,6 @@ const Wrapper = styled.div`
     height: 100vh;
     width: 30%;
   }
-  // @media (max-width: 1100px) {
-  //   .fullscreen .challenge {
-  //     width: 30%;
-  //   }
-  // }
-  // @media (max-width: 920px) {
-  //   .fullscreen .challenge {
-  //     float: none;
-  //     width: 100%;
-  //   }
-  // }
-
-  .bg {
-    position: absolute;
-    height: 1200px;
-    width: 700px;
-    top: 50%;
-    right: -140px;
-    margin-top: -600px;
-    background: #fff;    
-    border-radius: 50%;
-    z-index: 5;
-  }
-
-  // @media (max-width: 920px) {
-  //   .fullscreen .challenge .bg {
-  //     display: none;
-  //   }
-  // }
-
 
   .content {
     display: -webkit-box;
@@ -202,27 +175,18 @@ const Wrapper = styled.div`
     padding-left: 100px;
   }
 
-  // @media (max-width: 920px) {
-  //   .fullscreen .challenge .content {
-  //     position: relative;
-  //     padding: 48px 16px;
-  //   }
-  // }
-  // @media (max-width: 520px) {
-  //   .fullscreen .challenge .content {
-  //     padding-top: 16px;
-  //   }
-  // }
-
   .tutorial {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    flex-flow: column nowrap;    
+    flex-flow: column nowrap;
     height: 100%;
     width: 70%;
     padding: 32px 32px 32px 140px;
-    background: linear-gradient(200deg, #4f8ef3 0%, #a7d8f8 100%);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
 
     a {
       right: 0;
@@ -244,12 +208,13 @@ const Wrapper = styled.div`
       float: none;
       width: 100%;
       padding: 48px 16px 96px 16px;
-      
+
       a {
         display: none
       }
-    }   
+    }
   }
+
 
   .fullscreen .tutorial .logo {
     position: relative;
@@ -353,6 +318,32 @@ const Wrapper = styled.div`
   text-shadow: 1px 2px 4px rgba(74, 100, 164, 0.4);
 }
 
+.curved-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #4da0ff, #bce0fd);
+  z-index: 0;
+  overflow: hidden;
+}
 
+.white-curve {
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 80%;
+    height: 180%;
+    background: white;
+    border-radius: 60%;
+    z-index: 1;
+}
+
+  @media (max-width: 600px) {
+   .curved-bg {
+    display: none;
+  }
+  }
 
 `

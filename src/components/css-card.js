@@ -20,8 +20,8 @@ function CSSCard({ title, info, description }) {
         Olena (<a href="https://codepen.io/olena-ageyeva">@olena-ageyeva</a>) on{" "}
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
-      <p class="title">{info}</p>
-      <p class="description">{description}</p>
+      <p className ="title">{info}</p>
+      <p className ="description">{description}</p>
     </Container>
   )
 }

@@ -28,10 +28,10 @@ class IndexPage extends React.Component {
               <Button className="button" id="shape">shape</Button>
             </div>
           </div>
-          <div class="quote-wrapper">
+          <div className ="quote-wrapper">
             <img src={pifagoras} alt="Author" className="author-image" />
             <blockquote className="blockquote">
-              <p class="quote">
+              <p className ="quote">
                 <span className="quote-icon">“</span>
                 There is geometry in the humming of the strings, there is music in
                 the spacing of the spheres.
