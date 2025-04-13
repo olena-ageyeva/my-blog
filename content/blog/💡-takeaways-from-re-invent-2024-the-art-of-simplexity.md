@@ -1,7 +1,7 @@
 ---
 path: reinvent_2024
 date: 2024-12-13T05:00:00.000Z
-title: "💡 Takeaways from re:Invent 2024: The Art of Simplexity"
+title: "🎯 Takeaways from re:Invent 2024: The Art of Simplexity"
 description: Simplicity isn’t a shortcut—it’s a strategy. Here are my key
   takeaways from AWS re:Invent 2024 on mastering the art of “simplexity” in tech
   and design.
