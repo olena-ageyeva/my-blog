@@ -1,7 +1,7 @@
 ---
 path: atomic_habits
 date: 2025-03-30T14:53:20.167Z
-title: Winners and Losers Have the Same Goals (Wait… What?)
+title: ⚙️ Winners and Losers Have the Same Goals (Wait… What?)
 description: Everyone wants to win—but not everyone builds the daily habits to
   actually get there. In this lighthearted take inspired by Atomic Habits, we
   explore why having a goal isn’t enough—and how building joyful, sustainable
