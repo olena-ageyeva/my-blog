@@ -1,7 +1,7 @@
 ---
 path: restroom_data
 date: 2025-01-04T19:30:21.305Z
-title: "The Restroom Census: From the Queue to the Clue"
+title: "🚻 The Restroom Census: From the Queue to the Clue"
 description: What happens when a data lover attends one of the world’s biggest
   tech events? They uncover a surprising "demographic report" in the most
   unexpected place.
