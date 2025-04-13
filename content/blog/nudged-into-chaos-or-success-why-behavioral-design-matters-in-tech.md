@@ -26,11 +26,11 @@ Coined by behavioral economists Richard Thaler and Cass Sunstein in the book *Nu
 
 > *Change the environment, and you change behavior.*
 
-It’s not about controlling people.\
+It’s not about controlling people.
 It’s about structuring choices to make certain behaviors *more likely*.
 
-This is called **choice architecture**—and it’s literally everywhere.\
-\
+This is called **choice architecture**—and it’s literally everywhere.
+
 Watch it in action. That beautifully illustrates these real-world nudges in action.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LF4ETgw29BA?si=DCLgWljDtFMsDz7F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -39,7 +39,7 @@ From how kids choose snacks to how drivers slow down on curves, these examples s
 
 ## Nudges Are Everywhere (For Better or Worse)
 
-Here's the thing: nudges aren’t always good.\
+Here's the thing: nudges aren’t always good.
 They can lead to growth—or doomscrolling.
 
 * 🛒 **Supermarkets** put essentials in the back so you pass the snacks.
@@ -49,7 +49,7 @@ They can lead to growth—or doomscrolling.
 
 These are not evil. They’re just… strategic. They’re **designed to steer your behavior**. 
 
-Sometimes for your good.\
+Sometimes for your good.
 Sometimes... not so much.
 
 But if you’re not aware, you’ll find your day (or career) shaped by someone else’s design.
@@ -110,7 +110,7 @@ Let’s talk about my *self-investment* habit.
 
 I’ve taken so many certifications, degrees, and Coursera courses that I may qualify as an honorary server farm at this point. I’m not saying this to brag—though my Google Drive is quietly panicking—but to highlight something important:
 
-I didn’t *force* myself to learn.\
+I didn’t *force* myself to learn.
 I designed my environment so that learning became the **default**—the easiest, most obvious choice.
 
 * Books live next to my bed.
@@ -119,23 +119,22 @@ I designed my environment so that learning became the **default**—the easiest,
 
 Basically, I’ve nudged myself into being a **knowledge sponge**. Whether I’m showing up as a leader, teammate, partner, or friend—there’s always something useful I can bring to the table.
 
-If you want to stay relevant in tech (without burning out), you can nudge yourself too.\
+If you want to stay relevant in tech (without burning out), you can nudge yourself too.
 Here’s the system I use:
 
 * I attend **weekly meetups and workshops** (most are free and incredibly insightful).
 * I actively network with engineers, tech leads, and founders to stay sharp and connected.
 * I **set aside a personal budget** to attend 5+ conferences annually—no matter if my company foots the bill or not.
 
-I don’t do this because I’m ultra-disciplined.\
+I don’t do this because I’m ultra-disciplined.
 I do it because I’ve made learning the *easiest path*—a **nudge-powered growth loop** that feeds curiosity and compounds value over time.
 
-And hey, do you enjoy good food, quality entertainment, intelligent conversations, and a bit of travel?\
+And hey, do you enjoy good food, quality entertainment, intelligent conversations, and a bit of travel?
 Maybe even Vegas?
 
-**Guess what?** I treat myself to all of the above *every year*—by attending **AWS re:Invent**, one of the biggest tech conferences in the world, held in Las Vegas every November.\
-One week of learning, connecting, geeking out over cloud innovation—and yes, maybe a little blackjack.
+**Guess what?** I treat myself to all of the above *every year*—by attending **AWS re:Invent**, one of the biggest tech conferences in the world, held in Las Vegas every November.One week of learning, connecting, geeking out over cloud innovation—and yes, maybe a little blackjack.
 
-Nudging never felt so fun.
+Nudging never felt so fun. 
 
 ![Picasa Restaurant in Vegas ](../assets/vegas.jpg "Picasa Restaurant in Vegas ")
 
@@ -147,8 +146,8 @@ You just need better defaults.
 
 Whether you’re building habits for yourself, or helping your team succeed—**design the path of least resistance to align with your values.** That’s the real power of nudging.
 
-So go ahead. Move the fruit bowl to eye level.\
-Put your high-value stories at the top of the backlog.\
+So go ahead. Move the fruit bowl to eye level.
+Put your high-value stories at the top of the backlog.
 Shrink your WIP. Block your focus time.
 
 **You can’t always control people’s decisions. But you can control the menu.**
