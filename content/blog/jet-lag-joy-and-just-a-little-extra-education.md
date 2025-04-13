@@ -1,7 +1,7 @@
 ---
 path: Barcelona_with_Quantic
 date: 2023-07-15T04:00:00.000Z
-title: Jet Lag, Joy, and Just a Little Extra Education
+title: 🎓  Jet Lag, Joy, and Just a Little Extra Education
 description: Graduating with an EMBA and parenting a future Doctor of Economics?
   That’s what I call a high ROI. They say success is a journey, not a
   destination — but this one includes Barcelona and advanced grad degrees, so
