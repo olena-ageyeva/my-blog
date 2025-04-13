@@ -1,6 +1,6 @@
 ---
 path: brocken_window
-date: 2025-11-13T05:00:00.000Z
+date: 2020-11-13T05:00:00.000Z
 title: 🪟 Don’t Let One Broken Test Become a Broken Team
 description: Small things aren’t small when left unchecked. In code, like in
   buildings, neglect invites decay.This isn’t about perfection—it’s about
