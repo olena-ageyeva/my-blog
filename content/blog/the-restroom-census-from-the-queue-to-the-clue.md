@@ -14,20 +14,21 @@ AWS re:Invent is one of the world’s biggest tech events, and I always enjoy at
 
 While soaking in the festivities, I couldn’t help but make an observation. Turning to a colleague, I quipped, “Want to guess how many women attended re:Invent? 5%.”
 
-Curious, they asked, “How did you figure that out?”
+They laughed and asked, “How did you figure that out?”
 
-I gestured toward the *definitive proof*: two massive, snaking lines, hundreds deep, stretching toward the gentlemen’s restroom.
+I gestured toward the most compelling evidence: two massive, snaking lines—each easily a hundred men deep—stretching toward the gentlemen’s restroom.
 
-And the ladies’? An echoing void. Not a line, not a wait. Just blissful emptiness.
+And the ladies’? A peaceful void. Not a line, not a wait. Just blissful emptiness. Out of curiosity, I walked in and counted about **10 women** inside.
 
-It’s like the restroom lines were delivering a live, unfiltered demographic report. 😏
+So: 10 inside, 200 in line. That’s how I ballparked it—**5%**.
 
-While I’m 95% confident in my restroom-line methodology (pun intended), but wonder:
+It felt like the restroom lines were delivering a live, unfiltered demographic report. 😏
 
-1️⃣ What’s the *real* data? Is attendee demographic information available?
+Now, while I’m 95% confident in my restroom-line methodology (pun intended), I do wonder:
 
-2️⃣ How many others made the same observation and drew a similar conclusion?
+1️⃣ What’s the *actual* data? Is the attendee demographic breakdown published?\
+2️⃣ Did others notice the same imbalance and draw similar conclusions?\
+3️⃣ What are the flaws in my logic? (Because even data-driven humor deserves statistical scrutiny.)
 
-3️⃣ What might be the flaws in my logic? (Because even data-driven humor deserves some statistical rigor, right?)
-
-Let me know what you think! And to my fellow data enthusiasts: the next time you're at a conference, keep an eye on those restroom lines—they might just be the most unexpected dataset of the day. 😉
+Let me know what you think!\
+And to my fellow data nerds: at your next conference, take a glance at the restroom lines—they might just be the most unexpected dataset of the day. 😉
