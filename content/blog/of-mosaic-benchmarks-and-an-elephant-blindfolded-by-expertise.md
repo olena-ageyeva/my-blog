@@ -1,7 +1,7 @@
 ---
 path: 2024_12_missed_elephant
 date: 2024-12-30T19:57:19.771Z
-title: Of Mosaic Benchmarks and an Elephant Blindfolded by Expertise
+title: 🧩 Of Mosaic Benchmarks and an Elephant Blindfolded by Expertise
 description: " A visit to a reputable math studio turned into an unexpected
   lesson in how expertise can sometimes miss the bigger picture. What happens
   when brilliance is measured by the wrong benchmarks? "
