@@ -2,12 +2,12 @@
 path: storybook_and_copilot
 date: 2025-04-13T20:16:50.114Z
 title: "🤖 From 10x Dev to 100x Joy: Coding with Copilot"
-description: A practical demo on setting up Storybook with MUI, creating UI
-  components with variants, and applying the restrictive–flexible pattern—all
-  while navigating the wild ride of Copilot suggestions. Expertise meets AI in
-  this fast-paced, slightly opinionated (and very real) build session.
+description: "What started as a front-end best practices demo turned into a
+  real-time duel with GitHub Copilot. I built a component, taught my teams, and
+  sparred with AI—spoiler: I won most rounds, but Copilot made me faster anyway.
+  AI isn’t the future of coding—it’s already here."
 ---
-About a year ago, I set out to create a demo for my team.
+About a year ago, I set out to create a demo for my teams.
 The goal?
 Teach front-end best practices, show off what **Storybook** can do, and introduce a pattern I love—**restrictive–flexible components**. You know, the kind that lock in good defaults but still let you override them when needed. Clean. Scalable. Practical.
 
@@ -22,7 +22,7 @@ Copilot offered suggestions at every turn—some helpful, some hilariously off, 
 I overrode more than half. But here’s the thing:
 I still worked faster. I still had more fun.
 
-What started as a demo for my team turned into a real-time case study in **working with AI, not against it**.
+What started as a demo for my teams turned into a real-time case study in **working with AI, not against it**.
 
 - - -
 
@@ -33,8 +33,7 @@ According to Stack Overflow’s 2023 Developer Survey,
 > 🧠 70% of developers are already using or planning to use AI tools in their workflows.
 > ([source](<>))
 
-GitHub reports that **developers using Copilot code up to 55% faster** and spend less time on boilerplate or repetitive tasks.
-
+> GitHub reports that **developers using Copilot code up to 55% faster** and spend less time on boilerplate or repetitive tasks. 
 > ([source](<>))
 
 This isn’t just an emerging trend—it’s already a transformation.
