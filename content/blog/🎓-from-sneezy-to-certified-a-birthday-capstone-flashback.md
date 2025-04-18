@@ -26,4 +26,4 @@ Now that I have my certificate in hand, I’m flashing back to that wild moment 
 Proud, honored, and maybe a little delirious to be part of the [Quantic](https://quantic.edu/) learning community.
 [**Adeyemi Alatishe**](https://www.linkedin.com/in/adeyemi-alatishe/), thanks for sharing this learning journey with me!
 
-**[Quantic School of Business and Technology](https://quantic.edu/)**
+**[Quantic School of Business and Technology: CTO Capstone](https://docs.google.com/document/d/1eNWbS4d2TXjUmPBVXB7LB41CY-0ofL1-LMTHNlIKcq8/edit?usp=sharing)**
