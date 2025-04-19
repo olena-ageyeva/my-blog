@@ -1,20 +1,32 @@
-body {
-  font-family: sans-serif;
-}
+@import '../../styles/design-system.css';
 
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: all var(--duration-fast) ease;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
-  /* font-family: "Open Sans"; */
+  font-family: var(--font-primary);
+  /* Montserrat from design system */
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 3rem;
+  letter-spacing: var(--letter-spacing-normal);
+  /* .1em */
+  font-size: var(--font-size-h1);
+  /* 3rem */
   text-align: center;
-  margin: 10px 0;
+  margin: var(--spacing-small) 0;
+  /* 10px 0 */
 }
 
 #app {
@@ -27,33 +39,14 @@ h1 {
   padding: 20px;
 }
 
-/* #wireframe,
-#shape,
-.button,
-button {
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  background: #333;
-  color: #fff;
-  letter-spacing: 0.2em;
-  padding: 5px 15px;
-  margin: 10px 0;
-  font-size: 0.9rem;
-  border-radius: 6px;
-} */
-
 .quote-wrapper {
   display: flex;
-  align-items: flex-start;
-  /* max-width: 600px; */
-  padding: 0 8px 0.2em;
-  background-color: #fff;
-  position:relative;
   align-items: center;
-  color: hsla(0, 0%, 0%, 0.59);
-  box-shadow: 4px 8px 4px 0 rgba(0, 0, 0, 0.1);
-  /* border-radius: 12px; */
+  padding: 0 8px 0.2em;
+  background-color: var(--color-background-primary);
+  position: relative;
+  color: var(--color-text-secondary);
+  box-shadow: 4px 8px 4px 0 var(--color-shadow-primary);
   margin: 20px 0 4em;
 }
 
@@ -62,58 +55,51 @@ button {
   height: 56px;
   border-radius: 50%;
   margin-right: 15px;
-  /* Space between image and text */
+  align-self: center;
 }
 
 .blockquote {
   margin: 0;
   text-align: left;
-  /* Ensure text is left-aligned */
   border: none;
   padding: 1em;
-  color: hsla(0, 0%, 0%, 0.59);
-
+  color: var(--color-text-secondary);
+  font-family: var(--font-special);
 }
 
 .quote {
-  font-size: 1.2em;
-  color: #333;
+  font-size: var(--font-size-body);
   line-height: 1;
   font-style: italic;
   font-weight: 400;
   margin: 0;
   display: inline;
-  color: hsla(0, 0%, 0%, 0.59);
+  color: var(--color-text-secondary);
 }
 
-
 .quote-icon {
-  color: #ff9800;
-  /* Adjusted color for the quote icon */
-  font-size: 32px;
+  color: var(--color-orange);
+  font-size: var(--font-size-h3);
   font-weight: 600;
   margin-right: 8px;
   vertical-align: middle;
 }
 
 .quote_author {
-  font-size: 14px;
-  color: #666;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
   display: block;
-  /* margin-top: 10px; */
   font-style: normal;
   text-align: left;
-  /* Ensure author text is left-aligned */
 }
 
 .quote_author::before {
   content: "— ";
-  /* Add dash before author name */
 }
 
 .quote_author em {
   font-style: italic;
-  color: #999;
+  color: var(--color-text-light);
   font-weight: 400;
 }
 
@@ -123,7 +109,7 @@ button {
   left: 50%;
   margin-left: -100px;
   position: absolute;
-  border-bottom: 3px solid #7FB7E4;
+  border-bottom: 3px solid var(--color-border-primary);
   height: 3px;
   width: 200px;
 }
@@ -132,17 +118,40 @@ button {
   text-align: center;
 }
 
-.post_nav ul li {
-  padding-left: 0;
-  width: 33%;
-  text-align: center;
+.post-nav {
+  width: 100%;
 }
 
-.post_nav li:nth-child(1) a {
+.post-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-nav__item {
+  width: 33.333%;
+  text-align: center;
+  padding: var(--spacing-small);
+}
+
+.post-nav__link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--animation-timing-default);
+}
+
+.post-nav__link:hover {
+  color: var(--color-secondary);
+}
+
+.post-nav__item--prev .post-nav__link {
   float: left;
 }
 
-.post_nav li:nth-child(3) a {
+.post-nav__item--next .post-nav__link {
   float: right;
 }
 
@@ -166,7 +175,7 @@ button {
   color: #ffffff;
   position: relative;
   font-weight: bold;
-  font-size: 20px;
+  font-size: var(--font-size-large);
   padding: 10px;
   animation: animated_div 5s 1;
   -moz-animation: animated_div 5s 1;
@@ -213,8 +222,8 @@ button {
   height: 3rem;
   white-space: nowrap;
   overflow: hidden;
-  font-family: "Source Code Pro", monospace;
-  font-size: 1.5rem;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-large);
   position: relative;
 }
 
@@ -259,5 +268,112 @@ button {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: var(--font-size-body);
+}
+
+/* Blog post content styles */
+main ul,
+main ol {
+  margin: var(--spacing-medium) 0 var(--spacing-medium) 20px;
+  /* Set specific left margin */
+  padding-left: 1.5rem;
+  /* Keep padding for bullets */
+}
+
+main li {
+  margin-left: 20px;
+  /* Add specific left margin to list items */
+  margin-bottom: var(--spacing-small);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+main li>ul,
+main li>ol {
+  margin-top: var(--spacing-small);
+  margin-left: 20px;
+  /* Consistent margin for nested lists */
+  padding-left: 1.5rem;
+}
+
+main blockquote {
+  margin: 2rem 0 2rem 20px;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--color-secondary);
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+main blockquote p {
+  margin: 0;
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+}
+
+main blockquote em {
+  font-style: normal;
+  /* Reset italics for emphasized text within already italic blockquote */
+}
+
+main blockquote+p {
+  margin-top: 1.5rem;
+  /* Add spacing after blockquote */
+}
+
+main div h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Blog Post Styles */
+.post-date {
+  display: block;
+  margin-bottom: var(--spacing-medium);
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+}
+
+.post-content {
+  font-size: var(--font-size-body);
+}
+
+.post-divider {
+  margin-bottom: var(--spacing-medium);
+  border: 0;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+/* Post Navigation */
+.post_nav {
+  margin: var(--spacing-medium) 0;
+}
+
+.post-nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.post-nav__item {
+  flex: 1;
+  text-align: center;
+}
+
+.post-nav__item--prev {
+  text-align: left;
+}
+
+.post-nav__item--next {
+  text-align: right;
+}
+
+.post-nav__item a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.post-nav__item a:hover {
+  text-decoration: underline;
 }

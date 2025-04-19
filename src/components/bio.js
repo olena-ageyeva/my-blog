@@ -63,7 +63,7 @@ function Bio() {
               <a href={social.website}>Web Developer</a> {"-"}
               <a href={mentor}>Mentor</a> {"-"}
               <a href={social.mathwell}>Educator</a> */}
-              <a href={social.linkedIn} target="_blank" >Engineering Leader</a> | Driving Innovation & Efficiency
+              <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">Engineering Leader</a> | Driving Innovation & Efficiency
             </p>
           </Container>
         )
