@@ -47,7 +47,7 @@ const MobileSpan = styled.span`
 `
 
 const StyledImage = styled(Image)`
-  margin-right: ${rhythm(1/2)};
+  margin-right: ${rhythm(1 / 2)};
   margin-bottom: 0;
   min-width: 50px;
 
@@ -78,10 +78,15 @@ function Bio() {
                 <MobileSpan>Olena A</MobileSpan>
               </strong>
               <br />
+
+              <DesktopSpan>
+                <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">Engineering Leader</a> | Driving Innovation & Efficiency</DesktopSpan>
+              <MobileSpan>
               <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">
-                <DesktopSpan>Engineering Leader | Driving Innovation & Efficiency</DesktopSpan>
-                <MobileSpan>Engineering Lead</MobileSpan>
-              </a>
+                Engineering Lead
+                </a>
+                </MobileSpan>
+
             </p>
           </Container>
         )
