@@ -7,7 +7,8 @@ description: When you are try to catalyze change within your organization  are
 ---
 ![](../assets/stoned-soup-2.jpg "soup")
 
-**Another gem from one of my favorite books — and a timeless lesson in leadership, influence, and change.**\
+**Another gem from one of my favorite books — and a timeless lesson in leadership, influence, and change.**
+
 If you’ve ever tried to drive change in a resistant organization, deliver innovation without a budget, or navigate the tension between intention and perception… this one’s for you. 🍲🐸
 
 - - -
@@ -18,13 +19,13 @@ If you’ve ever tried to drive change in a resistant organization, deliver inno
 >
 > Undeterred, the soldiers boiled a pot of water and carefully placed three stones into it. The amazed villagers came out to watch.
 >
-> "This is stone soup," the soldiers explained.\
-> "Is that all you put in it?" asked the villagers.\
-> "Absolutely—although some say it tastes even better with a few carrots."\
+> "This is stone soup," the soldiers explained.
+> "Is that all you put in it?" asked the villagers.
+> "Absolutely—although some say it tastes even better with a few carrots."
 > A villager ran off, returning with a basket of carrots from his hoard.
 >
-> A couple of minutes later, the villagers again asked, "Is that it?"\
-> "Well," said the soldiers, "a couple of potatoes give it body."\
+> A couple of minutes later, the villagers again asked, "Is that it?"
+> "Well," said the soldiers, "a couple of potatoes give it body."
 > Off ran another villager.
 >
 > Over the next hour, the soldiers listed more ingredients that would enhance the soup: beef, leeks, salt, and herbs. Each time, a different villager ran off to raid their personal stores.
@@ -39,7 +40,7 @@ If you’ve ever tried to drive change in a resistant organization, deliver inno
 >
 > It's time to bring out the stones. Work out what you can reasonably ask for. Develop it well. Once you've got it, show people, and let them marvel. Then say, "of course, it would be better if we added..." Pretend it's not important. Sit back and wait for them to start asking you to add the functionality you originally wanted. People find it easier to join an ongoing success. Show them a glimpse of the future and you'll get them to rally around.
 >
-> **The Villagers’ Side**\
+> **The Villagers’ Side**
 > On the other hand, the stone soup story is also about gentle and gradual deception. It’s about focusing too tightly. The villagers think about the stones and forget about the rest of the world. We all fall for it, every day. Things just creep up on us.
 >
 > We’ve all seen the symptoms. Projects slowly and inexorably get totally out of hand. Most software disasters start out too small to notice, and most project overruns happen a day at a time. Systems drift from their specifications feature by feature, while patch after patch gets added to a piece of code until there’s nothing of the original left. It’s often the accumulation of small things that breaks morale and teams.
@@ -56,6 +57,7 @@ If you’ve ever tried to drive change in a resistant organization, deliver inno
 
 - - -
 
-**🌱 My takeaway?**\
-Sometimes, leadership means planting the first stone in the pot—and letting others discover the vision along the way. But the real challenge is making sure you’re cooking **stone soup**, not **frog soup**.\
+**🌱 My takeaway?**
+
+Sometimes, leadership means planting the first stone in the pot—and letting others discover the vision along the way. But the real challenge is making sure you’re cooking **stone soup**, not **frog soup**.
 So lead, catalyze, inspire—but always keep an eye on the temperature *and* the ingredients you put in.
