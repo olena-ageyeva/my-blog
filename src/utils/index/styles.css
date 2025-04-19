@@ -3,6 +3,9 @@
 body {
   margin: 0;
   font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  line-height: 1.5;
 }
 
 a {
@@ -17,16 +20,12 @@ a:hover {
 
 h1 {
   font-family: var(--font-primary);
-  /* Montserrat from design system */
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-normal);
-  /* .1em */
   font-size: var(--font-size-h1);
-  /* 3rem */
   text-align: center;
   margin: var(--spacing-small) 0;
-  /* 10px 0 */
 }
 
 #app {
@@ -36,25 +35,25 @@ h1 {
 .controls {
   display: grid;
   position: absolute;
-  padding: 20px;
+  padding: var(--spacing-medium);
 }
 
 .quote-wrapper {
   display: flex;
   align-items: center;
-  padding: 0 8px 0.2em;
+  padding: 0 var(--spacing-small) 0.2em;
   background-color: var(--color-background-primary);
   position: relative;
   color: var(--color-text-secondary);
-  box-shadow: 4px 8px 4px 0 var(--color-shadow-primary);
-  margin: 20px 0 4em;
+  box-shadow: var(--shadow-small);
+  margin: var(--spacing-medium) 0 4em;
 }
 
 .author-image {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: var(--spacing-medium);
   align-self: center;
 }
 
@@ -62,7 +61,7 @@ h1 {
   margin: 0;
   text-align: left;
   border: none;
-  padding: 1em;
+  padding: var(--spacing-medium);
   color: var(--color-text-secondary);
   font-family: var(--font-special);
 }
@@ -71,7 +70,7 @@ h1 {
   font-size: var(--font-size-body);
   line-height: 1;
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   margin: 0;
   display: inline;
   color: var(--color-text-secondary);
@@ -80,8 +79,8 @@ h1 {
 .quote-icon {
   color: var(--color-orange);
   font-size: var(--font-size-h3);
-  font-weight: 600;
-  margin-right: 8px;
+  font-weight: var(--font-weight-semibold);
+  margin-right: var(--spacing-small);
   vertical-align: middle;
 }
 
@@ -100,7 +99,7 @@ h1 {
 .quote_author em {
   font-style: italic;
   color: var(--color-text-light);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
 }
 
 .blockquote::after {
@@ -114,14 +113,7 @@ h1 {
   width: 200px;
 }
 
-.home {
-  text-align: center;
-}
-
-.post-nav {
-  width: 100%;
-}
-
+/* Navigation styles */
 .post-nav__list {
   list-style: none;
   padding: 0;
@@ -137,87 +129,96 @@ h1 {
   padding: var(--spacing-small);
 }
 
-.post-nav__link {
-  color: var(--color-text-primary);
-  text-decoration: none;
-  transition: color var(--duration-fast) var(--animation-timing-default);
-}
-
-.post-nav__link:hover {
+.post-nav__item a {
   color: var(--color-secondary);
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
 }
 
-.post-nav__item--prev .post-nav__link {
-  float: left;
+.post-nav__item a:hover {
+  text-decoration: underline;
 }
 
-.post-nav__item--next .post-nav__link {
-  float: right;
+/* Hide short titles by default */
+.post-nav__short-title {
+  display: none !important;
 }
 
+.post-nav__full-title {
+  display: inline !important;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .post-nav__short-title {
+    display: inline !important;
+  }
+
+  .post-nav__full-title {
+    display: none !important;
+  }
+
+  .post-nav__item {
+    padding: var(--spacing-small) var(--spacing-small);
+  }
+
+  .post-nav__item a {
+    font-size: var(--font-size-small);
+    white-space: nowrap;
+  }
+
+  h1 {
+    font-size: calc(var(--font-size-h1) * 0.5); /* Reduce to 50% of desktop size */
+    margin: calc(var(--spacing-small) * 0.75) 0;
+  }
+
+  /* Adjust page title if it has a specific class */
+  .site-title {
+    font-size: calc(var(--font-size-h1) * 0.5);
+  }
+
+  /* Adjust blog post title */
+  .post-title {
+    font-size: calc(var(--font-size-h1) * 0.5);
+  }
+}
+
+/* Header styles */
 .header {
   display: inline-flex;
   width: 100%;
   justify-content: space-around;
-  z-index: 1;
+  z-index: var(--z-header);
 }
 
-.header a {
-  box-shadow: none;
-  text-decoration: none;
-}
-
-
+/* Animation styles */
 #animated_div {
   width: 70px;
   height: 47px;
-  background: #92b901;
-  color: #ffffff;
+  background: var(--color-green);
+  color: var(--color-white);
   position: relative;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-large);
-  padding: 10px;
+  padding: var(--spacing-small);
   animation: animated_div 5s 1;
-  -moz-animation: animated_div 5s 1;
-  -webkit-animation: animated_div 5s 1;
-  -o-animation: animated_div 5s 1;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: var(--border-radius-small);
 }
 
 @keyframes animated_div {
-  0% {
-    transform: rotate(0deg);
-    left: 0px;
-  }
-
-  25% {
-    transform: rotate(20deg);
-    left: 0px;
-  }
-
-  50% {
-    transform: rotate(0deg);
-    left: 500px;
-  }
-
-  55% {
-    transform: rotate(0deg);
-    left: 500px;
-  }
-
+  0% { transform: rotate(0deg); left: 0px; }
+  25% { transform: rotate(20deg); left: 0px; }
+  50% { transform: rotate(0deg); left: 500px; }
+  55% { transform: rotate(0deg); left: 500px; }
   70% {
     transform: rotate(0deg);
     left: 500px;
-    background: #1ec7e6;
+    background: var(--color-blue);
   }
-
-  100% {
-    transform: rotate(-360deg);
-    left: 0px;
-  }
+  100% { transform: rotate(-360deg); left: 0px; }
 }
 
+/* Typing animation styles */
 #parent {
   height: 3rem;
   white-space: nowrap;
@@ -228,76 +229,50 @@ h1 {
 }
 
 #border {
-  border-bottom: solid 3px rgba(0, 255, 0, 0.75);
+  border-bottom: solid 3px var(--color-secondary);
   position: absolute;
   right: -7px;
   width: 20px;
+  animation: animated-cursor 600ms steps(30, end) infinite;
 }
 
-/* Animation */
 #parent {
   animation: animated-text 2s steps(30, end) 1s 1 normal both;
 }
 
-#border {
-  animation: animated-cursor 600ms steps(30, end) infinite;
-}
-
-/* text animation */
-
 @keyframes animated-text {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 40rem;
-  }
+  from { width: 0; }
+  to { width: 40rem; }
 }
-
-/* cursor animations */
 
 @keyframes animated-cursor {
-  from {
-    border-bottom-color: rgba(0, 255, 0, 0.75);
-  }
-
-  to {
-    border-bottom-color: transparent;
-  }
+  from { border-bottom-color: var(--color-secondary); }
+  to { border-bottom-color: transparent; }
 }
 
-p {
-  font-size: var(--font-size-body);
-}
-
-/* Blog post content styles */
+/* Content styles */
 main ul,
 main ol {
-  margin: var(--spacing-medium) 0 var(--spacing-medium) 20px;
-  /* Set specific left margin */
+  margin: var(--spacing-medium) 0 var(--spacing-medium) var(--spacing-medium);
   padding-left: 1.5rem;
-  /* Keep padding for bullets */
 }
 
 main li {
-  margin-left: 20px;
-  /* Add specific left margin to list items */
+  margin-left: var(--spacing-medium);
   margin-bottom: var(--spacing-small);
   line-height: 1.6;
   color: var(--color-text-primary);
 }
 
-main li>ul,
-main li>ol {
+main li > ul,
+main li > ol {
   margin-top: var(--spacing-small);
-  margin-left: 20px;
-  /* Consistent margin for nested lists */
+  margin-left: var(--spacing-medium);
   padding-left: 1.5rem;
 }
 
 main blockquote {
-  margin: 2rem 0 2rem 20px;
+  margin: var(--spacing-large) 0 var(--spacing-large) var(--spacing-medium);
   padding-left: 1.5rem;
   border-left: 4px solid var(--color-secondary);
   font-style: italic;
@@ -310,70 +285,36 @@ main blockquote p {
   line-height: 1.6;
 }
 
-main blockquote em {
-  font-style: normal;
-  /* Reset italics for emphasized text within already italic blockquote */
-}
-
-main blockquote+p {
-  margin-top: 1.5rem;
-  /* Add spacing after blockquote */
-}
-
 main div h3 {
   font-family: var(--font-heading);
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-semibold);
 }
 
-/* Blog Post Styles */
-.post-date {
-  display: block;
-  margin-bottom: var(--spacing-medium);
-  font-size: var(--font-size-small);
-  color: var(--color-text-secondary);
-}
+/* Responsive styles */
+@media (max-width: var(--breakpoint-mobile)) {
+  body {
+    font-size: var(--font-size-small);
+  }
 
-.post-content {
-  font-size: var(--font-size-body);
-}
+  h1 {
+    font-size: calc(var(--font-size-h1) * 0.8);
+  }
 
-.post-divider {
-  margin-bottom: var(--spacing-medium);
-  border: 0;
-  border-bottom: 1px solid var(--color-border-primary);
-}
+  .quote-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* Post Navigation */
-.post_nav {
-  margin: var(--spacing-medium) 0;
-}
+  .author-image {
+    margin: var(--spacing-small) 0;
+  }
 
-.post-nav__list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-}
+  #parent {
+    font-size: var(--font-size-body);
+  }
 
-.post-nav__item {
-  flex: 1;
-  text-align: center;
-}
-
-.post-nav__item--prev {
-  text-align: left;
-}
-
-.post-nav__item--next {
-  text-align: right;
-}
-
-.post-nav__item a {
-  color: var(--color-secondary);
-  text-decoration: none;
-}
-
-.post-nav__item a:hover {
-  text-decoration: underline;
+  @keyframes animated-text {
+    to { width: 100%; }
+  }
 }

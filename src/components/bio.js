@@ -19,27 +19,42 @@ const breakpoints = {
 const Container = styled.div`
   display: flex;
   margin-bottom: ${rhythm(1)};
-  .title{
-   font-size: 1em;
+
+  .title {
+    font-size: 1em;
     line-height: 1.5em;
-   }
+  }
 
   strong {
     font-size: 1.2em;
   }
+`
+
+const DesktopSpan = styled.span`
+  display: inline;
 
   @media (max-width: ${breakpoints.mobile}) {
-    display: block;
-    max-width: 64%;
+    display: none;
+  }
+`
+
+const MobileSpan = styled.span`
+  display: none;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: inline;
   }
 `
 
 const StyledImage = styled(Image)`
-  margin-right: ${rhythm(1 / 2)};
+  margin-right: ${rhythm(1/2)};
   margin-bottom: 0;
-  min-width: ${rhythm(2)};
-  min-height: ${rhythm(2)};
-  border-radius: 100%;
+  min-width: 50px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 40px !important;
+    height: 40px !important;
+  }
 `
 
 function Bio() {
@@ -58,12 +73,15 @@ function Bio() {
               }}
             />
             <p className="title">
-              by <strong>{author}</strong> <br />
-              {/* <a href={cto}>Tech Strategist</a> {"-"}
-              <a href={social.website}>Web Developer</a> {"-"}
-              <a href={mentor}>Mentor</a> {"-"}
-              <a href={social.mathwell}>Educator</a> */}
-              <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">Engineering Leader</a> | Driving Innovation & Efficiency
+              by <strong>
+                <DesktopSpan>{author}</DesktopSpan>
+                <MobileSpan>Olena A</MobileSpan>
+              </strong>
+              <br />
+              <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">
+                <DesktopSpan>Engineering Leader | Driving Innovation & Efficiency</DesktopSpan>
+                <MobileSpan>Engineering Lead</MobileSpan>
+              </a>
             </p>
           </Container>
         )

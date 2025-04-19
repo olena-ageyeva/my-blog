@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
-// import { rhythm } from "../utils/typography"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,6 +21,20 @@ const Wrapper = styled.div`
   }
 `
 
+const DesktopSpan = styled.span`
+  display: inline;
+  @media (max-width: ${breakpoints.mobile}) {
+    display: none;
+  }
+`
+
+const MobileSpan = styled.span`
+  display: none;
+  @media (max-width: ${breakpoints.mobile}) {
+    display: inline;
+  }
+`
+
 class Blog extends React.Component {
   render() {
     const { data, navigate, location } = this.props
@@ -35,7 +48,10 @@ class Blog extends React.Component {
         <div className="header">
           <Bio />
           <StyledLink to="/">
-            <Button>Go Home</Button>
+            <Button>
+              <DesktopSpan>Go Home</DesktopSpan>
+              <MobileSpan>Home</MobileSpan>
+            </Button>
           </StyledLink>
         </div>
         <Wrapper>

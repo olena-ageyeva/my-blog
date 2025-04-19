@@ -6,7 +6,7 @@ import { animationMixins } from "../styles/animations"
 const Button = ({ id = "", className = "", onClick = () => { }, children, ...rest }) => {
   return (
     <ButtonWrapper
-      props={rest}
+      {...rest}
       id={id}
       className={className}
       onClick={onClick}

@@ -6,6 +6,9 @@
   --color-blue: #7FB7E4;
   --color-white: #fff;
   --color-orange: #ff9800;
+  --color-green: #92b901;
+
+
 
   /* Text Colors */
   --color-text-primary: #333;
@@ -76,6 +79,11 @@
   --z-dropdown: 800;
   --z-header: 700;
   --z-footer: 600;
+
+  /* Add if not already present */
+  --border-radius-small: 5px;
+  --animation-timing-default: ease;
+  --border-width-default: 4px;
 }
 
 /* Base Typography Styles */
@@ -86,7 +94,12 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   letter-spacing: var(--letter-spacing-normal);
 }
@@ -152,8 +165,3 @@ h1 {
     font-size: calc(var(--font-size-heading) * 0.8);
   }
 }
-
-
-
-
-

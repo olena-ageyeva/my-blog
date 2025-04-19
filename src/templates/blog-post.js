@@ -28,7 +28,8 @@ class BlogPostTemplate extends React.Component {
           <li className="post-nav__item post-nav__item--prev">
             {previous && (
               <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
+                <span className="post-nav__full-title">← {previous.frontmatter.title}</span>
+                <span className="post-nav__short-title">← Prev</span>
               </Link>
             )}
           </li>
@@ -38,7 +39,8 @@ class BlogPostTemplate extends React.Component {
           <li className="post-nav__item post-nav__item--next">
             {next && (
               <Link to={`/blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
+                <span className="post-nav__full-title">{next.frontmatter.title} →</span>
+                <span className="post-nav__short-title">Next →</span>
               </Link>
             )}
           </li>
@@ -53,7 +55,7 @@ class BlogPostTemplate extends React.Component {
           description={description || post.excerpt}
         />
         {post_nav()}
-        <h1>{title}</h1>
+        <h1 className="post-title">{title}</h1>
         <p className="post-date">{post.frontmatter.date}</p>
         <div className="post-content">
           <MDXRenderer>{post.body}</MDXRenderer>
