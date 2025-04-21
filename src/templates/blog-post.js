@@ -28,19 +28,27 @@ class BlogPostTemplate extends React.Component {
           <li className="post-nav__item post-nav__item--prev">
             {previous && (
               <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                <span className="post-nav__full-title">← {previous.frontmatter.title}</span>
-                <span className="post-nav__short-title">← Prev</span>
+                <span className="post-nav__full-title">
+                  <span className="nav-arrow left"></span> {previous.frontmatter.title}
+                </span>
+                <span className="post-nav__short-title">
+                  <span className="nav-arrow left"></span> Prev
+                </span>
               </Link>
             )}
           </li>
           <li className="post-nav__item">
-            <Link to="/blog/">See All</Link>
+            <Link to="/blog/">All</Link>
           </li>
           <li className="post-nav__item post-nav__item--next">
             {next && (
               <Link to={`/blog${next.fields.slug}`} rel="next">
-                <span className="post-nav__full-title">{next.frontmatter.title} →</span>
-                <span className="post-nav__short-title">Next →</span>
+                <span className="post-nav__full-title">
+                  {next.frontmatter.title} <span className="nav-arrow right"></span>
+                </span>
+                <span className="post-nav__short-title">
+                  Next <span className="nav-arrow right"></span>
+                </span>
               </Link>
             )}
           </li>

@@ -117,10 +117,25 @@ h1 {
 .post-nav__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 2rem; /* Add bottom margin for spacing */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  position: relative; /* For absolute positioning of pseudo-element */
+}
+
+/* Add divider line */
+.post-nav__list::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem; /* Position it below the navigation */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* Match the quote's line width */
+  height: 2px; /* Reduced from 4px to 2px */
+  background-color: #e0e0e0; /* Much lighter gray */
+  border-radius: 1px; /* Adjusted border-radius to match new height */
 }
 
 .post-nav__item {
@@ -129,29 +144,40 @@ h1 {
   padding: var(--spacing-small);
 }
 
+.post-nav__item--prev {
+  text-align: left;
+}
+
+.post-nav__item--next {
+  text-align: right;
+}
+
 .post-nav__item a {
   color: var(--color-secondary);
   text-decoration: none;
   transition: color var(--duration-fast) ease;
-}
-
-.post-nav__item a:hover {
-  text-decoration: underline;
-}
-
-/* Hide short titles by default */
-.post-nav__short-title {
-  display: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
 }
 
 .post-nav__full-title {
-  display: inline !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-nav__short-title {
+  display: none !important;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .post-nav__short-title {
-    display: inline !important;
+    display: inline-flex !important;
+    font-size: var(--font-size-body);
+    align-items: center;
   }
 
   .post-nav__full-title {
@@ -159,27 +185,32 @@ h1 {
   }
 
   .post-nav__item {
-    padding: var(--spacing-small) var(--spacing-small);
+    padding: var(--spacing-small);
+    font-size: var(--font-size-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .post-nav__item a {
-    font-size: var(--font-size-small);
-    white-space: nowrap;
+    color: #007bff;  /* This blue matches your image better */
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 
-  h1 {
-    font-size: calc(var(--font-size-h1) * 0.5); /* Reduce to 50% of desktop size */
-    margin: calc(var(--spacing-small) * 0.75) 0;
+  .post-title {
+    font-size: calc(var(--font-size-h1) * 0.5);
   }
 
-  /* Adjust page title if it has a specific class */
   .site-title {
     font-size: calc(var(--font-size-h1) * 0.5);
   }
 
-  /* Adjust blog post title */
-  .post-title {
-    font-size: calc(var(--font-size-h1) * 0.5);
+  .nav-arrow {
+    width: 20px;  /* Slightly smaller arrows on mobile */
+    height: 20px;
+    margin: 0;
   }
 }
 
@@ -206,16 +237,36 @@ h1 {
 }
 
 @keyframes animated_div {
-  0% { transform: rotate(0deg); left: 0px; }
-  25% { transform: rotate(20deg); left: 0px; }
-  50% { transform: rotate(0deg); left: 500px; }
-  55% { transform: rotate(0deg); left: 500px; }
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+
+  55% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+
   70% {
     transform: rotate(0deg);
     left: 500px;
     background: var(--color-blue);
   }
-  100% { transform: rotate(-360deg); left: 0px; }
+
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
 }
 
 /* Typing animation styles */
@@ -241,13 +292,23 @@ h1 {
 }
 
 @keyframes animated-text {
-  from { width: 0; }
-  to { width: 40rem; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 40rem;
+  }
 }
 
 @keyframes animated-cursor {
-  from { border-bottom-color: var(--color-secondary); }
-  to { border-bottom-color: transparent; }
+  from {
+    border-bottom-color: var(--color-secondary);
+  }
+
+  to {
+    border-bottom-color: transparent;
+  }
 }
 
 /* Content styles */
@@ -264,8 +325,8 @@ main li {
   color: var(--color-text-primary);
 }
 
-main li > ul,
-main li > ol {
+main li>ul,
+main li>ol {
   margin-top: var(--spacing-small);
   margin-left: var(--spacing-medium);
   padding-left: 1.5rem;
@@ -315,6 +376,53 @@ main div h3 {
   }
 
   @keyframes animated-text {
-    to { width: 100%; }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+.nav-arrow {
+  width: 32px;  /* Increased to match desktop size */
+  height: 32px; /* Same as width to ensure perfect circle */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #7FB7E4;
+  margin: 0 4px;
+  flex-shrink: 0; /* Prevents arrow from being squished */
+}
+
+.nav-arrow::before {
+  content: '';
+  width: 10px; /* Slightly larger arrow for desktop */
+  height: 10px;
+  border: 2px solid white;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  position: relative; /* Helps with precise positioning */
+}
+
+.nav-arrow.left::before {
+  transform: rotate(-135deg);
+  left: 2px; /* Fine-tuned positioning */
+}
+
+.nav-arrow.right::before {
+  transform: rotate(45deg);
+  right: 2px; /* Fine-tuned positioning */
+}
+
+/* Keep your existing mobile styles */
+@media screen and (max-width: 768px) {
+  .nav-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-arrow::before {
+    width: 8px;
+    height: 8px;
   }
 }

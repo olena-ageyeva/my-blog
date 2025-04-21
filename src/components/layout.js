@@ -12,7 +12,7 @@ const Layout = ({ location, title, children }) => {
       <GlobalStyle />
       <Header>
         <TitleLink to="/blog">
-          <Title>{title}</Title>
+          <Title className="site-title">{title}</Title>
         </TitleLink>
       </Header>
       <Main isHomePage={isHomePage}>{children}</Main>
