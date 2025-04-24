@@ -1,7 +1,7 @@
 ---
 path: storybook_and_copilot
 date: 2025-04-13T20:16:50.114Z
-title: "🤖 From 10x Dev to 100x Joy: Coding with Copilot"
+title: "🤖From 10x Dev to 100x Joy: Coding with Copilot"
 description: "What started as a front-end best practices demo turned into a
   real-time duel with GitHub Copilot. I built a component, taught my teams, and
   sparred with AI—spoiler: I won most rounds, but Copilot made me faster anyway.
@@ -32,7 +32,7 @@ According to Stack Overflow’s 2023 Developer Survey,
 
 > 🧠 70% of developers are already using or planning to use AI tools in their workflows.
 > ([source](<>))
-
+>
 > GitHub reports that **developers using Copilot code up to 55% faster** and spend less time on boilerplate or repetitive tasks. 
 > ([source](<>))
 
@@ -45,5 +45,7 @@ And it's not going back in the box.
 - - -
 
 If you’re curious how it looked in action, 🎬 watch the demo and see how it all came together. Enjoy!
+
+⚠️ Enjoy it while it lasts—while experts like myself are still here to outperform AI in real time. Believe me, we’re a vanishing breed.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NaVopCBFY3w?si=g09A0gM-BCe_2Jqr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
