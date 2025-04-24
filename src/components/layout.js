@@ -47,8 +47,8 @@ const TitleLink = styled(Link)`
 `
 
 const Title = styled.h1`
-  // margin-bottom: ${rhythm(1)};
   margin-top: 0;
+  color: var(--color-text-light); /* Using the light gray color (#999) */
 `
 
 const Main = styled.main`
@@ -67,6 +67,7 @@ const Main = styled.main`
 const Footer = styled.footer`
   padding: ${rhythm(1)};
   text-align: center;
+  font-size: ${rhythm(0.75)};
 `
 
 export default Layout

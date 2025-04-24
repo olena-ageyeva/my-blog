@@ -8,54 +8,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import styled from "styled-components"
-
-import { rhythm } from "../utils/typography"
-
-const breakpoints = {
-  mobile: '768px', // Or any size you define as the mobile breakpoint
-};
-
-const Container = styled.div`
-  display: flex;
-  margin-bottom: ${rhythm(1)};
-
-  .title {
-    font-size: 1em;
-    line-height: 1.5em;
-  }
-
-  strong {
-    font-size: 1.2em;
-  }
-`
-
-const DesktopSpan = styled.span`
-  display: inline;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    display: none;
-  }
-`
-
-const MobileSpan = styled.span`
-  display: none;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    display: inline;
-  }
-`
-
-const StyledImage = styled(Image)`
-  margin-right: ${rhythm(1 / 2)};
-  margin-bottom: 0;
-  min-width: 50px;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 40px !important;
-    height: 40px !important;
-  }
-`
 
 function Bio() {
   return (
@@ -64,31 +16,32 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <Container>
-            <StyledImage
+          <div className="bio-container">
+            <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
+              className="bio-image"
               imgStyle={{
                 borderRadius: `50%`,
               }}
             />
-            <p className="title">
-              by <strong>
-                <DesktopSpan>{author}</DesktopSpan>
-                <MobileSpan>Olena A</MobileSpan>
-              </strong>
+            <p className="bio-title">
+              by <span className="bio-name">
+                <span className="bio-desktop">{author}</span>
+                <span className="bio-mobile">Olena A</span>
+              </span>
               <br />
 
-              <DesktopSpan>
-                <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">Engineering Leader</a> | Driving Innovation & Efficiency</DesktopSpan>
-              <MobileSpan>
-              <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">
-                Engineering Lead
+              <span className="bio-desktop bio-role">
+                <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">Engineering Leader</a> | Driving Innovation & Efficiency
+              </span>
+              <span className="bio-mobile bio-role">
+                <a href={social.linkedIn} target="_blank" rel="noopener noreferrer">
+                  Engineering Lead
                 </a>
-                </MobileSpan>
-
+              </span>
             </p>
-          </Container>
+          </div>
         )
       }}
     />

@@ -7,18 +7,25 @@
   --color-white: #fff;
   --color-orange: #ff9800;
   --color-green: #92b901;
+  --color-lightgrey: #e0e0e0;
 
 
 
   /* Text Colors */
-  --color-text-primary: #333;
-  --color-text-secondary: hsla(0, 0%, 0%, 0.59);
-  --color-text-muted: #666;
+  --color-text-primary: #3b3b3b;
+  --color-text-secondary: #606770;
+  --color-text-muted: #484646;
   --color-text-light: #999;
+  --color-title: #333;
+  --color-subtitle: #888;
+  --color-unfocused: #bbb;
+  --color-test-description: #666;
+  --color-axillary: #dfe1e5;
+  --color-placeholder: #9aa0a6;
 
   /* Background Colors */
   --color-background-primary: #fff;
-  --color-background-secondary: #f5f5f5;
+  --color-background-secondary: #fdfdfd;
 
   /* Border Colors */
   --color-border-primary: var(--color-secondary);
@@ -34,9 +41,13 @@
   --font-body: "Open Sans";
 
   /* Font Sizes */
-  --font-size-small: 0.9rem;
-  --font-size-body: 1.2rem;
-  --font-size-large: 1.5rem;
+  --font-size-tiny: 1rem;
+  --font-size-small: 1.2rem;
+  --font-size-mobile: 1.2rem;
+  --font-size-primary: 1.3rem;
+  --font-size-body: 1.5rem;
+  --font-size-large: 1.8rem;
+  --font-size-header: 2.25rem;
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
   --font-size-h3: 1.5rem;

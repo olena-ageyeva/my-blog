@@ -1,3 +1,4 @@
+
 import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "styled-components"
@@ -9,6 +10,10 @@ import SearchPosts from "../components/searchPosts"
 
 const StyledLink = styled(Link)`
   box-shadow: none;
+
+  :hover {
+    text-decoration: none;
+  }
 `
 
 const breakpoints = {
@@ -56,11 +61,13 @@ class Blog extends React.Component {
         </div>
         <Wrapper>
           <StyledLink to="/news">
-            <div id="parent">
-              {`Check out my 100 days css challenge --->>>`}
-              <div id="border"></div>
+            <div className="animation_wrapper">
+              <div className="animated_div">CSS</div>
+              <div id="parent">
+                {`Check out my 100 days CSS Challenge --->>>`}
+                <div id="border"></div>
+              </div>
             </div>
-            <div id="animated_div">CSS</div>
           </StyledLink>
         </Wrapper>
         <br />
@@ -93,6 +100,7 @@ export const pageQuery = graphql`
         node {
           fields {
             slug
+            timeToRead
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

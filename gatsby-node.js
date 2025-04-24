@@ -65,5 +65,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+
+    // Calculate reading time based on lines
+    const content = node.rawBody || '';
+    const lines = content.split('\n').filter(line => line.trim().length > 0);
+    const timeToRead = Math.max(1, Math.ceil(lines.length / 10));
+
+    createNodeField({
+      name: `timeToRead`,
+      node,
+      value: timeToRead,
+    })
   }
 }

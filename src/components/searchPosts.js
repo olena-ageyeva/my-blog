@@ -1,44 +1,11 @@
+
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+// import styled from "styled-components"
 import { useFlexSearch } from "react-use-flexsearch"
 import * as queryString from "query-string"
 
-import { rhythm } from "../utils/typography"
-
-const SearchBar = styled.div`
-  display: flex;
-  border: 1px solid #dfe1e5;
-  border-radius: 10px;
-  margin: 0 ${rhythm(1)} ${rhythm(1)} 0;
-  height: 3rem;
-  background: #fdfdfd;
-
-  svg {
-    margin: auto 1rem;
-    height: 20px;
-    width: 20px;
-    color: #9aa0a6;
-    fill: #9aa0a6;
-  }
-
-  input {
-    display: flex;
-    flex: 100%;
-    height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    padding-right: 0.5rem;
-    color: rgb(55, 53, 47);
-    word-wrap: break-word;
-    outline: none;
-  }
-`
+// import { rhythm } from "../utils/typography"
 
 const SearchedPosts = ({ results }) =>
   results.length > 0 ? (
@@ -48,25 +15,23 @@ const SearchedPosts = ({ results }) =>
       const description = node.description
       const excerpt = node.excerpt
       const slug = node.slug
+      const timeToRead = node.timeToRead || 1
 
       return (
-        <div key={slug}>
-          <h3
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
+        <Link to={`/blog${slug}`} className="card-link">
+          <div key={slug} className="blog-post-item--card">
+            <h3>
               {title}
-            </Link>
-          </h3>
-          <small>{date}</small>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description || excerpt,
-            }}
-          />
-        </div>
+            </h3>
+            <small>{date} • ⏱️ {timeToRead} min read</small>
+            <p className="post-description">
+              {description || excerpt}
+              <span className="read-more">Read More
+              <span class="nav-arrow right"></span>
+              </span>
+            </p>
+          </div>
+        </Link>
       )
     })
   ) : (
@@ -79,24 +44,22 @@ const AllPosts = ({ posts }) => (
   <div style={{ margin: "20px 0 40px" }}>
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
+      const timeToRead = node.fields.timeToRead || 1
       return (
-        <div key={node.fields.slug}>
-          <h3
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+        <Link to={`/blog${node.fields.slug}`} className="card-link">
+          <div key={node.fields.slug} className="blog-post-item--card">
+            <h3>
               {title}
-            </Link>
-          </h3>
-          <small>{node.frontmatter.date}</small>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
-            }}
-          />
-        </div>
+            </h3>
+            <small>{node.frontmatter.date} • ⏱️ {timeToRead} min read</small>
+            <p className="post-description">
+              {node.frontmatter.description || node.excerpt}
+              <span className="read-more">Read More
+              <span class="nav-arrow right read-more-icon"></span>
+              </span>
+            </p>
+          </div>
+        </Link>
       )
     })}
   </div>
@@ -114,11 +77,11 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
 
   return (
     <>
-      <SearchBar>
+      <div className="search-bar">
         <svg
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
+          viewBox="0 0 18 18"
         >
           <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
         </svg>
@@ -134,7 +97,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
             setQuery(e.target.value)
           }}
         />
-      </SearchBar>
+      </div>
       {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />}
     </>
   )

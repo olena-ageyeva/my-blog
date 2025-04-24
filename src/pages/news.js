@@ -116,7 +116,7 @@ const Wrapper = styled.div`
     top: 10rem;
     left: 3rem;
     z-index: 5;
-    color: black;
+    color: #333;
     display: inline-block;
     max-width: 1700px;
 
@@ -128,6 +128,7 @@ const Wrapper = styled.div`
       background: transparent;
       z-index: 6;
       cursor: poiner;
+      opacity: 0.5;
     }
   }
 

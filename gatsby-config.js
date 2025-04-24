@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     // edit below
@@ -50,7 +51,7 @@ module.exports = {
         `,
         ref: "id",
         index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description"],
+        store: ["id", "slug", "date", "title", "excerpt", "description", "timeToRead"],
         normalizer: ({ data }) =>
           data.allMdx.nodes.map(node => ({
             id: node.id,
@@ -60,6 +61,7 @@ module.exports = {
             title: node.frontmatter.title,
             description: node.frontmatter.description,
             date: node.frontmatter.date,
+            timeToRead: node.fields.timeToRead,
           })),
       },
     },
