@@ -1019,6 +1019,11 @@ main div h3 {
     line-height: 1.4;
   }
 
+  blockquote {
+    font-size: var(--font-size-mobile);
+    line-height: 1.4;
+  }
+
   h1 {
     font-size: calc(var(--font-size-h1) * 0.8);
   }
@@ -1030,7 +1035,7 @@ main div h3 {
   }
 
   .author-image {
-    margin: var(--spacing-small) 0;
+    margin-block: var(--spacing-medium) 0;
   }
 
   #parent {

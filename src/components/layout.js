@@ -34,6 +34,10 @@ const Wrapper = styled.div`
 const Header = styled.header`
   padding: ${rhythm(1)};
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 `
 
 const TitleLink = styled(Link)`
@@ -53,7 +57,7 @@ const Title = styled.h1`
 
 const Main = styled.main`
   flex: 1;
-  padding: ${rhythm(1)};
+  padding-inline: ${rhythm(1)};
   max-width: ${props => props.isHomePage ? rhythm(24) : rhythm(32)};
   margin: 0 auto;
   width: 100%;

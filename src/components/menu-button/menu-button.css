@@ -1,0 +1,61 @@
+.menu-button {
+    position: relative;
+    width: 60px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 8px auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: -0.5rem 3rem;
+}
+.dash-top,
+.dash-bottom {
+    position: absolute;
+    height: 3px;
+    background: var(--color-text-light);
+    left: 0;
+    transition: all 0.2s ease;
+}
+
+.dash-top {
+    top: 6px;
+    width: 22px;
+}
+
+.dash-bottom {
+    bottom: 6px;
+    width: 45px;
+}
+
+.menu-button-circle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-text-light);
+    left: 30px;
+    top: 4.5px;
+}
+
+/* Hover effects */
+.menu-button:hover .dash-top,
+.menu-button:hover .dash-bottom,
+.menu-button:hover .menu-button-circle {
+    background: var(--color-text-primary);
+}
+
+.menu-button:hover .dash-top {
+    transform: translateY(1px);
+}
+
+.menu-button:hover .dash-bottom {
+    transform: translateY(-1px);
+}
+
+.menu-button:hover .menu-button-circle {
+    transform: translateY(-25%) scale(1.1);
+}
