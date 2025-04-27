@@ -35,22 +35,28 @@ const SideMenu = ({ currentSlug }) => {
   const earliestDate = lastPost ? new Date(lastPost.node.frontmatter.date) : new Date();
   const today = new Date();
 
-  // Initialize dateRange from localStorage or default values
-  const [dateRange, setDateRange] = useState(() => {
-    const savedRange = localStorage.getItem('blogDateRange');
-    if (savedRange) {
-      const parsed = JSON.parse(savedRange);
-      return {
-        start: new Date(parsed.start),
-        end: new Date(parsed.end)
-      };
-    }
-    return {
-      start: earliestDate,
-      end: today
-    };
+  // Initialize with default values first
+  const [dateRange, setDateRange] = useState({
+    start: earliestDate,
+    end: today
   });
 
+  // Then update from localStorage if available (client-side only)
+  useEffect(() => {
+    // This code only runs in the browser after component mounts
+    try {
+      const savedRange = localStorage.getItem('blogDateRange');
+      if (savedRange) {
+        const parsed = JSON.parse(savedRange);
+        setDateRange({
+          start: new Date(parsed.start),
+          end: new Date(parsed.end)
+        });
+      }
+    } catch (e) {
+      console.error('Error accessing localStorage:', e);
+    }
+  }, []);
 
   const filterPosts = useCallback((start, end) => {
     const startDate = new Date(start);
@@ -84,11 +90,17 @@ const SideMenu = ({ currentSlug }) => {
     const newRange = { start, end };
     setDateRange(newRange);
 
-    // Save to localStorage
-    localStorage.setItem('blogDateRange', JSON.stringify({
-      start: start.toISOString(),
-      end: end.toISOString()
-    }));
+    // Save to localStorage only in browser environment
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('blogDateRange', JSON.stringify({
+          start: start.toISOString(),
+          end: end.toISOString()
+        }));
+      }
+    } catch (e) {
+      console.error('Error saving to localStorage:', e);
+    }
 
     filterPosts(start, end);
     setCurrentPage(1);
