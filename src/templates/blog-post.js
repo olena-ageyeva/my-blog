@@ -13,7 +13,7 @@ import PostNavigationAnimated from "../components/post-nav/post-nav-animated"
 
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const { state, setNavAnimation } = useGlobalState();
+  const { setNavAnimation } = useGlobalState();
 
   // Get initial state from body class if it exists
   const [isPanelOpen, setIsPanelOpen] = useState(

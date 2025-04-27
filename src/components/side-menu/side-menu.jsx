@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import DateRangeSelector from "../date-range-selector/date-range-selector"
 import PaperClip from "../paper-clip/paper-clip"
@@ -51,12 +51,8 @@ const SideMenu = ({ currentSlug }) => {
     };
   });
 
-  // Apply initial filter on mount
-  useEffect(() => {
-    filterPosts(dateRange.start, dateRange.end);
-  }, []);
 
-  const filterPosts = (start, end) => {
+  const filterPosts = useCallback((start, end) => {
     const startDate = new Date(start);
     const endDate = new Date(end);
 
@@ -70,14 +66,19 @@ const SideMenu = ({ currentSlug }) => {
     });
 
     setFilteredPosts(filtered);
-  };
+  }, [allPosts]);
 
-  const formatDate = (date) => {
+  // Apply initial filter on mount
+  useEffect(() => {
+    filterPosts(dateRange.start, dateRange.end);
+  }, [dateRange, filterPosts]);
+
+  function formatDate(date) {
     return new Date(date).toLocaleDateString('en-US', {
       month: 'short',
       year: 'numeric'
-    });
-  };
+    })
+  }
 
   const handleDateRangeChange = (start, end) => {
     const newRange = { start, end };

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { onPageRender } from "../utils/index/index"
 import pifagoras from "../img/pifagoras-2.png"
 import styled from "styled-components"
-import { FaHome, FaBook } from "react-icons/fa"
+import {  FaBook } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
