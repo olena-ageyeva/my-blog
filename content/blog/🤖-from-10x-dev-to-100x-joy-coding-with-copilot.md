@@ -1,7 +1,7 @@
 ---
 path: storybook_and_copilot
 date: 2025-04-13T20:16:50.114Z
-title: "🤖From 10x Dev to 100x Joy: Coding with Copilot"
+title: "💻From 10x Dev to 100x Joy: Coding with Copilot"
 description: "What started as a front-end best practices demo turned into a
   real-time duel with GitHub Copilot. I built a component, taught my teams, and
   sparred with AI—spoiler: I won most rounds, but Copilot made me faster anyway.
