@@ -1,22 +1,25 @@
 .post {
     position: relative;
 }
+
+.post-nav__item {
+    font-size: var(--font-size-small);
+}
+
 .panel {
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
     z-index: var(--z-modal);
     height: fit-content;
     width: 100%;
     background: var(--color-background-primary);
     border-radius: var(--border-radius-small);
     overflow: hidden;
-    box-shadow: var(--shadow-large);
-    transition: transform var(--duration-slow) var(--animation-timing-default);
+    /* box-shadow: var(--shadow-large); */
+    transition: all var(--duration-slow) var(--animation-timing-default);
     padding: 1rem;
 }
 
 body.show-nav .panel {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(250px, 0, 0);
+    box-shadow: var(--shadow-large);
 }

@@ -3,8 +3,10 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { GlobalStyle } from "../styles/GlobalStyle"
 import { rhythm } from "../utils/typography"
+import { useLocation } from '@reach/router';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ title, children }) => {
+  const location = useLocation();
   const isHomePage = location.pathname === "/"
 
   return (
@@ -17,9 +19,10 @@ const Layout = ({ location, title, children }) => {
       </Header>
       <Main isHomePage={isHomePage}>{children}</Main>
       <Footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}
+        {/* , Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> */}
       </Footer>
     </Wrapper>
   )
@@ -32,7 +35,6 @@ const Wrapper = styled.div`
 `
 
 const Header = styled.header`
-  padding: ${rhythm(1)};
   z-index: 10;
   display: flex;
   flex-direction: column;

@@ -1,54 +1,60 @@
 .menu-button {
     position: relative;
-    width: 60px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background: none;
     border: none;
-    padding: 0;
+    padding: 2px;
     margin: 8px auto;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block: -0.5rem 3rem;
+    /* margin-block: -0.5rem 3rem; */
 }
+
 .dash-top,
 .dash-bottom {
     position: absolute;
-    height: 3px;
-    background: var(--color-text-light);
+    height: 4px;
+    /* background: var(--color-text-light); */
+    background: var(--color-blue);
     left: 0;
     transition: all 0.2s ease;
 }
 
 .dash-top {
     top: 6px;
-    width: 22px;
+    width: 16px;
 }
 
 .dash-bottom {
     bottom: 6px;
-    width: 45px;
+    width: 28px;
 }
 
 .menu-button-circle {
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background: var(--color-text-light);
-    left: 30px;
-    top: 4.5px;
+    /* background: var(--color-text-light); */
+    background: var(--color-blue);
+    left: 20px;
+    top: 4px;
 }
 
 /* Hover effects */
 .menu-button:hover .dash-top,
 .menu-button:hover .dash-bottom,
 .menu-button:hover .menu-button-circle {
-    background: var(--color-text-primary);
+    /* background: var(--color-text-primary); */
+    transform: translateY(-2px) scale(1.1);
+    transition: all 0.2s ease;
+
 }
 
-.menu-button:hover .dash-top {
+/* .menu-button:hover .dash-top {
     transform: translateY(1px);
 }
 
@@ -58,4 +64,4 @@
 
 .menu-button:hover .menu-button-circle {
     transform: translateY(-25%) scale(1.1);
-}
+} */

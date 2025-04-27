@@ -1,0 +1,75 @@
+/* Link styles */
+.styled-link {
+  box-shadow: none;
+}
+
+.styled-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive containers */
+.desktop-nav {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+  margin: auto;
+}
+
+/* Home icon button styles */
+.home-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-icon-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* CSS Challenge wrapper */
+.css-challenge-wrapper {
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .css-challenge-wrapper {
+    display: none;
+  }
+}
+
+/* Desktop button icon styles */
+.desktop-home-icon {
+  font-size: 1.2rem;
+  color: var(--color-blue);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Button text wrapper */
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

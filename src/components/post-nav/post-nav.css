@@ -1,0 +1,43 @@
+.post-nav__full-title {
+  /* Fix the conflicting display properties */
+  display: flex;
+  align-items: center;
+  max-width: 240px;
+  line-height: 1.3;
+}
+
+/* Create a separate container for the text that needs truncation */
+.post-nav__title-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3.9em; /* 3 lines × 1.3 line height */
+  width: 100%;
+}
+
+/* Ensure arrows are vertically centered */
+.post-nav__full-title .nav-arrow {
+  flex-shrink: 0; /* Prevent arrow from shrinking */
+  align-self: center; /* Center vertically within flex container */
+}
+
+/* Adjust spacing between arrow and text */
+.post-nav__item--prev .post-nav__full-title .nav-arrow {
+  margin-right: 8px;
+}
+
+.post-nav__item--next .post-nav__full-title .nav-arrow {
+  margin-left: 8px;
+}
+
+
+
+/* Menu button wrapper to ensure proper tooltip positioning */
+.menu-button-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+

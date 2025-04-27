@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 import { onPageRender } from "../utils/index/index"
 import pifagoras from "../img/pifagoras-2.png"
 import styled from "styled-components"
+import { FaHome, FaBook } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import AnimatedButton from "../components/animated-button/animated-button"
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -53,10 +55,28 @@ class IndexPage extends React.Component {
               </span>
             </blockquote>
           </div>
+          <div className="header">
+            {/* Desktop: Animated Button */}
+            <div className="desktop-nav">
+              <AnimatedButton>
+                <StyledLink to="/blog/">
+                  <div className="button-content">
+                    <FaBook className="desktop-book-icon" />
+                    Go to Blog
+                  </div>
+                </StyledLink>
+              </AnimatedButton>
+            </div>
 
-          <StyledLink to="/blog/">
-            <Button className="button">Go to Blog</Button>
-          </StyledLink>
+            {/* Mobile: Simple Icon */}
+            <div className="mobile-nav">
+              <Link to="/blog/" className="styled-link">
+                <div className="book-icon-button">
+                  <FaBook className="book-icon" />
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </Layout>
     )

@@ -1,0 +1,118 @@
+.date-range-selector {
+  position: relative;
+}
+
+.calendar-icon {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.calendar-icon:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-hover);
+  transform: translateY(-1px);
+}
+
+.calendar-icon:active {
+  transform: translateY(0px);
+}
+
+.calendar-icon:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-blue-light);
+}
+
+.date-picker-popup {
+  position: fixed;
+  z-index: 9999;
+  background: var(--color-background-primary);
+  border-radius: 8px;
+  box-shadow: var(--shadow-medium);
+  padding: 16px;
+  min-width: 280px;
+}
+
+/* Media query for positioning */
+@media (max-width: 480px) {
+  .date-picker-popup {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+}
+
+.date-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.date-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date-input-group label {
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.date-input-group input {
+  padding: 8px;
+  border: 1px solid var(--color-lightgrey);
+  border-radius: 4px;
+  font-size: var(--font-size-small);
+}
+
+.date-picker-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.date-picker-actions button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: var(--font-size-small);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.date-picker-actions button:first-child {
+  background: none;
+  border: 1px solid var(--color-lightgrey);
+}
+
+.date-picker-actions button:last-child {
+  background: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  color: white;
+}
+
+.date-picker-actions button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+

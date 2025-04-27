@@ -1,0 +1,10 @@
+.paperclip {
+    position: absolute;
+    /* top: -2px;
+    right: 8px; */
+    font-size: 1.2em;
+    transform: rotate(90deg); /* Make it vertical */
+    opacity: 0.8;
+    pointer-events: none;
+    color: var(--color-blue);
+}
