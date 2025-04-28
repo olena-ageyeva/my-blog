@@ -6,14 +6,14 @@ export const onPageRender = () => {
   var sphere = false
   var shape = "cube"
 
-  setTimeout(function() {
-    document.querySelector("#wireframe").addEventListener("click", function() {
+  setTimeout(function () {
+    document.querySelector("#wireframe").addEventListener("click", function () {
       wireframe = !wireframe
       objMaterial.wireframe = wireframe
       scene.remove(obj)
       scene.add(obj)
     })
-    document.querySelector("#shape").addEventListener("click", function() {
+    document.querySelector("#shape").addEventListener("click", function () {
       scene.remove(obj)
       sphere = !sphere
       if (shape === "ico") {

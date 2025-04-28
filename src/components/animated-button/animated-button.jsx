@@ -1,9 +1,9 @@
 import React from "react"
 import "./animated-button.css"
 
-const AnimatedButton = ({children}) => {
+const AnimatedButton = ({children, ...rest}) => {
     return (
-        <div className="animated-button">
+        <div className="animated-button" {...rest}>
             <div class="center">
                 <div class="button" onclick="void(0);">
                     <span>{children}</span>

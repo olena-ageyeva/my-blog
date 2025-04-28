@@ -62,7 +62,7 @@
 /* Desktop button icon styles */
 .desktop-home-icon {
   font-size: 1.2rem;
-  color: var(--color-blue);
+  color: var(--color-text-secondary);
   margin-right: 8px;
   vertical-align: middle;
 }

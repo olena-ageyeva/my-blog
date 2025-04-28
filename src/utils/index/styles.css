@@ -257,7 +257,7 @@ h6 {
 /* Desktop button icon styles for book icon */
 .desktop-book-icon {
   font-size: 1.2rem;
-  color: var(--color-blue);
+  color: var(--color-text-secondary);
   margin-right: 8px;
   vertical-align: middle;
 }
@@ -796,6 +796,49 @@ main div h3 {
   }
 }
 
+a .button-content {
+  color: var(--color-text-secondary);
+}
+
+.controls {
+  /* display: flex; */
+  position: absolute;
+  padding: var(--spacing-medium);
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+}
+
+.mobile-controls {
+  display: none;
+}
+
+.cube-icon {
+  font-size: 1.2em;
+  margin: 0 8px 6px;
+  line-height: 1.2;
+  vertical-align: middle;
+  color: var(--color-text-secondary);
+}
+
+.cube-icon-big {
+  font-size: 1.5em;
+}
+
+.cube-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-block: 4px;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -810,6 +853,23 @@ main div h3 {
   .header {
     justify-content: space-between;
     margin-bottom: calc(var(--spacing-medium)*2);
+  }
+
+  .cube-icon {
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1.2;
+    vertical-align: middle;
+    color: var(--color-white);
+  }
+
+  .mobile-controls {
+    display: block;
+
+  }
+
+  .desktop-controls {
+    display: none;
   }
 
   .bio-container {

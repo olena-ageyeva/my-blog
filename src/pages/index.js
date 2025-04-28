@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { onPageRender } from "../utils/index/index"
 import pifagoras from "../img/pifagoras-2.png"
 import styled from "styled-components"
-import {  FaBook } from "react-icons/fa"
+import { FaBook, FaCaretUp, FaCube, FaCubes } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,9 +38,39 @@ class IndexPage extends React.Component {
         <div className="home">
           <div id="app">
             <div className="controls">
-              <Button className="button" id="wireframe">frame</Button>
-              <Button className="button" id="shape">shape</Button>
+              <span id="wireframe">
+                <span className="desktop-controls">
+                  <AnimatedButton >
+                  <FaCubes className="cube-icon" />
+                    frame</AnimatedButton>
+                </span>
+                <span className="mobile-controls">
+                  <button className="cube-icon-button">
+                    <FaCubes className="cube-icon" />
+                  </button>
+                </span>
+              </span>
+              <span id="shape">
+                <span className="desktop-controls">
+                  <AnimatedButton ><FaCube className="cube-icon" />
+                     shape</AnimatedButton>
+                </span>
+                <span className="mobile-controls">
+                  <button className="cube-icon-button">
+                    <FaCube className="cube-icon" />
+                  </button>
+                </span>
+              </span>
+
             </div>
+            {/* <div className="mobile-controls controls">
+              <button className="cube-icon-button wireframe" id="wireframe">
+                <FaCubes className="cube-icon" />
+              </button>
+              <button className="cube-icon-button shape">
+                <FaCube className="cube-icon" />
+              </button>
+            </div> */}
           </div>
           <div className="quote-wrapper">
             <img src={pifagoras} alt="Author" className="author-image" />
