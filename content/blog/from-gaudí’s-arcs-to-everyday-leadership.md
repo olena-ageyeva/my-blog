@@ -69,7 +69,7 @@ You can choose to be part of that revolution — or stand in its way.
 I know where I stand.
 
 > Once, a colleague said about the transformations I led:
-> ***“**We don’t always agree—but most likely, she’s right.**”***
+> **“**We don’t always agree—but most likely, she’s right.**”**
 >
 > It took me a year of hard work to earn that kind of trust.
 > Yes, we disagreed—a lot.
