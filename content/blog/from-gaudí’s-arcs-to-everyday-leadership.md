@@ -1,7 +1,7 @@
 ---
 path: gaudi
 date: 2025-05-02T11:54:17.875Z
-title: From Gaudí’s Arcs to Everyday Leadership
+title: 🏰From Gaudí’s Arcs to Everyday Leadership
 description: A visit to La Sagrada Família reminded me that true innovation
   comes from challenging “good enough,” and as a leader, I strive to champion
   bold ideas—even when they seem unconventional.
