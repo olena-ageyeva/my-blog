@@ -20,14 +20,6 @@ export default function HTML(props) {
 
         {props.headComponents}
       </head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P8R0XLH57E"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'G-P8R0XLH57E');
-      </script>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
