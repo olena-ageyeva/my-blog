@@ -19,14 +19,20 @@ exports.onRenderBody = ({ setPostBodyComponents }) => {
       dangerouslySetInnerHTML: {
         __html: `
           try {
-            var sc_project = 13133304;
-            var sc_invisible = 1;
-            var sc_security = "065fb3a1";
-            var scJsHost = "https://";
+          var sc_project = 13133304;
+          var sc_invisible = 1;
+          var sc_security = "065fb3a1";
+          var scJsHost = "https://";
 
-            // Create a dummy function that does nothing
-            window._statcounter = function() {};
-          } catch(e) {
+          (function() {
+            var sc = document.createElement("script");
+            sc.type = "text/javascript";
+            sc.async = true;
+            sc.src = scJsHost + "statcounter.com/counter/counter.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(sc, s);
+          })();
+          catch(e) {
             // Silent catch - do nothing
           }
         `
