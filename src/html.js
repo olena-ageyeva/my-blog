@@ -44,7 +44,6 @@ Made Easy - Statcounter" href="https://statcounter.com/"
             alt="Web Analytics Made Easy - Statcounter"
             referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
         {/* End of Statcounter Code */}
-        <a href="https://statcounter.com/p13133304/?guest=1">View My Stats</a>
       </body>
     </html>
   )
