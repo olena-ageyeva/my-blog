@@ -24,6 +24,22 @@ const Layout = ({ title, children }) => {
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> */}
       </Footer>
+              {/* Default Statcounter code for olena-ageyeva https://olena-ageyeva.netlify.app/ */}
+              <script type="text/javascript">
+          var sc_project=13133304;
+          var sc_invisible=1;
+          var sc_security="065fb3a1";
+        </script>
+        <script type="text/javascript"
+          src="https://www.statcounter.com/counter/counter.js" async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/13133304/0/065fb3a1/1/" alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade" />
+        </a>
+        </div>
+        </noscript>
+        {/* End of Statcounter Code */}
+        <a href="https://statcounter.com/p13133304/?guest=1">View My Stats</a>
     </Wrapper>
   )
 }
