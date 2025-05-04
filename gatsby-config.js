@@ -1,3 +1,4 @@
+const GOOGLE_ANALYTICS_ID = process.env.GATSBY_GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
@@ -114,8 +115,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // edit below
-        trackingIds: [`G-P8R0XLH57E`],
+        trackingIds: [GOOGLE_ANALYTICS_ID],
         gtagConfig: {
           anonymize_ip: true,
         },
@@ -127,7 +127,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: ["G-P8R0XLH57E"],
+        trackingIds: [GOOGLE_ANALYTICS_ID],
         pluginConfig: {
           head: true,
         },
