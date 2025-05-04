@@ -34,15 +34,15 @@ export default function HTML(props) {
           var sc_invisible=1;
           var sc_security="065fb3a1";
         </script>
-        <script type="text/javascript"
-          src="https://www.statcounter.com/counter/counter.js"
-          async></script>
-        <noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-          target="_blank"><img class="statcounter"
-            src="https://c.statcounter.com/13133304/0/065fb3a1/1/"
-            alt="Web Analytics Made Easy - Statcounter"
-            referrerPolicy="no-referrer-when-downgrade" /></a></div></noscript>
+        <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async>
+        </script>
+        <noscript>
+          <div class="statcounter">
+            <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank">
+              <img class="statcounter" src="https://c.statcounter.com/13133304/0/065fb3a1/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade" />
+            </a>
+          </div>
+        </noscript>
         {/* End of Statcounter Code */}
       </body>
     </html>
