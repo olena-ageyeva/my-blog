@@ -67,7 +67,7 @@ const DateRangeSelector = ({ earliestDate, initialDateRange, onDateRangeChange }
         aria-label="Select date range"
         type="button"
       >
-        📆
+        <span role="img" aria-label="calendar">📆</span>
       </button>
 
       {isOpen && ReactDOM.createPortal(

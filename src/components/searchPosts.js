@@ -23,7 +23,7 @@ const SearchedPosts = ({ results }) =>
             <h3>
               {title}
             </h3>
-            <small>{date} • ⏱️ {timeToRead} min read</small>
+            <small>{date} • <span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
             <p className="post-description">
               {description || excerpt}
               <span className="read-more">Read More
@@ -51,7 +51,7 @@ const AllPosts = ({ posts }) => (
             <h3>
               {title}
             </h3>
-            <small>{node.frontmatter.date} • ⏱️ {timeToRead} min read</small>
+            <small>{node.frontmatter.date} •<span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
             <p className="post-description">
               {node.frontmatter.description || node.excerpt}
               <span className="read-more">Read More

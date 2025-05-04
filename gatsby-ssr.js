@@ -20,7 +20,8 @@ exports.onRenderBody = ({ setPostBodyComponents }) => {
         __html: `
           try {
           var sc_project = 13133304;
-          var sc_invisible = 1;
+          var sc_invisible = 0;
+          var sc_text=2;
           var sc_security = "065fb3a1";
           var scJsHost = "https://";
 

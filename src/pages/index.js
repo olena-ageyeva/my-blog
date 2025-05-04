@@ -3,11 +3,10 @@ import { Link } from "gatsby"
 import { onPageRender } from "../utils/index/index"
 import pifagoras from "../img/pifagoras-2.png"
 import styled from "styled-components"
-import { FaBook, FaCaretUp, FaCube, FaCubes } from "react-icons/fa"
+import { FaBook, FaCube, FaCubes } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 import AnimatedButton from "../components/animated-button/animated-button"
 
 const StyledLink = styled(Link)`
