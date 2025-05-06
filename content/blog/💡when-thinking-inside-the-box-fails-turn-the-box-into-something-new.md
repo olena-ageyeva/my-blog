@@ -68,7 +68,7 @@ It’s a reminder that:
 
 So next time you’re stuck in a maze of overengineered solutions, zoom out. Maybe the problem isn’t unsolvable. Maybe it’s just misunderstood.
 
-Next time you're spinning up another dashboard to track 14 KPIs on “innovation,” ask yourself:\
+Next time you're spinning up another dashboard to track 14 KPIs on “innovation,” ask yourself:
 🤔 *Is this helping… or is it just a fancier box?*
 
 Sometimes, the smartest move is to set the box on fire (metaphorically), roast some marshmallows, and sketch a new idea on a napkin.
