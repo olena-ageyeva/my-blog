@@ -13,7 +13,7 @@ Some problems are just waiting to be overcomplicated. We throw tools at them. We
 
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Funify%2Fvideos%2F2148792732199412%2F&show_text=false&width=332&t=0" width="332" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
-That’s the vibe of this  video gem.[](https://www.facebook.com/unify/videos/2148792732199412/). What looks like a failure of design becomes a masterclass in simplicity. No AI. No multi-cloud orchestration. Just one clever pivot that makes you say, “Oh. Well that was obvious… eventually.”
+That’s the vibe of this  video gem.[](https://www.facebook.com/unify/videos/2148792732199412/) What looks like a failure of design becomes a masterclass in simplicity. No AI. No multi-cloud orchestration. Just one clever pivot that makes you say, “Oh. Well that was obvious… eventually.”
 
 The solution feels *obvious* only after you've seen it—like all great ideas do.
 
@@ -23,7 +23,7 @@ It reminded me of a powerful insight from *Team of Teams* by Gen. Stanley McChry
 
 In tightly controlled systems, where roles are clearly defined and procedures are optimized to the decimal, innovation often becomes the first casualty. We may feel productive—but only in the way a hamster does in a wheel.
 
-Translation? You can be highly efficient at running the wrong direction .or not moving at all. 
+Translation? You can be highly efficient at running the wrong direction or not moving at all. 
 
 ### McKinsey Says You're Probably Doing Too Much
 
