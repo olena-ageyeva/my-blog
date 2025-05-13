@@ -8,7 +8,7 @@ description: A practical look at why breaking work into smaller stories—not
 ![](../assets/1707961367939.jpg)
 
 > *“Estimating tasks will slow you down. Don’t do it.”*
->﻿
+>
 > — Jeff Sutherland, Co-Creator of Scrum
 
 If you've ever argued for 20 minutes over whether something is a 3-point or a 5-point story, only to rework it mid-sprint anyway—congrats, you've experienced the full inefficiency of Agile estimation rituals.
@@ -25,7 +25,7 @@ And even **Ron Jeffries**, one of the original XP authors and possible inventor 
 
 > *“I may have invented story points. If I did, I’m sorry now.”*
 >
-> *-﻿ [Story Points Revisited by Ron Jeffries](https://ronjeffries.com/articles/019-01ff/story-points/Index.html)*
+> *\-﻿ [Story Points Revisited by Ron Jeffries](https://ronjeffries.com/articles/019-01ff/story-points/Index.html)*
 
 The message is clear: *we’re not supposed to be sizing work for the sake of predictability—we’re supposed to be delivering value.*
 
@@ -59,6 +59,25 @@ If a piece of work is too large to deliver in a couple of days, then the risk is
 
 - - -
 
+### Spotify's Approach: Flow Over Forecasting
+
+At **Spotify**, many squads have moved away from story points altogether. Instead of trying to predict how long something will take, they focus on **how predictably small stories flow through the system**. Using lightweight Kanban-style workflows, teams:
+
+* Break work into small, well-scoped stories
+* Track **story count and cycle time**, not point velocity
+* Use **cumulative flow diagrams** to monitor delivery trends
+* Treat estimation as overhead and focus on slicing scope instead
+
+With cross-functional squads empowered to choose their own methods, Spotify teams found that **shrinking work and visualizing flow** created better outcomes than trying to assign numbers to uncertainty.
+
+As a result, many teams deliver more predictably—**without spending hours estimating**, debating Fibonacci numbers, or worrying about whether a story is a 3 or a 5.
+
+**What Spotify Teaches Us**
+
+Spotify’s approach reinforces several powerful Agile principles in practice. By balancing autonomy with alignment, squads are empowered to decide whether or not to estimate, based on what works best for their workflow. Rather than obsessing over forecasting, teams focus on flow—using cycle time and throughput as more practical and meaningful indicators of progress than story point velocity. Small, consistently sized stories improve predictability and reduce the need for sizing debates altogether. Most importantly, stakeholder trust is earned not through perfectly predicted outcomes, but through transparency, steady iteration, and visible delivery.
+
+- - -
+
 ### What to Do Instead of Estimating
 
 No, you don't need to throw away all process and hope for the best. Here’s what modern, pragmatic Agile teams do:
@@ -86,7 +105,7 @@ Test-first or ATDD approaches work great here. Writing just enough code to meet 
 
 Once again. Every story should:
 
-* Identify **who** benefits: *As a [user or role]…*
+* Identify **who** benefits: *As a \[user or role]…*
 * Define **what** they need: *I want…*
 * Explain **why** it matters: *So that…*
 * Include **short, testable acceptance criteria**
