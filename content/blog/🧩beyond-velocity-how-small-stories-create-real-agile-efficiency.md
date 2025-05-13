@@ -16,7 +16,7 @@ For years, we’ve convinced ourselves that assigning numbers to work somehow ma
 
 - - -
 
-## A Quick Clarification
+### A Quick Clarification
 
 Yes, Jeff Sutherland’s quote refers to **task estimation**, not story points specifically. Fair enough. But the principle holds.
 
@@ -30,7 +30,7 @@ The message is clear: *we’re not supposed to be sizing work for the sake of pr
 
 - - -
 
-## Why Estimating Breaks Down
+### Why Estimating Breaks Down
 
 Software development isn’t factory work. Most of it falls into the realm of creative, knowledge-based problem solving. As such, estimates fall apart for a few predictable reasons:
 
@@ -43,7 +43,7 @@ So when someone says, “this story will take two weeks,” it usually translate
 
 - - -
 
-## A Better Strategy: Make Work Smaller
+### A Better Strategy: Make Work Smaller
 
 Instead of wrestling complexity into 13-point packages, **break it down** until it fits comfortably into one to two days of effort. That’s not just a productivity trick—it’s an uncertainty-reduction strategy.
 
@@ -58,7 +58,7 @@ If a piece of work is too large to deliver in a couple of days, then the risk is
 
 - - -
 
-## What to Do Instead of Estimating
+### What to Do Instead of Estimating
 
 No, you don't need to throw away all process and hope for the best. Here’s what modern, pragmatic Agile teams do:
 
@@ -72,7 +72,7 @@ Estimation feels like risk management. But most risk lives in complexity, depend
 
 - - -
 
-## How to Write Smaller Stories (Without Losing Your Mind)
+### How to Write Smaller Stories (Without Losing Your Mind)
 
 Small stories are more than tasks. They're the minimum slice of value that moves something forward. A few practical tips:
 
@@ -95,7 +95,7 @@ If you can’t find value in a story, it’s not a story. It’s a task. And Agi
 
 - - -
 
-## When Estimation Still Feels Necessary
+### When Estimation Still Feels Necessary
 
 If leadership insists on forecasts, offer historical data:
 
@@ -107,7 +107,7 @@ No one's saying burn your planning board. But if your Agile process feels more l
 
 - - -
 
-## The Bottom Line
+### The Bottom Line
 
 Agile was never about guessing better. It was about **delivering faster, learning continuously, and adjusting frequently**.
 
