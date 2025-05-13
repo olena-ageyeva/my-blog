@@ -7,7 +7,8 @@ description: A practical look at why breaking work into smaller stories—not
 ---
 ![](../assets/1707961367939.jpg)
 
-> *“Estimating tasks will slow you down. Don’t do it.”*\
+> *“Estimating tasks will slow you down. Don’t do it.”*
+>﻿
 > — Jeff Sutherland, Co-Creator of Scrum
 
 If you've ever argued for 20 minutes over whether something is a 3-point or a 5-point story, only to rework it mid-sprint anyway—congrats, you've experienced the full inefficiency of Agile estimation rituals.
