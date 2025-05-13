@@ -24,7 +24,7 @@ And even **Ron Jeffries**, one of the original XP authors and possible inventor 
 
 > *“I may have invented story points. If I did, I’m sorry now.”*
 >
-> *\-﻿ [Story Points Revisited by Ron Jeffries](https://ronjeffries.com/articles/019-01ff/story-points/Index.html)*
+> *-﻿ [Story Points Revisited by Ron Jeffries](https://ronjeffries.com/articles/019-01ff/story-points/Index.html)*
 
 The message is clear: *we’re not supposed to be sizing work for the sake of predictability—we’re supposed to be delivering value.*
 
