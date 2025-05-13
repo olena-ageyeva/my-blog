@@ -35,9 +35,9 @@ The message is clear: *we’re not supposed to be sizing work for the sake of pr
 
 Software development isn’t factory work. Most of it falls into the realm of creative, knowledge-based problem solving. As such, estimates fall apart for a few predictable reasons:
 
-* **Parkinson’s Law**: If you estimate five days, it will take five days—at least.
+* **Parkinson’s Law**: If you estimate five days, it will take five days—at least. Work expands to fill the time available.
 * **Optimism Bias**: Developers are generally optimistic (or at least hopeful) creatures.
-* **Uncertainty**: The more unknowns packed into a story, the less your estimate means.
+* **Uncertainty**: Every team, toolset, and project context is different—especially in creative and knowledge work. The more unknowns packed into a story, the less your estimate means.
 * **Inaccuracy**: Humans are simply not good at estimating anything bigger than about 2 days of work.
 
 So when someone says, “this story will take two weeks,” it usually translates to, “somewhere between 8 days and 8 weeks.” Which, as far as planning goes, isn’t particularly useful.
