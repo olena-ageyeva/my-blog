@@ -86,7 +86,7 @@ Test-first or ATDD approaches work great here. Writing just enough code to meet 
 
 Once again. Every story should:
 
-* Identify **who** benefits: *As a \[user or role]…*
+* Identify **who** benefits: *As a [user or role]…*
 * Define **what** they need: *I want…*
 * Explain **why** it matters: *So that…*
 * Include **short, testable acceptance criteria**
@@ -114,6 +114,6 @@ Agile was never about guessing better. It was about **delivering faster, learnin
 
 Shrinking stories helps you do all of those things—without the estimation overhead. And in a world where priorities shift, complexity hides in the details, and feedback is gold, that’s a competitive advantage.
 
-So next time someone asks for an estimate, try this:\
-**“If it’s too big to deliver in two days, it’s too big to estimate.”**\
+So next time someone asks for an estimate, try this:
+**“If it’s too big to deliver in two days, it’s too big to estimate.”**
 Then break it down, and build it better.
