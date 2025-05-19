@@ -5,6 +5,7 @@ title: "🚀Quantity vs. Quality: Rethinking the Path to Excellence in Tech"
 description: An exploration of why delivering more—faster—often leads to better
   outcomes in tech, grounded in Agile principles, Atomic Habits, and real-world
   examples.
+status: public
 ---
 When we think about producing high-quality work, the instinct is often to slow down, plan meticulously, and perfect every detail before sharing it with the world. But in fast-paced, innovation-driven fields like software development, this mindset can actually **get in the way of excellence**.
 
