@@ -60,6 +60,10 @@ Newsflash: Your comfort zone is sabotaging you. And let’s be clear: when the c
 * Ignoring ideas just because you don’t like the messenger = 🚩🚩
 * If no one challenges ideas anymore, your team has entered the cozy but hazardous conforming stage. Danger level: Kodak/Blockbuster/BlackBerry.
 
+Not Convinced? Watch Asch's Conformity Experiment
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_IUlV5KI5B0?si=eoJqL5-bLpD702Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 - - -
 
 ### TL;DR (Too Long, Didn't Rebel):
