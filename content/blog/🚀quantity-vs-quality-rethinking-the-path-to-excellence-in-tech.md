@@ -7,6 +7,8 @@ description: An exploration of why delivering more—faster—often leads to bet
   examples.
 status: draft
 ---
+![](../assets/quantity-beats-quality.png)
+
 Ever caught yourself staring obsessively at a tiny detail, wondering if the alignment of your buttons could singlehandedly ruin your company's stock price? We've all been there—meticulously planning, endlessly tweaking, convinced perfection is just one more Jira ticket away. But here's a scandalous secret for you: **in tech, your perfectionism might actually be sabotaging your greatness**.
 
 Yeah, seriously.
