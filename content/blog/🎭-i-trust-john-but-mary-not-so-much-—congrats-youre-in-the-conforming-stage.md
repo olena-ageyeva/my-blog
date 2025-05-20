@@ -7,6 +7,9 @@ description: Insightful look at the dangers of trusting people over
   ideas—featuring cautionary tales from Kodak, Blockbuster, and BlackBerry, and
   practical tips for breaking out of the cozy but risky conforming stage.
 ---
+![](../assets/edisonsprojectteamperformancecurve.png)
+
+\
 Have you ever sat through a meeting, nodding vigorously at John's half-baked idea simply because, "Hey, it's John, right? John's cool!" Or caught yourself squinting suspiciously at Mary’s (brilliant, it turns out) proposal, whispering silently, "Hmm... what’s her angle?"
 
 Congratulations! You've officially entered what psychology lovingly calls the **"Conforming Stage."**
@@ -48,11 +51,6 @@ Newsflash: Your comfort zone is sabotaging you. And let’s be clear: when the c
 * **Normalize Idea-Based Critique**: Next time  Katie—or anyone—shares an idea, pretend you don't recognize who's speaking and just focus on the words. Weird trick, but it works.
 * **Encourage Gentle Rebellion**: If everyone nods too quickly, raise your hand and say, "Just for fun, let's pretend  Katie’s idea came from someone we don't know. Would we still love it?" Cue awkward silence and breakthrough moments.
 * **Celebrate (Healthy) Conflict**: Regularly reward the "rebels" who dare to disagree politely. And remember, the operative word is "politely"—let’s not start a riot, people.
-
-  a﻿nd even more
-* Encourage Psychological Safety: Build an environment where team members feel comfortable voicing dissent, questioning assumptions, and challenging consensus—regardless of who presents the idea.
-* Institutionalize Idea-Based Meritocracy: Emphasize that good ideas are independent of who proposes them. Implement processes that reward critical examination and data-driven decision-making.
-* Promote Diverse Perspectives: Actively solicit input from a variety of backgrounds and experiences, ensuring no voice dominates simply due to seniority, familiarity, or social preference.
 
 - - -
 
