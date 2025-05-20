@@ -62,7 +62,7 @@ Newsflash: Your comfort zone is sabotaging you. And let’s be clear: when the c
 
 - - -
 
-## 📊 Still Not Convinced? Check Asch's Conformity Experiment
+## Still Not Convinced? Check Asch's Conformity Experiment
 
 In Solomon Asch’s famous conformity experiment, **75% of participants** went along with obviously incorrect answers just because the group did. Only about **25% of participants consistently stood their ground**. Think about that: three-quarters of us might nod at a clearly bad idea simply because everyone else does.
 
