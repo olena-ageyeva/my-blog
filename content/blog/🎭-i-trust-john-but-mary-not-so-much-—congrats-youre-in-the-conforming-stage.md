@@ -9,7 +9,6 @@ description: Insightful look at the dangers of trusting people over
 ---
 ![](../assets/edisonsprojectteamperformancecurve.png)
 
-\
 Have you ever sat through a meeting, nodding vigorously at John's half-baked idea simply because, "Hey, it's John, right? John's cool!" Or caught yourself squinting suspiciously at Mary’s (brilliant, it turns out) proposal, whispering silently, "Hmm... what’s her angle?"
 
 Congratulations! You've officially entered what psychology lovingly calls the **"Conforming Stage."**
@@ -66,9 +65,9 @@ Newsflash: Your comfort zone is sabotaging you. And let’s be clear: when the c
 
 In Solomon Asch’s famous conformity experiment, **75% of participants** went along with obviously incorrect answers just because the group did. Only about **25% of participants consistently stood their ground**. Think about that: three-quarters of us might nod at a clearly bad idea simply because everyone else does.
 
-Personally, I'm proud to say I belong to that stubborn 25% who never conform—no matter how much I like John or how strongly the group pushes. I trust my gut, not the cozy consensus. And history suggests that's often the right call.
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_IUlV5KI5B0?si=eoJqL5-bLpD702Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Personally, I'm proud to say I belong to that stubborn 25% who never conform—no matter how much I like John or how strongly the group pushes. I trust my gut, not the cozy consensus. And history suggests that's often the right call.
 
 - - -
 
@@ -77,3 +76,5 @@ Personally, I'm proud to say I belong to that stubborn 25% who never conform—n
 Feeling too comfortable around the conference table lately? It's probably time to shake things up. Embrace discomfort. Question your trust reflex. Otherwise, you might just become the next business school case study, and frankly, nobody wants to be in a PowerPoint slide titled: "When Comfort Killed Innovation."
 
 So, hey, Katie—and everyone else—let’s start politely disagreeing. Your business’s future might just depend on it.
+
+![](../assets/1747722010169.jpg)
