@@ -60,7 +60,13 @@ Newsflash: Your comfort zone is sabotaging you. And let’s be clear: when the c
 * Ignoring ideas just because you don’t like the messenger = 🚩🚩
 * If no one challenges ideas anymore, your team has entered the cozy but hazardous conforming stage. Danger level: Kodak/Blockbuster/BlackBerry.
 
-Not Convinced? Watch Asch's Conformity Experiment
+- - -
+
+## 📊 Still Not Convinced? Check Asch's Conformity Experiment
+
+In Solomon Asch’s famous conformity experiment, **75% of participants** went along with obviously incorrect answers just because the group did. Only about **25% of participants consistently stood their ground**. Think about that: three-quarters of us might nod at a clearly bad idea simply because everyone else does.
+
+Personally, I'm proud to say I belong to that stubborn 25% who never conform—no matter how much I like John or how strongly the group pushes. I trust my gut, not the cozy consensus. And history suggests that's often the right call.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_IUlV5KI5B0?si=eoJqL5-bLpD702Um" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
