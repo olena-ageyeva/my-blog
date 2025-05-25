@@ -6,6 +6,7 @@ description: Small things aren’t small when left unchecked. In code, like in
   buildings, neglect invites decay.This isn’t about perfection—it’s about
   intention. A messy codebase becomes a cultural message. What messages are your
   broken windows sending?
+visibility: private
 ---
 **🪟 Broken Window Theory: Addressing Small Issues Promptly**
 
