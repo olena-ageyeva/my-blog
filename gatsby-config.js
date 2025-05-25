@@ -45,6 +45,7 @@ module.exports = {
                   title
                   description
                   date(formatString: "MMMM DD, YYYY")
+                  visibility
                 }
               }
             }

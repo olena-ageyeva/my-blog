@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
       {
         allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
-           filter: { frontmatter: { date: { ne: null } } }
+          filter: { frontmatter: { date: { ne: null } } }
           limit: 1000
         ) {
           edges {
@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 date
+                visibility
               }
             }
           }
@@ -78,3 +79,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  createTypes(`
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter!
+    }
+
+    type MdxFrontmatter {
+      title: String
+      date: Date @dateformat
+      description: String
+      visibility: String
+    }
+  `);
+};

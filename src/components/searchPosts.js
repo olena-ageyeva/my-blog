@@ -16,11 +16,25 @@ const SearchedPosts = ({ results }) =>
       const excerpt = node.excerpt
       const slug = node.slug
       const timeToRead = node.timeToRead || 1
+      let visibilityIcon;
+      const visibility = node.frontmatter.visibility;
+      switch (visibility) {
+        case "public": visibilityIcon = '🌐';
+          break;
+        case "private": visibilityIcon = '🔒';
+          return null;
+        case "draft": visibilityIcon = '✏️';
+          return null;
+        default: visibilityIcon = '🔒';
+          break;
+      }
+
 
       return (
         <Link to={`/blog${slug}`} className="card-link">
           <div key={slug} className="blog-post-item--card">
             <h3>
+              <small><span className="visibility-icon">{visibilityIcon}</span></small>
               {title}
             </h3>
             <small>{date} • <span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
@@ -42,16 +56,31 @@ const SearchedPosts = ({ results }) =>
 
 const AllPosts = ({ posts }) => (
   <div style={{ margin: "20px 0 40px" }}>
-    {posts.map(({ node }) => {
-      const title = node.frontmatter.title || node.fields.slug
-      const timeToRead = node.fields.timeToRead || 1
+    {posts.map(({ node}) => {
+      let visibilityIcon;
+      const {frontmatter, fields, excerpt} = node;
+      const title = frontmatter.title || fields.slug
+      const timeToRead = fields.timeToRead || 1
+      const visibility = frontmatter.visibility || "public";
+      switch (visibility) {
+        case "public": visibilityIcon = '🌐';
+          break;
+        case "private": visibilityIcon = '🔒';
+          break;
+        case "draft": visibilityIcon = '✏️';
+          break;
+        default: visibilityIcon = '🔒';
+          break;
+      }
+
       return (
         <Link to={`/blog${node.fields.slug}`} className="card-link">
           <div key={node.fields.slug} className="blog-post-item--card">
             <h3>
+              {/* <small><span className="visibility-icon">{visibilityIcon}</span></small> */}
               {title}
             </h3>
-            <small>{node.frontmatter.date} •<span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
+            <small><span role="img" aria-label="visibility">{visibilityIcon}</span> {node.frontmatter.date} •<span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
             <p className="post-description">
               {node.frontmatter.description || node.excerpt}
               <span className="read-more">Read More
