@@ -6,6 +6,7 @@ description: "What started as a front-end best practices demo turned into a
   real-time duel with GitHub Copilot. I built a component, taught my teams, and
   sparred with AI—spoiler: I won most rounds, but Copilot made me faster anyway.
   AI isn’t the future of coding—it’s already here."
+visibility: private
 ---
 About a year ago, I set out to create a demo for my teams.
 The goal?
