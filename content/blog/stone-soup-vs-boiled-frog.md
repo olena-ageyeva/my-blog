@@ -4,6 +4,7 @@ date: 2020-09-19T03:01:55.770Z
 title: 🌱 Stone Soup vs Boiled Frog
 description: When you are try to catalyze change within your organization  are
   you doing good or bad? Is the decision subjective or objective?
+visibility: private
 ---
 ![](../assets/stoned-soup-2.jpg "soup")
 
