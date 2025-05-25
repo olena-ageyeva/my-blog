@@ -6,6 +6,7 @@ description: A visit to La Sagrada Família reminded me that true innovation
   comes from challenging “good enough,” and as a leader, I strive to champion
   bold ideas—even when they seem unconventional.
 status: private
+visibility: private
 ---
 ![La Sagrada Familia](../assets/chatgpt-image-may-2-2025-08_11_11-am.png "La Sagrada Familia")
 
