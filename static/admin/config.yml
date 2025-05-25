@@ -15,4 +15,11 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
+      - {
+          name: visibility,
+          label: Status,
+          widget: select,
+          options: ["public", "private", "draft"],
+          default: "public"
+        }
       - { name: body, label: Body, widget: markdown }
