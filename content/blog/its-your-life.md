@@ -4,6 +4,7 @@ date: 2020-09-11T21:36:40.866Z
 title: 🧭 It's Your Life
 description: Make no mistake, it is your career, and more importantly, It's Your
   Life. You own it.
+visibility: private
 ---
 ![](../assets/happy.jpg)
 
