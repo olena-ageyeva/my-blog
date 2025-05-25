@@ -6,6 +6,7 @@ description: Graduating with an EMBA and parenting a future Doctor of Economics?
   That’s what I call a high ROI. They say success is a journey, not a
   destination — but this one includes Barcelona and advanced grad degrees, so
   I’ll take both. ✈️🎓
+visibility: private
 ---
 ![Olena and Marsha](../assets/1688157810020.jpg "Olena and Marsha")
 
