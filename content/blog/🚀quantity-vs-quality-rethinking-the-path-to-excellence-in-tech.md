@@ -6,6 +6,7 @@ description: An exploration of why delivering more—faster—often leads to bet
   outcomes in tech, grounded in Agile principles, Atomic Habits, and real-world
   examples.
 status: draft
+visibility: public
 ---
 ![](../assets/quantity-beats-quality.png)
 
