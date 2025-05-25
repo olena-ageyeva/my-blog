@@ -6,6 +6,7 @@ description: Everyone wants to win—but not everyone builds the daily habits to
   actually get there. In this lighthearted take inspired by Atomic Habits, we
   explore why having a goal isn’t enough—and how building joyful, sustainable
   systems is what truly sets winners apart.
+visibility: public
 ---
 ![Goal vs System](../assets/goal-vs-system.png "Goal vs System")
 
