@@ -5,6 +5,7 @@ title: "🎯Takeaways from re:Invent 2024: The Art of Simplexity"
 description: Simplicity isn’t a shortcut—it’s a strategy. Here are my key
   takeaways from AWS re:Invent 2024 on mastering the art of “simplexity” in tech
   and design.
+visibility: private
 ---
 ![bull Picasso](../assets/picasso-bulls.jpg "bull Picasso")
 
