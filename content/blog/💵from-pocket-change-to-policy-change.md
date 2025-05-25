@@ -5,6 +5,7 @@ title: 💵From Pocket Change to Policy Change
 description: A personal story of how childhood lessons in pocket money and chore
   charts helped shape a future economist—now headed to Duke with an NSF
   Fellowship.
+visibility: private
 ---
 
 
