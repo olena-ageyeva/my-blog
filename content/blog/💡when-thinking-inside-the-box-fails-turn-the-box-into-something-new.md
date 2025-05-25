@@ -7,6 +7,7 @@ description: A playful yet insightful look at how innovation thrives when we
   boardroom. Featuring lessons from Team of Teams and McKinsey, this piece
   explores why simplicity, creativity, and empowered teams drive real progress.
 status: public
+visibility: public
 ---
 In today’s world of constant disruption, “thinking outside the box” has become more than a cliché—it's become a survival skill. But what if the real problem isn’t just the box… it's the belief that we're supposed to stay near it?
 
