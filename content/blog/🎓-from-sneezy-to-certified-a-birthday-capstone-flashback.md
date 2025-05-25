@@ -5,6 +5,7 @@ title: "🎓From Sneezy to Certified: A Birthday Capstone Flashback"
 description: Sick on my birthday, 7am Zoom call, time zone mix-up—classic
   capstone chaos. But honestly? Wouldn’t have missed it. Quantic has been
   ✨caffeine for my soul.
+visibility: private
 ---
 ![](../assets/cto.jpg)
 
