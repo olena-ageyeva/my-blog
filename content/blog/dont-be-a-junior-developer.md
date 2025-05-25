@@ -4,6 +4,7 @@ date: 2020-09-27T22:21:30.852Z
 title: 🚫 Delete ‘Junior’ From Your Title and Your Mind
 description: Don’t overestimate the world and underestimate yourself. You are
   better than you think.
+visibility: private
 ---
 **🚫 Don’t sell yourself short — and please stop calling yourself a “junior developer.”**  
 
