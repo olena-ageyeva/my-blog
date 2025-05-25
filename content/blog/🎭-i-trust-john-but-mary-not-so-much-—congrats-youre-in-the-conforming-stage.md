@@ -6,7 +6,7 @@ title: 🎭"I Trust John, but Mary? Not So Much..."—Congrats, You're in the
 description: Insightful look at the dangers of trusting people over
   ideas—featuring cautionary tales from Kodak, Blockbuster, and BlackBerry, and
   practical tips for breaking out of the cozy but risky conforming stage.
-visibility: private
+visibility: draft
 ---
 ![](../assets/edisonsprojectteamperformancecurve.png)
 
