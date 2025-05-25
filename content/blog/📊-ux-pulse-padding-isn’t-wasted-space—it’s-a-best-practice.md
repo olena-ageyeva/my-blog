@@ -5,6 +5,7 @@ title: "📊UX Pulse: Padding Isn’t Wasted Space—It’s a Best Practice"
 description: Think padding is just white space? Think again—it's structure,
   signal, and the secret to seamless UX. Good padding isn't extra; it's what
   makes a design feel right, even before users know why.
+visibility: private
 ---
 ![css_padding](../assets/1740871277428.jpg "css padding")
 
