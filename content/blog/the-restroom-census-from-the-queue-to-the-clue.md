@@ -5,6 +5,7 @@ title: "🚻The Restroom Census: From the Queue to the Clue"
 description: What happens when a data lover attends one of the world’s biggest
   tech events? They uncover a surprising "demographic report" in the most
   unexpected place.
+visibility: private
 ---
 ![](../assets/restroom-draft4.jpg)
 
