@@ -5,6 +5,7 @@ title: "🧩Beyond Velocity: How Small Stories Create Real Agile Efficiency"
 description: A practical look at why breaking work into smaller stories—not
   better estimates—is the real key to Agile efficiency.
 status: public
+visibility: public
 ---
 ![](../assets/1707961367939.jpg)
 
