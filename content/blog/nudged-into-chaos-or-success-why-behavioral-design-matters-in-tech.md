@@ -3,6 +3,7 @@ path: nudge
 date: 2025-01-25T05:00:00.000Z
 title: "🌀Nudged Into Chaos (or Success): Why Behavioral Design Matters in Tech"
 description: And how Agile can save your team from death by decision fatigue
+visibility: private
 ---
 Ever wonder why you can walk into a supermarket for "just milk" and leave with $82 of snacks and three types of cheese you don’t even like?
 
