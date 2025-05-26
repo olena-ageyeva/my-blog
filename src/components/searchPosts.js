@@ -1,11 +1,12 @@
 
 import React, { useState } from "react"
 import { Link } from "gatsby"
-// import styled from "styled-components"
 import { useFlexSearch } from "react-use-flexsearch"
 import * as queryString from "query-string"
+import { FaGlobe, FaPen, FaLock } from "react-icons/fa"
+import { useGlobalState } from "../context/GlobalContext"
 
-// import { rhythm } from "../utils/typography"
+
 
 const SearchedPosts = ({ results }) =>
   results.length > 0 ? (
@@ -16,16 +17,24 @@ const SearchedPosts = ({ results }) =>
       const excerpt = node.excerpt
       const slug = node.slug
       const timeToRead = node.timeToRead || 1
-      let visibilityIcon;
+      let VisibilityIcon;
       const visibility = node.frontmatter.visibility;
       switch (visibility) {
-        case "public": visibilityIcon = '🌐';
+        case "public":
+          //visibilityIcon = '🌐';
+          VisibilityIcon = <FaGlobe style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
-        case "private": visibilityIcon = '🔒';
-          return null;
-        case "draft": visibilityIcon = '✏️';
-          return null;
-        default: visibilityIcon = '🔒';
+        case "private":
+          //visibilityIcon = '🔒';
+          VisibilityIcon = <FaLock style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
+          break;
+        case "draft":
+          //visibilityIcon = '✏️';
+          VisibilityIcon = <FaPen style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
+          break;
+        default:
+          //visibilityIcon = '🔒';
+          VisibilityIcon = <FaLock style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
       }
 
@@ -34,14 +43,14 @@ const SearchedPosts = ({ results }) =>
         <Link to={`/blog${slug}`} className="card-link">
           <div key={slug} className="blog-post-item--card">
             <h3>
-              <small><span className="visibility-icon">{visibilityIcon}</span></small>
+              <small><span className="visibility-icon">{VisibilityIcon}</span></small>
               {title}
             </h3>
-            <small>{date} • <span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
+            <small>{VisibilityIcon} {date} • <span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
             <p className="post-description">
               {description || excerpt}
               <span className="read-more">Read More
-              <span class="nav-arrow right"></span>
+                <span class="nav-arrow right"></span>
               </span>
             </p>
           </div>
@@ -54,22 +63,31 @@ const SearchedPosts = ({ results }) =>
     </p>
   )
 
-const AllPosts = ({ posts }) => (
+const AllPosts = ({ posts, isLoggedIn }) => (
   <div style={{ margin: "20px 0 40px" }}>
-    {posts.map(({ node}) => {
-      let visibilityIcon;
-      const {frontmatter, fields, excerpt} = node;
+    {posts.map(({ node }) => {
+
+      const { frontmatter, fields } = node;
+      const visibility = node.frontmatter.visibility;
+      if (!isLoggedIn && visibility !== "public") {
+        return null;
+      }
       const title = frontmatter.title || fields.slug
       const timeToRead = fields.timeToRead || 1
-      const visibility = frontmatter.visibility || "public";
+      let VisibilityIcon;
+
       switch (visibility) {
-        case "public": visibilityIcon = '🌐';
+        case "public":
+          VisibilityIcon = <FaGlobe style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
-        case "private": visibilityIcon = '🔒';
+        case "private":
+          VisibilityIcon = <FaLock style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
-        case "draft": visibilityIcon = '✏️';
+        case "draft":
+          VisibilityIcon = <FaPen style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
-        default: visibilityIcon = '🔒';
+        default:
+          VisibilityIcon = <FaLock style={{ marginRight: '6px', fontSize: '0.8rem', verticalAlign: `middle`, marginBottom: `4px` }} />
           break;
       }
 
@@ -80,11 +98,11 @@ const AllPosts = ({ posts }) => (
               {/* <small><span className="visibility-icon">{visibilityIcon}</span></small> */}
               {title}
             </h3>
-            <small><span role="img" aria-label="visibility">{visibilityIcon}</span> {node.frontmatter.date} •<span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
+            <small><span role="img" aria-label="visibility">{VisibilityIcon}</span>{node.frontmatter.date} •<span role="img" aria-label="clock">⏱️</span> {timeToRead} min read</small>
             <p className="post-description">
               {node.frontmatter.description || node.excerpt}
               <span className="read-more">Read More
-              <span class="nav-arrow right read-more-icon"></span>
+                <span class="nav-arrow right read-more-icon"></span>
               </span>
             </p>
           </div>
@@ -97,6 +115,9 @@ const AllPosts = ({ posts }) => (
 const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
   const { search } = queryString.parse(location.search)
   const [query, setQuery] = useState(search || "")
+  const { state } = useGlobalState()
+  const { isLoggedIn } = state;
+
 
   const results = useFlexSearch(
     query,
@@ -127,7 +148,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
           }}
         />
       </div>
-      {query ? <SearchedPosts results={results} /> : <AllPosts posts={posts} />}
+      {query ? <SearchedPosts results={results} isLoggedIn={isLoggedIn} /> : <AllPosts posts={posts} isLoggedIn={isLoggedIn} />}
     </>
   )
 }

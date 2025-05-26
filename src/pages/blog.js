@@ -13,7 +13,9 @@ import "./blog.css"
 const Blog = (props) => {
   const { data, navigate, location } = props
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMdx.edges
+  const { state } = useGlobalState()
+  const { isAdmin } = state;
+  const posts = isAdmin ? data.allMdx.edges : data.allMdx.edges.filter(p => p.node.frontmatter.visibility !== "draft").sort((a, b) => new Date(b.node.frontmatter.date));
   const localSearchBlog = data.localSearchBlog
   const { setNavAnimation, togglePanel } = useGlobalState()
 

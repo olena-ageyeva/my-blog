@@ -583,7 +583,7 @@ main div h3 {
 .bio-title {
   font-size: calc(var(--font-size-body) * 0.9);
   /* Slightly smaller than post text */
-  line-height: 1.5em;
+  line-height: 1.2em;
   margin: 0;
 }
 

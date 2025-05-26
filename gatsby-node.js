@@ -33,13 +33,51 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
+
+
     // Create blog posts pages.
-    const posts = result.data.allMdx.edges
+    const adminPosts = result.data.allMdx.edges
+    const posts = adminPosts.filter(p => p.node.frontmatter.visibility !== "draft").sort((a, b) => new Date(b.node.frontmatter.date));
+
+    // Helper: create a map of slug -> index
+    const createSlugIndexMap = (postList) =>
+      Object.fromEntries(postList.map((p, i) => [p.node.fields.slug, i]));
+
+    const publicPosts = posts.filter(p => p.node.frontmatter.visibility === "public").sort((a, b) => new Date(b.node.frontmatter.date));
+
+
+    const publicIndexMap = createSlugIndexMap(publicPosts);
+    const adminIndexMap = createSlugIndexMap(adminPosts);
 
     posts.forEach((post, index) => {
       // For DESC order: previous = newer post (index - 1), next = older post (index + 1)
       const next = index === 0 ? null : posts[index - 1].node
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
+
+      const slug = post.node.fields.slug;
+
+      // Public neighbors (only if this post is public)
+      const isPublic = post.node.frontmatter.visibility === "public";
+      let prevPublic = null;
+      let nextPublic = null;
+
+      if (isPublic) {
+        const publicIndex = publicIndexMap[slug];
+        prevPublic = publicIndex === publicPosts.length - 1 ? null : publicPosts[publicIndex + 1].node;
+        nextPublic = publicIndex === 0 ? null : publicPosts[publicIndex - 1].node;
+      }
+
+      // Admin neighbors
+      const adminIndex = adminIndexMap[slug];
+      const prevAdmin =
+        adminIndex !== undefined && adminIndex < adminPosts.length - 1
+          ? adminPosts[adminIndex + 1].node
+          : null;
+      const nextAdmin =
+        adminIndex !== undefined && adminIndex > 0
+          ? adminPosts[adminIndex - 1].node
+          : null;
+
 
       createPage({
         path: `blog${post.node.fields.slug}`,
@@ -48,6 +86,10 @@ exports.createPages = ({ graphql, actions }) => {
           slug: post.node.fields.slug,
           previous,
           next,
+          prevPublic,
+          nextPublic,
+          prevAdmin,
+          nextAdmin,
         },
       })
     })

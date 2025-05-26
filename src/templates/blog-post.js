@@ -13,7 +13,8 @@ import PostNavigationAnimated from "../components/post-nav/post-nav-animated"
 
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const { setNavAnimation } = useGlobalState();
+  const { state, setNavAnimation } = useGlobalState()
+  const { isLoggedIn } = state;
 
   // Get initial state from body class if it exists
   const [isPanelOpen, setIsPanelOpen] = useState(
@@ -23,7 +24,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   )
   const post = data.mdx
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  const { previous, next, prevPublic, nextPublic } = pageContext
   const { title, description, slug } = post.frontmatter
 
   const disqusConfig = {
@@ -52,8 +53,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <SEO title={title} description={description || post.excerpt} />
         <div className="post">
           <PostNavigationAnimated
-            previous={previous}
-            next={next}
+            previous={isLoggedIn ? previous : prevPublic}
+            next={isLoggedIn ? next : nextPublic}
             onClick={togglePanel}
             isPanelOpen={isPanelOpen}
           />
@@ -104,6 +105,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        visibility
       }
     }
   }

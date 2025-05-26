@@ -28,6 +28,7 @@
   /* Background Colors */
   --color-background-primary: #fff;
   --color-background-secondary: #fdfdfd;
+  --color-banner: #dfe1e5;
 
   /* Border Colors */
   --color-border-primary: var(--color-secondary);

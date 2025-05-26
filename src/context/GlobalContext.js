@@ -17,7 +17,10 @@ const initialState = {
     currentPost: null,
     searchQuery: '',
     filterOptions: {},
-  }
+  },
+  isLoggedIn: false,
+  username: '',
+  isAdmin: false,
 };
 
 // Action types
@@ -29,6 +32,9 @@ export const ACTIONS = {
   SET_ANIMATION: 'SET_ANIMATION',
   SET_BLOG_STATE: 'SET_BLOG_STATE',
   RESET_STATE: 'RESET_STATE',
+  SET_LOGIN_STATUS: 'SET_LOGIN_STATUS',
+  SET_USERNAME: 'SET_USERNAME',
+  SET_IS_ADMIN: 'SET_IS_ADMIN',
 };
 
 // Reducer
@@ -87,6 +93,21 @@ function reducer(state, action) {
         ...initialState,
         ...action.payload,
       };
+    case ACTIONS.SET_LOGIN_STATUS:
+      return {
+        ...state,
+        isLoggedIn: action.payload,
+      };
+    case ACTIONS.SET_USERNAME:
+      return {
+        ...state,
+        username: action.payload,
+      };
+    case ACTIONS.SET_IS_ADMIN:
+      return {
+        ...state,
+        isAdmin: action.payload,
+      };
     default:
       return state;
   }
@@ -131,6 +152,18 @@ export function GlobalProvider({ children }) {
 
     resetState: useCallback((keepData = {}) => {
       dispatch({ type: ACTIONS.RESET_STATE, payload: keepData });
+    }, []),
+
+    setLoginStatus: useCallback((isLoggedIn) => {
+      dispatch({ type: ACTIONS.SET_LOGIN_STATUS, payload: isLoggedIn });
+    }, []),
+
+    setUsername: useCallback((username) => {
+      dispatch({ type: ACTIONS.SET_USERNAME, payload: username });
+    }, []),
+
+    setIsAdmin: useCallback((isAdmin) => {
+      dispatch({ type: ACTIONS.SET_IS_ADMIN, payload: isAdmin });
     }, []),
   };
 
