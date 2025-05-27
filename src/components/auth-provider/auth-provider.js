@@ -9,6 +9,7 @@ const AUTH_AUDIENCE = process.env.GATSBY_OKTA_ISSUER;
 
 const Auth0ProviderWithHistory = ({ children }) => {
 
+    if (typeof window === "undefined") return null; // Prevent SSR crash
     const onRedirectCallback = (appState) => {
         const returnTo = appState?.returnTo || window.location.pathname;
         navigate(returnTo);
