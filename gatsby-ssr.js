@@ -1,16 +1,13 @@
 const React = require('react');
 const { GlobalProvider } = require('./src/context/GlobalContext');
 const { GlobalStyle } = require('./src/styles/GlobalStyle');
-const Auth0ProviderWithHistory = require('./src/components/auth-provider/auth-provider');
 
 // Use CommonJS exports
 exports.wrapRootElement = ({ element }) => (
-  <Auth0ProviderWithHistory>
   <GlobalProvider>
     <GlobalStyle />
     {element}
   </GlobalProvider>
-  </Auth0ProviderWithHistory>
 );
 
 // This is the proper place to add scripts to your site

@@ -8,9 +8,11 @@ import { FaLock, FaSignOutAlt } from "react-icons/fa"
 import { useGlobalState } from "../context/GlobalContext"
 import { useAuth0 } from "@auth0/auth0-react";
 
-const AUTH_ADMIN= process.env.GATSBY_ADMIN_EMAIL;
+const AUTH_ADMIN = process.env.GATSBY_ADMIN_EMAIL;
 
 const Layout = ({ title, children }) => {
+  console.log('Layout component called', { title, children: !!children });
+
   const location = useLocation();
   const isHomePage = location.pathname === "/"
 
@@ -18,24 +20,24 @@ const Layout = ({ title, children }) => {
   const { state, setUsername, setLoginStatus, setIsAdmin } = useGlobalState()
   const { username, isAdmin } = state;
 
-  const {
-    user,
-    isAuthenticated,
-    loginWithRedirect,
-    logout,
-  } = useAuth0();
+  // Use Auth0 with proper error handling
+  const auth0 = useAuth0();
+  console.log('Auth0 hook result:', auth0);
 
-  const logoutWithRedirect = () =>
-    logout({
-      logoutParams: {
-        returnTo: window.location.origin + '/blog'
-      }
-    });
+  // Extract values safely with fallbacks
+  const user = auth0?.user || null;
+  const isAuthenticated = auth0?.isAuthenticated || false;
+  const isLoading = auth0?.isLoading || false;
+  const loginWithRedirect = auth0?.loginWithRedirect || (() => {
+    console.log('Auth0 loginWithRedirect not available');
+  });
+  const logout = auth0?.logout || (() => {
+    console.log('Auth0 logout not available');
+  });
 
+  console.log('Auth0 state:', { user, isAuthenticated, isLoading });
 
-
-
-
+  // All hooks must be called before any conditional returns
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const loggedInUser = localStorage.getItem("username")
@@ -45,11 +47,11 @@ const Layout = ({ title, children }) => {
   }, [setLoginStatus, setUsername])
 
   useEffect(() => {
-    if (isAuthenticated) {
+    if (isAuthenticated && user) {
       setLoginStatus(true);
-      setUsername(user.name);
+      setUsername(user.name || user.email || "User");
       setIsAdmin(user.email === AUTH_ADMIN);
-      localStorage.setItem("username", user.name);
+      localStorage.setItem("username", user.name || user.email || "User");
       localStorage.setItem("isAdmin", user.email === AUTH_ADMIN);
     } else {
       setLoginStatus(false);
@@ -58,7 +60,35 @@ const Layout = ({ title, children }) => {
     }
   }, [isAuthenticated, user, setLoginStatus, setUsername, isAdmin, setIsAdmin]);
 
-  console.log("auth status", isAuthenticated, isAdmin, user?.email, user?.email === 'egeeva@gmail.com');
+  // Show loading state if Auth0 is still initializing
+  if (isLoading) {
+    console.log('Auth0 is loading, showing loading state');
+    return (
+      <Wrapper>
+        <GlobalStyle />
+        <div style={{ padding: '2rem', textAlign: 'center' }}>
+          <h2>Loading...</h2>
+          <p>Initializing authentication...</p>
+        </div>
+      </Wrapper>
+    );
+  }
+
+  const logoutWithRedirect = () => {
+    if (typeof window !== 'undefined') {
+      logout({
+        logoutParams: {
+          returnTo: window.location.origin + '/blog'
+        }
+      });
+    }
+  };
+
+
+
+
+
+
 
   return (
     <Wrapper>
@@ -91,7 +121,7 @@ const Layout = ({ title, children }) => {
               {/* {`To see more posts   `}<StyledLink to={`/login?returnTo=${encodeURIComponent(location.pathname)}`}> Login</StyledLink> / <StyledLink to={`/register?returnTo=${encodeURIComponent(location.pathname)}`}>Sign up</StyledLink></span> */}
 
               {`To see more posts   `}<AuthLink onClick={() => loginWithRedirect({
-                appState: { returnTo: window.location.pathname }
+                appState: { returnTo: typeof window !== 'undefined' ? window.location.pathname : location.pathname }
               })}>Login / Sign Up</AuthLink> </span>
           </BannerContent>
         </AuthBanner>

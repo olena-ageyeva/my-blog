@@ -7,13 +7,23 @@ export const onPageRender = () => {
   var shape = "cube"
 
   setTimeout(function () {
-    document.querySelector("#wireframe").addEventListener("click", function () {
+    // Check if required elements exist before adding event listeners
+    const wireframeElement = document.querySelector("#wireframe");
+    const shapeElement = document.querySelector("#shape");
+    const appElement = document.getElementById("app");
+
+    if (!wireframeElement || !shapeElement || !appElement) {
+      console.log('Three.js elements not found, skipping initialization');
+      return;
+    }
+
+    wireframeElement.addEventListener("click", function () {
       wireframe = !wireframe
       objMaterial.wireframe = wireframe
       scene.remove(obj)
       scene.add(obj)
     })
-    document.querySelector("#shape").addEventListener("click", function () {
+    shapeElement.addEventListener("click", function () {
       scene.remove(obj)
       sphere = !sphere
       if (shape === "ico") {
@@ -39,14 +49,14 @@ export const onPageRender = () => {
       scene.add(obj)
     })
     //SCENE
-    var width = document.getElementById("app").offsetWidth
-    var height = document.getElementById("app").offsetHeight
+    var width = appElement.offsetWidth
+    var height = appElement.offsetHeight
 
     var renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setSize(width, height)
     renderer.shadowMap.enabled = true
     renderer.shadowMap.type = THREE.PCFSoftShadowMap
-    document.getElementById("app").appendChild(renderer.domElement)
+    appElement.appendChild(renderer.domElement)
 
     var scene = new THREE.Scene()
 
