@@ -66,10 +66,37 @@ const Layout = ({ title, children }) => {
     return (
       <Wrapper>
         <GlobalStyle />
-        <div style={{ padding: '2rem', textAlign: 'center' }}>
-          <h2>Loading...</h2>
-          <p>Initializing authentication...</p>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '3rem',
+          minHeight: '200px'
+        }}>
+          <div style={{
+            border: '4px solid #f3f3f3',
+            borderTop: '4px solid var(--color-secondary, #007acc)',
+            borderRadius: '50%',
+            width: '50px',
+            height: '50px',
+            animation: 'spin 1s linear infinite',
+            marginBottom: '1rem'
+          }} />
+          <p style={{
+            color: 'var(--color-text-secondary, #666)',
+            fontSize: '1rem',
+            margin: 0
+          }}>
+            Initializing authentication...
+          </p>
         </div>
+        <style>{`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
       </Wrapper>
     );
   }
