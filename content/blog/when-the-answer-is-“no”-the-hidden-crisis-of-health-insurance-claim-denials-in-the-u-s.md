@@ -37,9 +37,13 @@ According to HealthCare.gov about 20% of all claims submitted in 2023 were denie
 
 ### Why Are Claims Denied?
 
-Insurers often cite **“other” or “lack of medical necessity”** as reasons for denial. But the definitions behind these terms are often vague and inconsistently applied.
+Insurers often cite **“other” or “lack of medical necessity”** as reasons for denial. But the definitions behind these terms are often vague and inconsistently applied. Lack of prior authorization remains the number one reason for claim denial and attributes to 10% or 7 million claim denials in 2023.
 
-👀 *See Exhibit 5: Reasons for Denial*\
+👀 *See Exhibit 5: Reasons for Denial*
+
+![](../assets/common-reasons-for-denials.png)
+
+\
 In fact, in some plans, **over 80% of denied claims were for services doctors deemed medically necessary**.
 
 ### Patients Rarely Appeal—But When They Do, They Win
