@@ -20,7 +20,7 @@ Unfortunately, this is not a rare glitch in the system. It’s a feature.
 
 According to a comprehensive study by KFF ([link to source](https://www.kff.org)), health insurance claim denials in the U.S. marketplace are alarmingly common—and climbing.
 
-📊 **Denial rates range from 1% to 33%**, depending on the insurer and state.\
+📊 **Denial rates range from 1% to 33%**, depending on the insurer and state.
 *See Exhibit 3: Denial Rates by Issuer in the Federal Marketplace.*
 
 ![](../assets/claim-denials-lowest-to-highest.jpg)
@@ -43,13 +43,14 @@ Insurers often cite **“other” or “lack of medical necessity”** as reason
 
 ![](../assets/common-reasons-for-denials.png)
 
-\
-In fact, in some plans, **over 80% of denied claims were for services doctors deemed medically necessary**.
+In fact, in some plans, **over 80% of denied claims were for services doctors deemed medically necessary** and  the patients get harmed by adverse events associated with delays.
 
 ### Patients Rarely Appeal—But When They Do, They Win
 
-Perhaps the most staggering figure? **Less than 1 in 1,000 denials are appealed.**\
+Perhaps the most staggering figure? **Less than 1 in 1,000 denials are appealed.**
 *See Exhibit 7: Rate of Appeals*
+
+![](../assets/no-appeal-reasons.png)
 
 The process is difficult, opaque, and discouraging. Yet, **when patients do appeal, they win around 40% of the time**.
 
@@ -61,13 +62,18 @@ Behind every statistic is a real person. A father fighting cancer. A teenager ne
 
 Claim denial isn’t just administrative—it’s life-altering.
 
+![](../assets/harm-caused-by-pa.png)
+
 ### It Doesn’t Have to Be This Way
 
 We need:
 
-✅ **Greater transparency** in denial reasoning.\
-✅ **Simplified, automated appeals processes** supported by technology.\
-✅ **Real-time claim prechecks** powered by AI to avoid denials before they happen.\
+✅ **Greater transparency** in denial reasoning.
+
+✅ **Simplified, automated appeals processes** supported by technology.
+
+✅ **Real-time claim prechecks** powered by AI to avoid denials before they happen.
+
 ✅ **Better regulation and accountability** across plans and states.
 
 - - -
