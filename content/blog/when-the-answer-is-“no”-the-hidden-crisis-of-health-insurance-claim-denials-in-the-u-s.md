@@ -58,6 +58,8 @@ What does that tell us? The system is broken—not because patients lose, but be
 
 ### The Human Cost
 
+Even successful prior authorization and successful appeal still causes delay of series. 
+
 Behind every statistic is a real person. A father fighting cancer. A teenager needing emergency surgery. A parent trying to afford insulin.
 
 Claim denial isn’t just administrative—it’s life-altering.
