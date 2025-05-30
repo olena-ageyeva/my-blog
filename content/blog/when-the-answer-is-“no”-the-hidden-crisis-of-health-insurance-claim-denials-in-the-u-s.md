@@ -23,9 +23,9 @@ According to a comprehensive study by KFF ([link to source](https://www.kff.org)
 📊 **Denial rates range from 1% to 33%**, depending on the insurer and state.\
 *See Exhibit 3: Denial Rates by Issuer in the Federal Marketplace.*
 
+![](../assets/claim-denials-lowest-to-highest.jpg)
+
 And these aren't obscure claims. They include some of the most expensive, urgent, and potentially life-saving treatments.
-
-
 
 ### Why Are Claims Denied?
 
@@ -33,8 +33,6 @@ Insurers often cite **“other” or “lack of medical necessity”** as reason
 
 👀 *See Exhibit 5: Reasons for Denial*\
 In fact, in some plans, **over 80% of denied claims were for services doctors deemed medically necessary**.
-
-
 
 ### Patients Rarely Appeal—But When They Do, They Win
 
@@ -45,15 +43,11 @@ The process is difficult, opaque, and discouraging. Yet, **when patients do appe
 
 What does that tell us? The system is broken—not because patients lose, but because most never get a fair shot.
 
-
-
 ### The Human Cost
 
 Behind every statistic is a real person. A father fighting cancer. A teenager needing emergency surgery. A parent trying to afford insulin.
 
 Claim denial isn’t just administrative—it’s life-altering.
-
-
 
 ### It Doesn’t Have to Be This Way
 
