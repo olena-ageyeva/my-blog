@@ -8,7 +8,7 @@ description: Let's look into the widespread issue of health insurance claim
   cost of delayed care, and the rare but often successful appeals. Backed by KFF
   data, it calls for greater transparency, accountability, and innovation in
   claims processing.
-visibility: draft
+visibility: public
 ---
 Imagine this: You’ve just been diagnosed with a serious condition. The treatment is urgent. Your doctor submits a request to your insurance provider. Days pass, and then the letter arrives—it’s a denial.
 
