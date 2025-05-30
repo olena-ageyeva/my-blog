@@ -31,7 +31,9 @@ And these aren't obscure claims. They include some of the most expensive, urgent
 
 And elderly people who need the access to medical treatment the most at this stage of life are the most impacted.
 
+![](../assets/denials-by-payers.png)
 
+According to HealthCare.gov about 20% of all claims submitted in 2023 were denied. 60% of adults in US had any problems with their current health insurance in the past 12 month which resulted in treatment delays. 
 
 ### Why Are Claims Denied?
 
