@@ -19,7 +19,7 @@ Behind every decision you make—every swipe, click, and “sure, why not”—t
 
 - - -
 
-## What Is a Nudge?
+### What Is a Nudge?
 
 A **nudge** is a subtle design choice that influences your behavior without restricting your freedom.
 
@@ -37,8 +37,8 @@ Watch it in action. That beautifully illustrates these real-world nudges in acti
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LF4ETgw29BA?si=DCLgWljDtFMsDz7F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 From how kids choose snacks to how drivers slow down on curves, these examples show the power of *gentle correction over hard control*. A must-watch if you want to spot nudges in the wild.
-
-## Nudges Are Everywhere (For Better or Worse)
+- - -
+### Nudges Are Everywhere (For Better or Worse)
 
 Here's the thing: nudges aren’t always good.
 They can lead to growth—or doomscrolling.
@@ -55,7 +55,8 @@ Sometimes... not so much.
 
 But if you’re not aware, you’ll find your day (or career) shaped by someone else’s design.
 
-## 🧠 **Agile — done well —** Is a S**elf-Reinforcing** Nudge System
+- - -
+### **Agile — done well —** Is a S**elf-Reinforcing** Nudge System
 
 Here’s the fun part: **Agile—done well—is a self-reinforcing nudge system.**
 
@@ -83,15 +84,13 @@ Here’s how Agile applies nudge thinking:
 | Encourage ownership                      | Daily standups, team planning         |
 | Reduce analysis paralysis                | ⏱️ Time-boxing (sprints, ceremonies)  |
 
-
-
 Agile doesn’t force teams to be “better” or “be smarter.” It designs systems where *smart choices* are easier. It **nudges** them to *work in ways that naturally lead to better outcomes.*
 
 > The goal isn't to rely on discipline. It's to remove friction from the behaviors that actually lead to progress.
 
 When teams struggle with Agile, it’s often because they’re **missing these nudges**. Instead, they’re cargo-culting ceremonies without adjusting the actual environment.
-
-## 🎯 Outcome: Teams That Learn and Ship
+- - -
+### Outcome: Teams That Learn and Ship
 
 Done right, Agile removes decision fatigue and replaces it with structured momentum.
 
@@ -100,12 +99,8 @@ Done right, Agile removes decision fatigue and replaces it with structured momen
 * Instead of hoarding unfinished work, you finish small pieces early and often.
 
 These are **intentional nudges** to make great software more likely—without requiring herculean effort every day.
-
-![Agile vs Waterfall](../assets/agile-vs-waterfall.jpg "Agile vs Waterfall")
-
-
-
-## Nudge Yourself, Too
+- - -
+### Nudge Yourself, Too
 
 Let’s talk about my *self-investment* habit.
 
@@ -139,7 +134,8 @@ Nudging never felt so fun.
 
 ![Picasa Restaurant in Vegas ](../assets/vegas.jpg "Picasa Restaurant in Vegas ")
 
-## 🧻 Final Thought
+- - -
+### Final Thought
 
 You don’t need to force better habits.
 
