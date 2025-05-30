@@ -8,7 +8,7 @@ description: Let's look into the widespread issue of health insurance claim
   cost of delayed care, and the rare but often successful appeals. Backed by KFF
   data, it calls for greater transparency, accountability, and innovation in
   claims processing.
-visibility: public
+visibility: draft
 ---
 Imagine this: You’ve just been diagnosed with a serious condition. The treatment is urgent. Your doctor submits a request to your insurance provider. Days pass, and then the letter arrives—it’s a denial.
 
@@ -26,6 +26,12 @@ According to a comprehensive study by KFF ([link to source](https://www.kff.org)
 ![](../assets/claim-denials-lowest-to-highest.jpg)
 
 And these aren't obscure claims. They include some of the most expensive, urgent, and potentially life-saving treatments.
+
+![](../assets/cost-threshold.png)
+
+And elderly people who need the access to medical treatment the most at this stage of life are the most impacted.
+
+
 
 ### Why Are Claims Denied?
 
