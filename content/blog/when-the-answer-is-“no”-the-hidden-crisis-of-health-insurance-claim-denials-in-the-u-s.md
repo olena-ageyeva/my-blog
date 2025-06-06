@@ -1,7 +1,7 @@
 ---
 path: claim_denials
 date: 2025-05-30T12:55:26.987Z
-title: "When the Answer Is “No”: The Hidden Crisis of Health Insurance Claim
+title: "💔When the Answer Is “No”: The Hidden Crisis of Health Insurance Claim
   Denials in the U.S."
 description: Let's look into the widespread issue of health insurance claim
   denials in the U.S., highlighting shocking denial rates (1–30%), the human
@@ -79,8 +79,6 @@ We need:
 ✅ **Better regulation and accountability** across plans and states.
 
 - - -
-
-### A Call to Action
 
 As engineers, product designers, and leaders in health tech, we have a responsibility. The future of healthcare isn’t just about wearables and wellness apps—it’s about **building a system patients can trust**.
 
