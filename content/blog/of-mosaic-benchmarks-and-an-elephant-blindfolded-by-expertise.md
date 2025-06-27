@@ -5,7 +5,7 @@ title: 🧩Of Mosaic Benchmarks and an Elephant Blindfolded by Expertise
 description: " A visit to a reputable math studio turned into an unexpected
   lesson in how expertise can sometimes miss the bigger picture. What happens
   when brilliance is measured by the wrong benchmarks? "
-visibility: private
+visibility: public
 ---
 ![](../assets/gettyimages-522959656-612x612.jpg)
 
