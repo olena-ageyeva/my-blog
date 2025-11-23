@@ -7,7 +7,7 @@ description: What happens when you step into a space you’re not sure you belon
   begins with simply showing up—and staying open to what unfolds.
 visibility: public
 ---
-![](../assets/olena-from-athena.png)
+![award](../assets/olena-from-athena.png "Olena_from_athena")
 
 Has a stranger ever walked up to you and asked for a photo—like you’re a celebrity? It happened to me recently, and it left me with more than a smile. It left me thinking.
 
