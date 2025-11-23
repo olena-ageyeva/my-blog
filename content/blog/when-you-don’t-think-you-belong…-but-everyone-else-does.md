@@ -1,7 +1,7 @@
 ---
 path: olena_from_athena
 date: 2025-11-23T22:23:38.411Z
-title: When You Don’t Think You Belong… but Everyone Else Does
+title: 🛡️When You Don’t Think You Belong… but Everyone Else Does
 description: What happens when you step into a space you’re not sure you belong
   in? This reflection on a cybersecurity conference reminds us that impact often
   begins with simply showing up—and staying open to what unfolds.
