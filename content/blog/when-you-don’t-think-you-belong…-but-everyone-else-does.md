@@ -13,13 +13,13 @@ Has a stranger ever walked up to you and asked for a photo—like you’re a cel
 
 Let me tell you the story.
 
-Not long ago, I received an email letting me know I’d been nominated as an honorary attendee at FutureCon, a local cybersecurity conference. The note was warm and thoughtful, complete with a complimentary full-access pass. My first reaction wasn’t excitement or pride—it was disbelief.
+Not long ago, I received an email letting me know I’d been nominated as an honorary attendee at [FutureCon](https://futureconevents.com/events/boston-ma-2025/), a local cybersecurity conference. The note was warm and thoughtful, complete with a complimentary full-access pass. My first reaction wasn’t excitement or pride—it was disbelief.
 
-Cybersecurity has long been adjacent to my work, but it’s not part of my formal title. I don’t lead a security team. While I’ve been actively engaged with the WiCyS community—taking classes, volunteering as a mentor, attending events—I still didn’t see myself as someone who fit the mold of an “honorary attendee.”
+Cybersecurity has long been adjacent to my work, but it’s not part of my formal title. I don’t lead a security team. While I’ve been actively engaged with the [WiCyS](https://www.wicys.org/initiatives/programs/) community—taking classes, volunteering as a mentor, attending events—I still didn’t see myself as someone who fit the mold of an “honorary attendee.”
 
 But I showed up. Not out of confidence—out of curiosity. That, and I never turn down a free pass to a room full of smart people and sponsor swag.
 
-And I’m so glad I did. FutureCon turned out to be one of the most meaningful professional experiences I’ve had. I was surrounded by brilliant minds—security leaders, researchers, engineers—all grappling with the complex, nuanced space where innovation meets protection, where automation meets trust, and where rapid progress demands responsible guardrails.
+And I’m so glad I did. [FutureCon](https://futureconevents.com/events/boston-ma-2025/) turned out to be one of the most meaningful professional experiences I’ve had. I was surrounded by brilliant minds—security leaders, researchers, engineers—all grappling with the complex, nuanced space where innovation meets protection, where automation meets trust, and where rapid progress demands responsible guardrails.
 
 The sessions were deeply insightful. I learned how Active Directory can become a hidden bottleneck when responsibility is pushed entirely to end users. I heard lessons from real-world breaches and discussions on how the threat landscape continues to evolve. There were cautionary tales of AI gone wrong—and also inspiring stories about what becomes possible when we implement it responsibly.
 
@@ -35,11 +35,11 @@ On my way out—rushing a bit to get home in time for dinner—a gentleman stopp
 
 Apparently, my reputation preceded me… just not in the way I expected.
 
-Suddenly, it clicked. Adebumni and I had connected through WIT and WiCyS events. She’d participated in one of my workshops, and we’d collaborated virtually several times—but never met in person. And here I was, not even a full year into my journey at athena, being recognized by someone who knew me through her. That moment stayed with me.
+Suddenly, it clicked. Adebumni and I had connected through WIT and[ WiCyS](https://www.wicys.org/initiatives/programs/) events. She’d participated in one of my workshops, and we’d collaborated virtually several times—but never met in person. And here I was, not even a full year into my journey at athena, being recognized by someone who knew me through her. That moment stayed with me.
 
 Driving home, I found myself reflecting—not out of vanity, but clarity. It reminded me how easy it is to underestimate the ripple effect of what we contribute, especially when that contribution doesn’t come with a podium, a spotlight, or a formal title. Our reach often extends further than we realize. Sometimes, it takes a chance encounter—or a very attentive spouse—to remind us of that.
 
-As if the week wasn’t energizing enough, the next day I attended the 39th Boston Code Camp at Microsoft and left with even more inspiration—from AWS’s AgentCore to Oracle’s insights into AI-driven claims processing. Every session, every conversation added something to the way I think and lead. I came back with a sharper perspective and stronger ideas to bring to my teams.
+As if the week wasn’t energizing enough, the next day I attended the[ 39th Boston Code Camp](https://www.bostoncodecamp.com/CC39/Sessions) at Microsoft and left with even more inspiration—from AWS’s AgentCore to Oracle’s insights into AI-driven claims processing. Every session, every conversation added something to the way I think and lead. I came back with a sharper perspective and stronger ideas to bring to my teams.
 
 As leaders, we’re asked to make decisions all the time. The best ones aren’t gambles. They’re educated risks—grounded in experience, shaped by insight, and aligned with purpose. With every opportunity to learn from others—at conferences, in workshops, through conversations—I become more equipped to take those kinds of risks. The ones where the worst-case scenario is manageable, but the best-case outcome can be life-changing—transforming how we work, how we lead, and how we serve.
 
@@ -53,4 +53,4 @@ But because I was willing to ask better questions.
 
 If there’s one takeaway I’d love to leave you with, it’s this: every one of us can make a difference—by showing up, by staying curious, by asking thoughtful questions, and by bringing what we learn back to our teams, our work, and our lives.
 
-There’s a wealth of resources available to all of us—WIT, Mentorship Programs,  WiCyS, and many more. These communities aren’t just opportunities to grow—they’re catalysts for raising the bar across our entire organization. Let’s keep learning, keep connecting, and keep leading together. Programs
+There’s a wealth of resources available to all of us—WIT, Mentorship Programs,  [WiCyS](https://www.wicys.org/initiatives/programs/), and many more. These communities aren’t just opportunities to grow—they’re catalysts for raising the bar across our entire organization. Let’s keep learning, keep connecting, and keep leading together.
