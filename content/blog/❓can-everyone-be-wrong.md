@@ -7,23 +7,23 @@ description: A short story about driving against traffic, trusting your
   right.” Sometimes progress starts with ignoring the radio.
 visibility: public
 ---
-Imagine you’re driving on a highway and every single car is coming toward you. The radio announces:\
+Imagine you’re driving on a highway and every single car is coming toward you. The radio announces:
 *“Warning: there is a driver going the wrong way.”*
 
-Most people, in that moment, don’t ask: *Could everyone else be wrong?*\
+Most people, in that moment, don’t ask: *Could everyone else be wrong?*
 They ask something more familiar: *There’s no way I’m the only one driving correctly… right?*
 
-Because we’re taught—quietly but consistently—to trust volume over truth. Preferably in large numbers. Preferably with confidence.\
-If enough people move in the same direction, we call it reality.\
+Because we’re taught—quietly but consistently—to trust volume over truth. Preferably in large numbers. Preferably with confidence.
+If enough people move in the same direction, we call it reality.
 If one person doesn’t, we call it a mistake.
 
-Group thinking is efficient.\
-It keeps things moving.\
+Group thinking is efficient.
+It keeps things moving.
 It also has a habit—an inconvenient one—of rewarding agreement more than accuracy. Especially when things are “working well enough.”
 
 What we don’t talk about enough is this: **it’s not unusual for the majority to be wrong—particularly when something new, uncomfortable, or unproven is involved.** Most progress starts that way. Not with certainty, but with someone feeling slightly out of place and deciding not to turn around.
 
-So when you find yourself moving against traffic, the most useful question often isn’t *“What am I missing?”*\
+So when you find yourself moving against traffic, the most useful question often isn’t *“What am I missing?”*
 It’s *“What might we all be missing?”*
 
 - - -
@@ -32,10 +32,10 @@ I grew up in a working-class family. Long shifts, modest pay, practical prioriti
 
 Around the age of twelve, I discovered that math came unusually easily to me. Not “good at school” strong—**outlier** strong. Concepts arrived fully formed. Competitions felt natural. I worked through olympiad-level problems published in math magazines for students far older than me, and my solutions were regularly accepted.
 
-My parents didn’t know.\
+My parents didn’t know.
 And even if they had, they wouldn’t have known what to do with that information.
 
-The school could have helped.\
+The school could have helped.
 But it largely didn’t.
 
 Here’s a moment that stayed with me.
@@ -52,8 +52,8 @@ My name never appeared in a celebratory context related to my representing the s
 
 What surprised me just as much was my peers’ reaction.
 
-To them, liking math wasn’t impressive—it was suspicious.\
-Enjoying it was… unnecessary.\
+To them, liking math wasn’t impressive—it was suspicious.
+Enjoying it was… unnecessary.
 Being excited about it was definitely unusual.
 
 “Why do you care so much?” was a question I heard more than once.
@@ -62,8 +62,8 @@ My interest wasn’t seen as a strength. It was treated like an anomaly—someth
 
 So support didn’t really come from anywhere. Not because anyone was unkind, but because difference often looks like noise before it looks like signal.
 
-I wasn’t given extra resources.\
-I wasn’t guided toward opportunities.\
+I wasn’t given extra resources.
+I wasn’t guided toward opportunities.
 Advancement simply wasn’t part of the default path.
 
 I was, however, very motivated.
@@ -76,28 +76,28 @@ I helped classmates who were struggling. I experimented with ways to explain com
 
 Slowly, things changed.
 
-The tone shifted.\
-Grades improved.\
+The tone shifted.
+Grades improved.
 People stopped saying *“I’m bad at math”* and started saying *“I get it now.”*
 
-And without a meeting, a mandate, or a roadmap—\
+And without a meeting, a mandate, or a roadmap—
 others joined me on that highway.
 
 - - -
 
 That experience stayed with me—and later, it became something I carried into every leadership role.
 
-You don’t need authority to lead.\
-You don’t need permission to influence.\
+You don’t need authority to lead.
+You don’t need permission to influence.
 And you don’t need validation to be right.
 
 Sometimes leadership is simply continuing forward—calmly, generously, and consistently—until the environment adapts around you.
 
-That wasn’t the last time I saw this pattern.\
+That wasn’t the last time I saw this pattern.
 But it was the first time I learned that transformation doesn’t require age, title, or perfect conditions.
 
-It requires conviction.\
-And patience.\
+It requires conviction.
+And patience.
 And just enough humor to keep going when the radio says you’re wrong.
 
 Especially when you know, from experience, that radios are often late to the truth—and progress rarely waits for permission.
