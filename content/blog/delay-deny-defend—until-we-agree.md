@@ -1,7 +1,7 @@
 ---
 path: claimgo
 date: 2026-01-25T14:14:06.407Z
-title: Delay. Deny. Defend—Until We Agree.
+title: 🚫Delay. Deny. Defend—Until We Agree.
 description: A personal and systems-level look at how insurance profits from
   friction—and how transparency, accountability, and human-centered AI can help
   rebuild trust and care when people need it most.
