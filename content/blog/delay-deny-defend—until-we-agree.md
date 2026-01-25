@@ -7,26 +7,28 @@ description: A personal and systems-level look at how insurance profits from
   rebuild trust and care when people need it most.
 visibility: private
 ---
-**Delay. Deny. Defend.**\
+**Delay. Deny. Defend.**
+
 That’s not a conspiracy theory. It’s a documented insurance strategy.
 
-The phrase was popularized by **Jay Feinman**, who described how insurers maximize profit not by care, but by friction:\
+The phrase was popularized by **Jay Feinman**, who described how insurers maximize profit not by care, but by friction:
+
 delay payments, deny claims, and defend every challenge until people give up.
 
-And it works.\
+And it works.
 It’s *incredibly* rewarding financially.
 
-Why?\
+Why?
 Because most people are exhausted, overwhelmed, sick, grieving, or—like many parents—just trying to get through a crisis. Every extra form, requirement change, reprocessing window, or “out of network” surprise shifts cost and burden from insurers to individuals and providers.
 
 
 
 **This is not theoretical for me. It’s personal.**
 
-My child is currently in crisis.\
+My child is currently in crisis.
 Last week, one of the most critical providers on her care team shared that **nearly all of her claims—across multiple insurers—were suddenly denied**.
 
-Why?\
+Why?
 Because requirements changed. Again.
 
 The target is always moving.
@@ -37,10 +39,10 @@ For recurring services, I discovered the provider was suddenly processed as *out
 * I should **pay out of pocket** and wait for reimbursement
 * Or ask the provider to **wait another 30 days** to get paid
 
-I pay my premiums. On time. Every month.\
+I pay my premiums. On time. Every month.
 Yet the experience is confusing, stressful, and adversarial.
 
-And here’s the part that hurts the most:\
+And here’s the part that hurts the most:
 **Nothing about this system is designed to improve care.**
 
 - - -
@@ -70,15 +72,15 @@ One example is **Lemonade Insurance**, which rethought incentives from the groun
 
 It’s not perfect—but it proves something important:
 
-> **Insurance doesn’t have to be extractive to be sustainable.**\
+> **Insurance doesn’t have to be extractive to be sustainable.**
 > **AI can be used to add value, not just reduce payouts.**
 
 - - -
 
-**So the real question isn’t “Why is insurance so broken?”**\
+**So the real question isn’t “Why is insurance so broken?”**
 It’s:
 
-> Why do we still accept a model that profits from delay, denial, and exhaustion—\
+> Why do we still accept a model that profits from delay, denial, and exhaustion—
 > when we have the technology to do better?
 
 AI could be used to:
@@ -88,11 +90,11 @@ AI could be used to:
 * Simplify coverage rules instead of weaponizing them
 * Support patients and families *when they are most vulnerable*
 
-That’s not radical.\
-That’s humane.\
+That’s not radical.
+That’s humane.
 That’s what insurance was supposed to be.
 
-And until we demand systems that serve people—not just balance sheets—\
+And until we demand systems that serve people—not just balance sheets—
 **Delay. Deny. Defend will keep winning.**
 
 
@@ -103,7 +105,7 @@ I refuse to accept that this is “just how insurance works.”
 
 In the ways available to me, I’m actively trying to **combat this system**—and that’s exactly why I chose my capstone project: **ClaimGo**.
 
-The goal is simple, but ambitious:\
+The goal is simple, but ambitious:
 **Outsmart the moving target that insurers deliberately create—and stay ahead of it.**
 
 Insurers change requirements constantly, not because care improves, but because *friction is profitable*. Every rule change resets the game. Providers scramble. Patients suffer. Families pay upfront. Many give up.
@@ -134,11 +136,11 @@ Because once friction is visible, incentives change.
 
 Now imagine employers being able to say:
 
-> “We partner with insurers that have the *lowest Claim Friction Index*\
+> “We partner with insurers that have the *lowest Claim Friction Index*
 > and the *lowest Denial Risk Score*—because our people matter.”
 
-That becomes a benefit.\
-A recruiting advantage.\
+That becomes a benefit.
+A recruiting advantage.
 A signal of **social capital**.
 
 “Best place for humans to work” wouldn’t just mean snacks and wellness apps—it would mean **your care won’t be trapped in administrative purgatory when you need it most**.
@@ -168,10 +170,10 @@ This is AI **working with humans—not against them**.
 
 ### This is personal. And it’s intentional.
 
-I’m building ClaimGo not as an abstract exercise, but as a response to lived experience—\
+I’m building ClaimGo not as an abstract exercise, but as a response to lived experience—
 as a parent, a technologist, and someone who refuses to normalize harm disguised as process.
 
-We don’t need more complexity.\
+We don’t need more complexity.
 We don’t need more “policy updates.”
 
 We need systems that reward **care, clarity, and fairness**.
@@ -186,7 +188,7 @@ Now we just need the courage to aim them in the right direction.
 
 As I’m working on my capstone idea, I’m choosing a logo that represents this mission—and I want your perspective.
 
-Which one feels like it stands *with patients and providers*?\
+Which one feels like it stands *with patients and providers*?
 Which one feels like it challenges the status quo instead of blending into it?
 
 ![claimgo logo](../assets/claimgo-2-logos.png "Claimgo logo")
