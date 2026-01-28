@@ -5,7 +5,7 @@ title: ❓Can Everyone Be Wrong?
 description: A short story about driving against traffic, trusting your
   instincts, and learning that “everyone agrees” is not the same as “everyone is
   right.” Sometimes progress starts with ignoring the radio.
-visibility: public
+visibility: draft
 ---
 Imagine you’re driving on a highway and every single car is coming toward you. The radio announces:
 *“Warning: there is a driver going the wrong way.”*
