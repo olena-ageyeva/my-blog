@@ -1,7 +1,7 @@
 ---
 path: london_conference
 date: 2026-03-28T01:51:38.019Z
-title: We’re Asking the Wrong Question About AI
+title: 💡We’re Asking the Wrong Question About AI
 description: "Insights from London: AI is no longer a productivity tool—it’s a
   system transformation engine. The real bottleneck now is leadership, not
   technology."
