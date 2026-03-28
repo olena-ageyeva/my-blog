@@ -5,7 +5,7 @@ title: 💡We’re Asking the Wrong Question About AI
 description: "Insights from London: AI is no longer a productivity tool—it’s a
   system transformation engine. The real bottleneck now is leadership, not
   technology."
-visibility: private
+visibility: public
 ---
 I went to Quantic School of Business and Technology’s Global Conference in London expecting to learn how to use AI better.
 
